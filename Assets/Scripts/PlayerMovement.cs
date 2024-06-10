@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour {
     
     #region MovementParameters
     private float minSpeed = 5.0f;
-    private float maxSpeed = 12.0f;
+    private float maxSpeed = 10.0f;
     private float acceleration = 0.1f;
     #endregion
 
@@ -15,6 +15,12 @@ public class PlayerMovement : MonoBehaviour {
     private float airMovementFactor = 0.25f;
 
     private float airMovementScaling = 0.05f;
+
+    private float minAirSpeed = 0.0f;
+
+    private float maxAirSpeed = 7.0f;
+
+    private float airAcceleration = 0.1f;
     #endregion
 
 
@@ -44,6 +50,8 @@ public class PlayerMovement : MonoBehaviour {
 
     private float currAirSpeed = 0.0f;
 
+    private float currAirMovementSpeed = 0.0f;
+
     private float currAirMovementScaling = 0.0f;
 
     #endregion
@@ -57,7 +65,6 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        Debug.Log(currSpeed);
         if (grounded) {
             Move();
         }
@@ -78,6 +85,8 @@ public class PlayerMovement : MonoBehaviour {
     void StopMoving() {
         StopCoroutine(Acceleration());
         currSpeed = minSpeed;
+        StopCoroutine(AirAcceleration());
+        currAirMovementSpeed = minAirSpeed;
     }
 
     void OnMovement(InputValue value) {
@@ -97,7 +106,7 @@ public class PlayerMovement : MonoBehaviour {
             if (grounded) {
                 currSpeed += acceleration * Time.deltaTime;
             }
-            yield return null;
+            yield return new WaitForEndOfFrame();
         }
     }
     #endregion
@@ -105,7 +114,15 @@ public class PlayerMovement : MonoBehaviour {
     #region AirMovement
 
     void AirMove() {
-        transform.position += (jumpMovementVector + (airMovementVector * (airMovementScaling * currAirSpeed))) * currAirSpeed * Time.deltaTime;
+        transform.position += (jumpMovementVector + (airMovementVector * (airMovementScaling * currAirSpeed) * currAirMovementSpeed)) * currAirSpeed * Time.deltaTime;
+        StartCoroutine(AirAcceleration());
+    }
+
+    IEnumerator AirAcceleration() {
+        while (currAirMovementSpeed < maxAirSpeed) {
+            currAirMovementSpeed += airAcceleration * Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
     }
 
     #endregion
@@ -125,6 +142,7 @@ public class PlayerMovement : MonoBehaviour {
         jumpMovementVector = movementVector;
         currAirSpeed = currSpeed;
         currAirMovementScaling = currSpeed;
+        currAirMovementSpeed = minAirSpeed;
     }
 
     IEnumerator CheckForGround() {
