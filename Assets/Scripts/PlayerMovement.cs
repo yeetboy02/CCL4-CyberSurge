@@ -25,21 +25,28 @@ public class PlayerMovement : MonoBehaviour {
 
 
     #region JumpingParameters
-    private float jumpPower = 4.0f;
+    [SerializeField] private float jumpPower = 4.0f;
 
-    private float jumpScaling = 0.25f;
+    [SerializeField] private float jumpScaling = 0.25f;
 
-    private float playerDistanceToGround = 1.0f;
+    [SerializeField] private float playerDistanceToGround = 1.0f;
 
+    #endregion
+
+    #region RotationParameters
+    private float rotationSpeed = 10.0f;
     #endregion
 
 
     #region Variables
     private Vector3 movementVector;
+    private Vector3 directionalMovementVector;
 
     private Vector3 prevMovementVector;
+    private Vector3 prevDirectionalMovementVector;
 
     private Vector3 airMovementVector;
+    private Vector3 directionalAirMovementVector;
 
     private Vector3 jumpMovementVector;
 
@@ -65,6 +72,9 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void FixedUpdate() {
+
+        UpdateMovementVectorDirection();
+
         if (grounded) {
             Move();
         }
@@ -77,7 +87,7 @@ public class PlayerMovement : MonoBehaviour {
     #region Movement
     void Move() {
         if (grounded && movementVector != Vector3.zero) {
-            transform.position += movementVector * currSpeed * Time.deltaTime;
+            transform.position += directionalMovementVector * currSpeed * Time.deltaTime;
             StartCoroutine(Acceleration());
         }
     }
@@ -111,10 +121,27 @@ public class PlayerMovement : MonoBehaviour {
     }
     #endregion
 
+    #region Rotation
+    void UpdateMovementVectorDirection() {
+        Quaternion cameraRotation = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
+        prevDirectionalMovementVector = cameraRotation * prevMovementVector;
+        directionalMovementVector = cameraRotation * movementVector;
+        directionalAirMovementVector = cameraRotation * airMovementVector;
+        FaceForward();
+    }
+
+    void FaceForward() {
+        if (movementVector != Vector3.zero) {
+            transform.forward = Vector3.Lerp(transform.forward, directionalMovementVector, rotationSpeed * Time.deltaTime);
+        }
+    }
+
+    #endregion
+
     #region AirMovement
 
     void AirMove() {
-        transform.position += (jumpMovementVector + (airMovementVector * (airMovementScaling * currAirSpeed) * currAirMovementSpeed)) * currAirSpeed * Time.deltaTime;
+        transform.position += (jumpMovementVector + (directionalAirMovementVector * (airMovementScaling * currAirSpeed) * currAirMovementSpeed)) * currAirSpeed * Time.deltaTime;
         StartCoroutine(AirAcceleration());
     }
 
@@ -138,7 +165,7 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void UpdateJumpVector() {
-        jumpMovementVector = movementVector;
+        jumpMovementVector = directionalMovementVector;
         currAirSpeed = currSpeed;
         currAirMovementScaling = currSpeed;
         currAirMovementSpeed = minAirSpeed;
@@ -149,7 +176,7 @@ public class PlayerMovement : MonoBehaviour {
 
         while (true) {
             bool raycastSuccess = Physics.Raycast(transform.position, transform.up * -1, out hit);
-            if (raycastSuccess && hit.collider.gameObject.CompareTag("Ground") && hit.distance <= playerDistanceToGround) {
+            if (raycastSuccess && hit.collider.gameObject.CompareTag("Ground") && hit.distance <= playerDistanceToGround + 0.00001f) {
                 grounded = true;
             }
             else {
