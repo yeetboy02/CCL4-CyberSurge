@@ -6,68 +6,63 @@ using UnityEngine.InputSystem;
 public class CameraMovement : MonoBehaviour {
 
     #region RotationParameters
-    private float rotationSpeedX = 1.0f;
+    private float rotationSpeedX = 1.50f;
 
-    private float rotationSpeedY = 1.0f;
+    #endregion
 
-    private float minRotationY = -45.0f;
-
-    private float maxRotationY = 45.0f;
+    #region MovementParameters
+    private Vector3 offset = new Vector3(0, 3.5f, -7);
     #endregion
 
     #region Variables
     [SerializeField] private Transform player;
-    private Vector3 offset;
 
-    private float yOffset;
+    private float distanceToPlayer;
 
-    private float currRotationY = 0.0f;
+    private Vector3 currPlayerOffset;
 
-    private Transform other;
-    private Transform own;
+    private float fixedYOffset;
 
-    float distance;
 
     #endregion
 
     void Start () {
-        other = player.GetComponent<Transform>();
-        own = gameObject.GetComponent<Transform>();
-        yOffset = own.position.y - other.position.y;
-        distance = Vector3.Distance(own.position, other.position);
+        currPlayerOffset = offset;
+        ApplyOffset();
+        fixedYOffset = transform.position.y - player.position.y;
+        distanceToPlayer = Vector3.Distance(transform.position, player.position);
         SetOffset();
     }
 
     void Update() {
-
-        // OFFSET
-        SetOffset();
-        gameObject.transform.position = other.position + offset;
-        transform.LookAt(player);
+        ApplyOffset();
+        LookAtPlayer();
     }
 
+    #region Movement
     public void SetOffset() {
-        offset = own.position - other.position;
-        offset.Normalize();
-        offset *= distance;
-        Debug.Log(offset);
-        offset.y = yOffset;
+        currPlayerOffset = gameObject.transform.position - player.position;
+        currPlayerOffset.Normalize();
+        currPlayerOffset *= distanceToPlayer;
+        currPlayerOffset.y = fixedYOffset;
     }
+
+    public void ApplyOffset() {
+        gameObject.transform.position = player.position + currPlayerOffset;
+    }
+
+    #endregion
 
     #region Rotations
 
+    void LookAtPlayer() {
+        gameObject.transform.LookAt(player);
+    }
+
     void OnCameraRotation(InputValue value) {
         Vector2 input = value.Get<Vector2>();
-
-        // X ROTATION
-        transform.RotateAround(player.position, new Vector3(0, 1, 0), input.x * rotationSpeedX);
-
-        // Y ROTATION
-        float prevRotationY = currRotationY;
-        currRotationY += input.y * rotationSpeedY;
-        currRotationY = Mathf.Clamp(currRotationY, minRotationY, maxRotationY);
-        input.y = currRotationY - prevRotationY;
-        transform.RotateAround(player.position, new Vector3(1, 0, 0), input.y);
+        gameObject.transform.RotateAround(player.transform.position, Vector3.up, input.x * rotationSpeedX);
+        SetOffset();
     }
 
     #endregion

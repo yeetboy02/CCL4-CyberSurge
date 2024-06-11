@@ -6,21 +6,21 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour {
     
     #region MovementParameters
-    private float minSpeed = 5.0f;
-    private float maxSpeed = 10.0f;
-    private float acceleration = 0.1f;
+    [SerializeField] private float minSpeed = 5.0f;
+    [SerializeField] private float maxSpeed = 10.0f;
+    [SerializeField] private float acceleration = 0.1f;
     #endregion
 
     #region AirMovementParameters
-    private float airMovementFactor = 0.25f;
+    [SerializeField] private float airMovementFactor = 0.25f;
 
-    private float airMovementScaling = 0.05f;
+    [SerializeField] private float airMovementScaling = 0.05f;
 
-    private float minAirSpeed = 0.0f;
+    [SerializeField] private float minAirSpeed = 0.0f;
 
-    private float maxAirSpeed = 7.0f;
+    [SerializeField] private float maxAirSpeed = 7.0f;
 
-    private float airAcceleration = 0.1f;
+    [SerializeField] private float airAcceleration = 0.1f;
     #endregion
 
 
@@ -133,7 +133,6 @@ public class PlayerMovement : MonoBehaviour {
         if (!grounded) {
             return;
         }
-        UpdateJumpVector();
         float currJumpPower = jumpPower + (jumpScaling * (currSpeed - minSpeed));
         rb.AddForce(Vector3.up * currJumpPower, ForceMode.Impulse);
     }
@@ -154,6 +153,9 @@ public class PlayerMovement : MonoBehaviour {
                 grounded = true;
             }
             else {
+                if (grounded) {
+                    UpdateJumpVector();
+                }
                 grounded = false;
             }
             yield return null;
