@@ -13,8 +13,16 @@
             "valueId": "Unity"
         },
         {
+            "id": "DeploymentPlatforms",
+            "valueId": "Mac"
+        },
+        {
+            "id": "DeploymentPlatforms",
+            "valueId": "Windows"
+        },
+        {
             "id": "Packages",
-            "valueId": "Extensions"
+            "valueId": "Unity"
         },
         {
             "id": "DeploymentPlatforms",
