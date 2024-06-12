@@ -6,14 +6,18 @@ using UnityEngine.InputSystem;
 public class CameraMovement : MonoBehaviour {
 
     #region RotationParameters
-    private float rotationSpeedX = 1.50f;
+    [SerializeField] private float rotationSpeedX = 1.50f;
+
+    [SerializeField] private float rotationSpeedY = 1.50f;
+
+    [SerializeField] private Vector2 rotationYConstraints = new Vector2(10, 75);
 
     #endregion
 
     #region MovementParameters
-    private Vector3 offset = new Vector3(0, 3.5f, -7);
+    [SerializeField] private Vector3 offset = new Vector3(0, 3.5f, -7);
 
-    private float minDistanceToPlayer = 1.0f;
+    [SerializeField] private float minDistanceToPlayer = 1.0f;
 
     #endregion
 
@@ -29,8 +33,6 @@ public class CameraMovement : MonoBehaviour {
 
     private Vector3 prevPlayerOffset;
 
-    private float fixedYOffset;
-
     private bool colliding = false;
 
 
@@ -39,7 +41,6 @@ public class CameraMovement : MonoBehaviour {
     void Start () {
         currPlayerOffset = offset;
         ApplyOffset();
-        fixedYOffset = transform.position.y - player.position.y;
         baseDistanceToPlayer = Vector3.Distance(transform.position, player.position);
         currDistanceToPlayer = baseDistanceToPlayer;
         prevPlayerOffset = currPlayerOffset;
@@ -60,7 +61,6 @@ public class CameraMovement : MonoBehaviour {
         currPlayerOffset = gameObject.transform.position - player.position;
         currPlayerOffset.Normalize();
         currPlayerOffset *= currDistanceToPlayer;
-        currPlayerOffset.y = fixedYOffset;
     }
 
     void SetZoom() {
@@ -101,7 +101,28 @@ public class CameraMovement : MonoBehaviour {
 
     void OnCameraRotation(InputValue value) {
         Vector2 input = value.Get<Vector2>();
+        // X ROTATION
         gameObject.transform.RotateAround(player.transform.position, Vector3.up, input.x * rotationSpeedX);
+
+        // Y ROTATION
+        Vector3 currRotations = gameObject.transform.rotation.eulerAngles;
+        float nextYRotation = input.y;
+        if (currRotations.x + input.y * rotationSpeedY >= rotationYConstraints.y) {
+            if (input.y > 0) {
+                nextYRotation = 0;
+            }
+        }
+        else if (currRotations.x + input.y * rotationSpeedY <= rotationYConstraints.x) {
+            if (input.y < 0) {
+                nextYRotation = 0;
+            }
+        }
+        else {
+            nextYRotation = input.y * rotationSpeedY;
+        }
+        gameObject.transform.RotateAround(player.transform.position, gameObject.transform.right, nextYRotation);
+
+
         SetOffset();
     }
 
@@ -110,7 +131,7 @@ public class CameraMovement : MonoBehaviour {
     #region Collisions
 
     void OnTriggerStay(Collider other) {
-        SetZoom();
+        // SetZoom();
         colliding = true;
     }
 
