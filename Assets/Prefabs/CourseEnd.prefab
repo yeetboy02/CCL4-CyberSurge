@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5488329042037074682}
   - component: {fileID: 8775792265261372860}
-  - component: {fileID: 5148090728001611515}
   m_Layer: 2
   m_Name: CourseEnd
   m_TagString: Untagged
@@ -26,13 +25,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6261585672723255655}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: -0.5, z: 5}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4470975714451593803}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &8775792265261372860
 CapsuleCollider:
@@ -57,20 +56,6 @@ CapsuleCollider:
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 1.25, z: 0}
---- !u!114 &5148090728001611515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6261585672723255655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98e90f1be3d3d4439ba9e3098f2be6bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  position: []
-  rotation: []
 --- !u!1001 &4145178370863562144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -121,6 +106,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4bb9e28ecfb751d4c83fff282dc5e11f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7695160676782996245, guid: 4bb9e28ecfb751d4c83fff282dc5e11f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7695160676782996245, guid: 4bb9e28ecfb751d4c83fff282dc5e11f, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4636300777304409883, guid: 4bb9e28ecfb751d4c83fff282dc5e11f, type: 3}
