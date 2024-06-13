@@ -51,13 +51,13 @@ public class CourseSetup : MonoBehaviour {
 
 [System.Serializable]
 public class CourseData {
-    public CoursePoint start;
-    public CoursePoint[] checkpoints;
-    public CoursePoint end;
+    public CoursePointData start;
+    public CoursePointData[] checkpoints;
+    public CoursePointData end;
 }
 
 [System.Serializable]
-public class CoursePoint {
+public class CoursePointData {
     public float[] position;
     public float[] rotation;
 }

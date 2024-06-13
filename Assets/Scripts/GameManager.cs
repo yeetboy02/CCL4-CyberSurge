@@ -7,6 +7,8 @@ public class GameManager: MonoBehaviour {
 
         public static GameManager instance;
 
+        public Course currCourse = null;
+
         void Start() {
                 if (instance != null)
                         return;
@@ -20,6 +22,10 @@ public class GameManager: MonoBehaviour {
                 string json = File.ReadAllText(jsonFile.FullName);
                 return json;
         }
+
+        #endregion
+
+        #region Timer
 
         #endregion
 }

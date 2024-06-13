@@ -63,7 +63,6 @@ public class CameraMovement : MonoBehaviour {
         Physics.Raycast(player.position, currPlayerOffset, out hit, currDistanceToPlayer + 0.50001f);
 
         if (hit.collider != null && hit.collider.gameObject != player.gameObject && hit.collider.gameObject != gameObject) {
-            Debug.Log(hit.collider);
             if (hit.distance < minDistanceToPlayer) {
                 ResetOffset();
             }

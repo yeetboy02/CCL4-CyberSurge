@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5488329042037074682}
   - component: {fileID: 8775792265261372860}
-  - component: {fileID: 5148090728001611515}
+  - component: {fileID: -3822621936943737054}
   m_Layer: 2
   m_Name: CourseEnd
   m_TagString: Untagged
@@ -57,7 +57,7 @@ CapsuleCollider:
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 1.25, z: 0}
---- !u!114 &5148090728001611515
+--- !u!114 &-3822621936943737054
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,11 +66,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6261585672723255655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98e90f1be3d3d4439ba9e3098f2be6bf, type: 3}
+  m_Script: {fileID: 11500000, guid: e789f0d56829440999c00ef96301a112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: []
-  rotation: []
+  type: End
 --- !u!1001 &4145178370863562144
 PrefabInstance:
   m_ObjectHideFlags: 0

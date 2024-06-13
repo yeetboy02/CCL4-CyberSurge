@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7735035283433589365}
   - component: {fileID: 6655004218683731122}
-  - component: {fileID: 1047780580559478513}
+  - component: {fileID: 5808288110093419403}
   m_Layer: 2
   m_Name: CourseCheckpoint
   m_TagString: Untagged
@@ -57,7 +57,7 @@ CapsuleCollider:
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 1.25, z: 0}
---- !u!114 &1047780580559478513
+--- !u!114 &5808288110093419403
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,11 +66,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6117527427934329034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98e90f1be3d3d4439ba9e3098f2be6bf, type: 3}
+  m_Script: {fileID: 11500000, guid: e789f0d56829440999c00ef96301a112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  position: []
-  rotation: []
+  type: Checkpoint
 --- !u!1001 &8616450037342934858
 PrefabInstance:
   m_ObjectHideFlags: 0

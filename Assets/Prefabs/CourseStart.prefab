@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 764581154249958571}
   - component: {fileID: 2922508053161476212}
+  - component: {fileID: 3608080287914915056}
   m_Layer: 2
   m_Name: CourseStart
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 4903120533671913778}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &2922508053161476212
 CapsuleCollider:
@@ -56,6 +57,19 @@ CapsuleCollider:
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 1.25, z: 0}
+--- !u!114 &3608080287914915056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766908550387181542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e789f0d56829440999c00ef96301a112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: Start
 --- !u!1001 &4864410246674468569
 PrefabInstance:
   m_ObjectHideFlags: 0
