@@ -6,7 +6,7 @@ using System.IO;
 public class CourseSetup : MonoBehaviour {
 
     #region Variables
-        private string courseSetupDir = "Assets/CoursesSetup/";
+        [SerializeField] private string courseSetupDir = "Assets/CoursesSetup/";
 
         DirectoryInfo dir;
 
