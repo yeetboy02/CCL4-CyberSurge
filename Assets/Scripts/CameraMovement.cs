@@ -55,9 +55,6 @@ public class CameraMovement : MonoBehaviour {
 
     #region Movement
     public void SetOffset() {
-        if (colliding) {
-            prevPlayerOffset = currPlayerOffset;
-        }
         currPlayerOffset = gameObject.transform.position - player.position;
         currPlayerOffset.Normalize();
         currPlayerOffset *= currDistanceToPlayer;
@@ -124,19 +121,6 @@ public class CameraMovement : MonoBehaviour {
 
 
         SetOffset();
-    }
-
-    #endregion
-
-    #region Collisions
-
-    void OnTriggerStay(Collider other) {
-        // SetZoom();
-        colliding = true;
-    }
-
-    void OnTriggerExit(Collider other) {
-        colliding = false;
     }
 
     #endregion
