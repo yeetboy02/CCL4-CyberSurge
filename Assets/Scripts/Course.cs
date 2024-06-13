@@ -65,6 +65,7 @@ public class Course : MonoBehaviour {
 
     public void CourseStart() {
         if (GameManager.instance.currCourse == null) {
+            GameManager.instance.StartTimer();
             GameManager.instance.currCourse = this;
             currCheckpoints = 0;
             SetCourseActive(true);
@@ -88,6 +89,7 @@ public class Course : MonoBehaviour {
 
     public void CourseEnd() {
         if (currCheckpoints == checkpoints.Length && GameManager.instance.currCourse == this) {
+            GameManager.instance.StopTimer();
             GameManager.instance.currCourse = null;
             currCheckpoints = 0;
             SetCourseActive(false);
