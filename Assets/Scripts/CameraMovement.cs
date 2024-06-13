@@ -33,8 +33,6 @@ public class CameraMovement : MonoBehaviour {
 
     private Vector3 prevPlayerOffset;
 
-    private bool colliding = false;
-
 
     #endregion
 
