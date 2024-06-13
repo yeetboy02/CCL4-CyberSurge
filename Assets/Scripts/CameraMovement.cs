@@ -77,8 +77,6 @@ public class CameraMovement : MonoBehaviour {
         else {
             currDistanceToPlayer = baseDistanceToPlayer;
         }
-
-        Debug.Log(currDistanceToPlayer);
     }
 
     void ApplyOffset() {
