@@ -14,8 +14,12 @@ public class GameManager: MonoBehaviour {
                 
                 DontDestroyOnLoad(gameObject);
         }
+
+        #region JSON Logic
         public string ReadJSON(FileInfo jsonFile) {
                 string json = File.ReadAllText(jsonFile.FullName);
                 return json;
         }
+
+        #endregion
 }

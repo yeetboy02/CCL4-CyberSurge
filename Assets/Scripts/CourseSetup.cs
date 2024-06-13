@@ -5,15 +5,19 @@ using System.IO;
 
 public class CourseSetup : MonoBehaviour {
 
-    #region Variables
+    #region Parameters
         [SerializeField] private string courseSetupDir = "Assets/CoursesSetup/";
 
+        [SerializeField] private GameObject Course;
+
+    #endregion
+
+    #region Variables
         DirectoryInfo dir;
 
         FileInfo[] courses;
-    #endregion
 
-        [SerializeField] private GameObject Course;
+    #endregion
 
     void Start() {
         GetCourseJSONFiles();
@@ -43,6 +47,8 @@ public class CourseSetup : MonoBehaviour {
     }
 }
 
+#region CourseData Classes
+
 [System.Serializable]
 public class CourseData {
     public CoursePoint start;
@@ -55,3 +61,5 @@ public class CoursePoint {
     public float[] position;
     public float[] rotation;
 }
+
+#endregion
