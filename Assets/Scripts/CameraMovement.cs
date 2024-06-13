@@ -66,6 +66,9 @@ public class CameraMovement : MonoBehaviour {
             if (hit.distance < minDistanceToPlayer) {
                 ResetOffset();
             }
+            else if (hit.distance > baseDistanceToPlayer) {
+                currDistanceToPlayer = baseDistanceToPlayer;
+            }
             else {
                 currDistanceToPlayer = hit.distance;
             }
@@ -74,6 +77,8 @@ public class CameraMovement : MonoBehaviour {
         else {
             currDistanceToPlayer = baseDistanceToPlayer;
         }
+
+        Debug.Log(currDistanceToPlayer);
     }
 
     void ApplyOffset() {
