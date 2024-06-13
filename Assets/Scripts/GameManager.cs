@@ -35,6 +35,10 @@ public class GameManager: MonoBehaviour {
                 return File.ReadAllText(jsonFile.FullName);
         }
 
+        public void WriteJSON(string path, string json) {
+                File.WriteAllText(path, json);
+        }
+
         #endregion
 
         void Update() {
@@ -56,7 +60,30 @@ public class GameManager: MonoBehaviour {
                 if (timerActive) {
                         timerActive = false;
                         Debug.Log("Time: " + ConvertTime(currTime));
+                        SaveTime();
                 }
+        }
+
+        public void SaveTime() {
+                if (timerActive) return;
+
+                string path = currCourse.setupPath;
+                float time = currTime;
+
+                // CREATE NEW COURSEDATA WITH UPDATED TIME
+                CourseData course = new CourseData();
+                course.start = currCourse.start;
+                course.checkpoints = currCourse.checkpoints;
+                course.end = currCourse.end;
+                course.times = new float[currCourse.times.Length + 1];
+                if (currCourse.times.Length > 0) {
+                        currCourse.times.CopyTo(course.times, 0);
+                }
+                course.times[course.times.Length - 1] = time;
+
+                string jsonCourseObject = JsonUtility.ToJson(course);
+                WriteJSON(path, jsonCourseObject);
+                currCourse.UpdateCourseTimes();
         }
 
         public string ConvertTime(float floatTime) {

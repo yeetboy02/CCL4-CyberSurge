@@ -19,6 +19,8 @@ public class CourseSetup : MonoBehaviour {
 
     #endregion
 
+    #region Setup
+
     void Start() {
         GetCourseJSONFiles();
 
@@ -34,17 +36,20 @@ public class CourseSetup : MonoBehaviour {
         foreach (FileInfo course in courses) {
             string currCourse = GameManager.instance.ReadJSON(course);
             CourseData courseObject = JsonUtility.FromJson<CourseData>(currCourse);
-            CreateCourse(courseObject);
+            CreateCourse(courseObject, course.FullName);
         }
     }
 
-    void CreateCourse(CourseData course) {
+    void CreateCourse(CourseData course, string path) {
         GameObject courseObject = Instantiate(Course);
         Course courseScript = courseObject.GetComponent<Course>();
         courseScript.start = course.start;
         courseScript.checkpoints = course.checkpoints;
         courseScript.end = course.end;
+        courseScript.times = course.times;
+        courseScript.setupPath = path;
     }
+    #endregion
 }
 
 #region CourseData Classes
@@ -54,6 +59,8 @@ public class CourseData {
     public CoursePointData start;
     public CoursePointData[] checkpoints;
     public CoursePointData end;
+
+    public float[] times;
 }
 
 [System.Serializable]

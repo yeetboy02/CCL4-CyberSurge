@@ -10,12 +10,18 @@ public class Course : MonoBehaviour {
     public CoursePointData[] checkpoints;
     public CoursePointData end;
 
+    public string setupPath;
+
+    public float[] times;
+
     #endregion
 
     #region CourseState
 
     private bool courseActive = false;
     private int currCheckpoints = 0;
+
+    private List<float> currTimes = new List<float>();
 
     #endregion
 
@@ -107,6 +113,11 @@ public class Course : MonoBehaviour {
             checkpoint.SetActive(active);
         }
         endObject.SetActive(active);
+    }
+
+    public void UpdateCourseTimes() {
+        currTimes.Add(GameManager.instance.currTime);
+        times = currTimes.ToArray();
     }
 
     void Update() {
