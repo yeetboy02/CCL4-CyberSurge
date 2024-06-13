@@ -1,0 +1,20 @@
+{
+    "start": {
+        "position" : [0, 0, 0],
+        "rotation" : [0, 0, 0]
+    },
+    "checkpoints": [
+        {
+            "position" : [5, 0, 5],
+            "rotation" : [0, 0, 0]
+        },
+        {
+            "position" : [-5, 0, 5],
+            "rotation" : [0, 0, 0]
+        }
+    ],
+    "end": {
+        "position" : [-5, 0, -5],
+        "rotation" : [0, 0, 0]
+    }
+}
