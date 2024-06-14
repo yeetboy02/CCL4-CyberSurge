@@ -87,13 +87,8 @@ public class PlayerMovement : MonoBehaviour {
     #region Movement
     void Move() {
         if (grounded && movementVector != Vector3.zero) {
-            if (!checkCollision(directionalMovementVector)) {
-                transform.position += directionalMovementVector * currSpeed * Time.deltaTime;
-                StartCoroutine(Acceleration());
-            }
-            else {
-                StopMoving();
-            }
+            transform.position += directionalMovementVector * currSpeed * Time.deltaTime;
+            StartCoroutine(Acceleration());
         }
     }
 
@@ -124,11 +119,6 @@ public class PlayerMovement : MonoBehaviour {
             yield return new WaitForEndOfFrame();
         }
     }
-
-    bool checkCollision(Vector3 inputVector) {
-        Ray ray = new Ray(transform.position, inputVector);
-        return Physics.Raycast(ray, inputVector.magnitude + 0.50001f);
-    }
     #endregion
 
     #region Rotation
@@ -151,13 +141,8 @@ public class PlayerMovement : MonoBehaviour {
     #region AirMovement
 
     void AirMove() {
-        if (!checkCollision(directionalAirMovementVector)) {
-            transform.position += (jumpMovementVector + (directionalAirMovementVector * (airMovementScaling * currAirSpeed) * currAirMovementSpeed)) * currAirSpeed * Time.deltaTime;
-            StartCoroutine(AirAcceleration());
-        }
-        else {
-            StopMoving();
-        }
+        transform.position += (jumpMovementVector + (directionalAirMovementVector * (airMovementScaling * currAirSpeed) * currAirMovementSpeed)) * currAirSpeed * Time.deltaTime;
+        StartCoroutine(AirAcceleration());
     }
 
     IEnumerator AirAcceleration() {

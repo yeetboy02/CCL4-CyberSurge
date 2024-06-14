@@ -34,6 +34,7 @@ public class CourseSetup : MonoBehaviour {
 
     void SetupCourses() {
         foreach (FileInfo course in courses) {
+            Debug.Log(GameManager.instance);
             string currCourse = GameManager.instance.ReadJSON(course);
             CourseData courseObject = JsonUtility.FromJson<CourseData>(currCourse);
             CreateCourse(courseObject, course.FullName);
