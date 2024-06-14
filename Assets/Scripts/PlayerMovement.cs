@@ -4,139 +4,150 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour {
-    
+
     #region MovementParameters
-    [SerializeField] private float minSpeed = 5.0f;
-    [SerializeField] private float maxSpeed = 10.0f;
-    [SerializeField] private float acceleration = 0.1f;
+
+    [SerializeField] private float minSpeed = 10.0f;
+
+    [SerializeField] private float maxSpeed = 20.0f;
+
+    [SerializeField] private float acceleration = 0.05f;
+
     #endregion
 
     #region AirMovementParameters
-    [SerializeField] private float airMovementFactor = 0.25f;
+
+    [SerializeField] private float minAirMovementSpeed = 0.0f;
+
+    [SerializeField] private float maxAirMovementSpeed = 0.4f;
+
+    [SerializeField] private float airAcceleration = 0.01f;
+
+    [SerializeField] private float airMovementFactor = 0.005f;
 
     [SerializeField] private float airMovementScaling = 0.05f;
-
-    [SerializeField] private float minAirSpeed = 0.0f;
-
-    [SerializeField] private float maxAirSpeed = 7.0f;
-
-    [SerializeField] private float airAcceleration = 0.1f;
-    #endregion
-
-
-    #region JumpingParameters
-    [SerializeField] private float jumpPower = 4.0f;
-
-    [SerializeField] private float jumpScaling = 0.25f;
-
-    [SerializeField] private float playerDistanceToGround = 1.0f;
 
     #endregion
 
     #region RotationParameters
-    private float rotationSpeed = 10.0f;
+
+    [SerializeField] private float rotationSpeed = 10.0f;
+
     #endregion
 
+    #region JumpParameters
+
+    [SerializeField] private float playerDistanceToGround = 1.01f;
+
+    [SerializeField] private float jumpPower = 4.0f;
+
+    [SerializeField] private float jumpScaling = 0.25f;
+
+    [SerializeField] private float playerGravity = 9.8f;
+
+    [SerializeField] private float gravityScaling = 3.0f;
+
+    #endregion
 
     #region Variables
-    private Vector3 movementVector;
-    private Vector3 directionalMovementVector;
 
-    private Vector3 prevMovementVector;
-    private Vector3 prevDirectionalMovementVector;
+    private CharacterController controller;
 
-    private Vector3 airMovementVector;
-    private Vector3 directionalAirMovementVector;
+    private Vector3 currMovementVector = Vector3.zero;
 
-    private Vector3 jumpMovementVector;
+    private Vector3 currDirectionalMovementVector = Vector3.zero;
 
-    private Vector3 currAirMovementVector;
+    private Vector3 currAirMovementVector = Vector3.zero;
 
-    private Rigidbody rb;
-    public bool grounded = false;
+
+    private Vector3 currDirectionalAirMovementVector = Vector3.zero;
+
+    private Vector3 currJumpMovementVector = Vector3.zero;
+
+    private Vector3 totalAirMovementVector = Vector3.zero;
+
+    private Vector3 currVelocityVector = Vector3.zero;
 
     private float currSpeed = 0.0f;
 
-    private float currAirSpeed = 0.0f;
-
     private float currAirMovementSpeed = 0.0f;
 
-    private float currAirMovementScaling = 0.0f;
+    private float currTotalAirSpeed = 0.0f;
+
+    private bool grounded = false;
 
     #endregion
 
     void Start() {
+        controller = GetComponent<CharacterController>();
+        
+        // INITIALIZE PLAYER SPEED
         currSpeed = minSpeed;
-        prevMovementVector = Vector3.zero;
-        movementVector = Vector3.zero;
-        rb = GetComponent<Rigidbody>();
+
         StartCoroutine(CheckForGround());
     }
 
-    void FixedUpdate() {
 
+    #region Movement
+
+    void Update() {
+        ApplyGravity();
         UpdateMovementVectorDirection();
-
-        if (grounded) {
-            Move();
-        }
-        else {
-            AirMove();
-        }
+        Move();
     }
 
-    
-    #region Movement
     void Move() {
-        if (grounded && movementVector != Vector3.zero) {
-            transform.position += directionalMovementVector * currSpeed * Time.deltaTime;
+        if (grounded && currMovementVector != Vector3.zero) {
+            // HORIZONTAL PLAYER MOVEMENT
+            controller.Move(currDirectionalMovementVector * currSpeed * Time.deltaTime);
             StartCoroutine(Acceleration());
+        }
+        else if (!grounded) {
+
+            // CALCULATE TOTAL CURRENT AIR MOVEMENT INCLUDING INITIAL JUMP MOVEMENT AND AIR MOVEMENT
+            totalAirMovementVector += currDirectionalAirMovementVector * (airMovementScaling * currTotalAirSpeed) * currAirMovementSpeed;
+
+            // PLAYER AIR MOVEMENT
+            controller.Move(totalAirMovementVector * currTotalAirSpeed * Time.deltaTime);
+            StartCoroutine(AirAcceleration());
+        }
+        else {
+            StopMoving();
         }
     }
 
     void StopMoving() {
+        // STOP PLAYER GROUND MOVEMENT
         StopCoroutine(Acceleration());
         currSpeed = minSpeed;
+
+        // STOP PLAYER AIR MOVEMENT
         StopCoroutine(AirAcceleration());
-        currAirMovementSpeed = minAirSpeed;
+        currAirMovementSpeed = minAirMovementSpeed;
     }
 
     void OnMovement(InputValue value) {
-        Vector2 currInput = value.Get<Vector2>();
-        prevMovementVector = movementVector;
-        movementVector = new Vector3(currInput.x, 0, currInput.y);
+        // RETRIEVE MOVEMENT INPUT VECTOR
+        Vector2 input = value.Get<Vector2>();
 
-        if (movementVector == Vector3.zero || movementVector.x - prevMovementVector.x == 0 || movementVector.z - prevMovementVector.z == 0) {
+        // SET CURRENT MOVEMENT INPUT VECTOR
+        currMovementVector = new Vector3(input.x, 0, input.y);
+
+        Debug.Log(currMovementVector);
+
+        if (currMovementVector == Vector3.zero) {
             StopMoving();
         }
 
-        if (movementVector != Vector3.zero) {
-            airMovementVector = movementVector * airMovementFactor;
-        }
+        // SET CURRENT AIR MOVEMENT VECTOR
+        currAirMovementVector = currMovementVector * airMovementFactor;
     }
 
     IEnumerator Acceleration() {
         while (currSpeed < maxSpeed) {
-            if (grounded) {
-                currSpeed += acceleration * Time.deltaTime;
-            }
+            // ACCELERATE CURRENT GROUND SPEED EVERY FRAME
+            currSpeed += acceleration * Time.deltaTime;
             yield return new WaitForEndOfFrame();
-        }
-    }
-    #endregion
-
-    #region Rotation
-    void UpdateMovementVectorDirection() {
-        Quaternion cameraRotation = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
-        prevDirectionalMovementVector = cameraRotation * prevMovementVector;
-        directionalMovementVector = cameraRotation * movementVector;
-        directionalAirMovementVector = cameraRotation * airMovementVector;
-        FaceForward();
-    }
-
-    void FaceForward() {
-        if (movementVector != Vector3.zero) {
-            transform.forward = Vector3.Lerp(transform.forward, directionalMovementVector, rotationSpeed * Time.deltaTime);
         }
     }
 
@@ -144,15 +155,9 @@ public class PlayerMovement : MonoBehaviour {
 
     #region AirMovement
 
-    void AirMove() {
-        currAirMovementVector += directionalAirMovementVector * (airMovementScaling * currAirSpeed) * currAirMovementSpeed;
-        
-        transform.position += currAirMovementVector * currAirSpeed * Time.deltaTime;
-        StartCoroutine(AirAcceleration());
-    }
-
     IEnumerator AirAcceleration() {
-        while (currAirMovementSpeed < maxAirSpeed) {
+        while (currAirMovementSpeed < maxAirMovementSpeed) {
+            // ACCELERATE CURRENT AIR SPEED EVERY FRAME
             currAirMovementSpeed += airAcceleration * Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }
@@ -160,29 +165,77 @@ public class PlayerMovement : MonoBehaviour {
 
     #endregion
 
+    #region Rotation
+
+    void UpdateMovementVectorDirection() {
+        // GET CAMERA ROTATION
+        Quaternion cameraRotation = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
+        // ROTATE PLAYER MOVEMENT VECTOR
+        currDirectionalMovementVector = cameraRotation * currMovementVector;
+        currDirectionalAirMovementVector = cameraRotation * currAirMovementVector;
+
+        FaceForward();
+    }
+
+    void FaceForward() {
+        if (currMovementVector != Vector3.zero) {
+            // ROTATE PLAYER TO THE FORWARD DIRECTION
+            transform.forward = Vector3.Lerp(transform.forward, currDirectionalMovementVector, rotationSpeed * Time.deltaTime);
+        }
+    }
+
+    #endregion
 
     #region Jumping
+
     void OnJump() {
-        if (!grounded) {
-            return;
-        }
+        if (!grounded) return;
+
+        // CALCULATE JUMPPOWER DEPENDENT ON CURRENT MOVEMENT SPEED
         float currJumpPower = jumpPower + (jumpScaling * (currSpeed - minSpeed));
-        rb.AddForce(Vector3.up * currJumpPower, ForceMode.Impulse);
+
+        // APPLY JUMP
+        currVelocityVector.y += Mathf.Sqrt(currJumpPower * gravityScaling * playerGravity);
     }
 
     void UpdateJumpVector() {
-        jumpMovementVector = directionalMovementVector;
-        currAirMovementVector = jumpMovementVector;
-        currAirSpeed = currSpeed;
-        currAirMovementScaling = currSpeed;
-        currAirMovementSpeed = minAirSpeed;
+        // Set JUMP MOVEMENT VECTOR TO CURRENT DIRECTIONAL MOVEMENT VECTOR WHEN STARTING JUMP
+        currJumpMovementVector = currDirectionalMovementVector;
+        totalAirMovementVector = currJumpMovementVector;
+
+        // SET CURRENT AIR SPEED TO CURRENT GROUND SPEED WHEN STARTING JUMP
+        currTotalAirSpeed = currSpeed;
+        currAirMovementSpeed = minAirMovementSpeed;
+    }
+
+    #endregion
+
+    #region Gravity
+
+    void ApplyGravity() {
+
+        // RESET Y VELOCITY IF GROUNDED
+        if (grounded && currVelocityVector.y < 0) {
+            currVelocityVector.y = 0;
+        }
+
+        // APPLY GRAVITY
+        if (!grounded) {
+            currVelocityVector.y -= playerGravity * gravityScaling * Time.deltaTime;
+        }
+
+        // APPLY VERTICAL MOVEMENT
+        controller.Move(currVelocityVector * Time.deltaTime);
     }
 
     IEnumerator CheckForGround() {
         RaycastHit hit;
 
         while (true) {
+            // RAYCAST TO GROUND
             bool raycastSuccess = Physics.Raycast(transform.position, transform.up * -1, out hit);
+
+            // CHECK IF GROUNDED
             if (raycastSuccess && hit.collider.gameObject.CompareTag("Ground") && hit.distance <= playerDistanceToGround + 0.00001f) {
                 grounded = true;
             }
@@ -195,8 +248,6 @@ public class PlayerMovement : MonoBehaviour {
             yield return null;
         }
     }
+
     #endregion
-    
-
 }
-
