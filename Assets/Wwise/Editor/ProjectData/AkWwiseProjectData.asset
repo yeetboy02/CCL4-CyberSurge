@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 33db6b682d2d3b43b3c978dc68461382
     GuidInternal: 
-    m_lastTime: -8584833453621715317
-    List: []
+    m_lastTime: -8584833205913344004
+    List:
+    - name: CyberSurge
+      guid: e115c34bb2641245bd8fc887c89b33c5
+      id: 3944981190
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 33db6b682d2d3b43b3c978dc68461382
+      - ElementName: CyberSurge
+        ObjectType: 7
+        guid: e115c34bb2641245bd8fc887c89b33c5
+      Path: SoundBanks\Default Work Unit\CyberSurge
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{686BDB33-2D2D-433B-B3C9-78DC68461382}" SchemaVersion="110">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{686BDB33-2D2D-433B-B3C9-78DC68461382}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{686BDB33-2D2D-433B-B3C9-78DC68461382}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="CyberSurge" ID="{4BC315E1-64B2-4512-BD8F-C887C89B33C5}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>
