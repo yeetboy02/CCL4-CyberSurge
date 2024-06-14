@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="CCL4-Game_WwiseProject" GUID="{D4CCF938-11F4-437F-8F3D-A5708DBC2D8C}" Generator="2022.1.11.8414"/>
+	<CacheRoot>../../../../CCL4-Game_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{48D03D00-E171-42C7-8F31-B62A9FF0FFBD}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../CCL4-Game_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{D0596425-1ECB-4C6C-A4B4-4CB2C317B810}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../CCL4-Game_WwiseProject/GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{FED985F0-9FDF-4625-8BEC-F1262C0CF332}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{E5066820-452D-D846-A8DD-3781937E6181}</FileHash>
+</ProjectInfo>
