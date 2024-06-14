@@ -50,6 +50,8 @@ public class PlayerMovement : MonoBehaviour {
 
     private Vector3 jumpMovementVector;
 
+    private Vector3 currAirMovementVector;
+
     private Rigidbody rb;
     public bool grounded = false;
 
@@ -108,7 +110,9 @@ public class PlayerMovement : MonoBehaviour {
             StopMoving();
         }
 
-        airMovementVector = movementVector * airMovementFactor;
+        if (movementVector != Vector3.zero) {
+            airMovementVector = movementVector * airMovementFactor;
+        }
     }
 
     IEnumerator Acceleration() {
@@ -141,7 +145,9 @@ public class PlayerMovement : MonoBehaviour {
     #region AirMovement
 
     void AirMove() {
-        transform.position += (jumpMovementVector + (directionalAirMovementVector * (airMovementScaling * currAirSpeed) * currAirMovementSpeed)) * currAirSpeed * Time.deltaTime;
+        currAirMovementVector += directionalAirMovementVector * (airMovementScaling * currAirSpeed) * currAirMovementSpeed;
+        
+        transform.position += currAirMovementVector * currAirSpeed * Time.deltaTime;
         StartCoroutine(AirAcceleration());
     }
 
@@ -166,6 +172,7 @@ public class PlayerMovement : MonoBehaviour {
 
     void UpdateJumpVector() {
         jumpMovementVector = directionalMovementVector;
+        currAirMovementVector = jumpMovementVector;
         currAirSpeed = currSpeed;
         currAirMovementScaling = currSpeed;
         currAirMovementSpeed = minAirSpeed;

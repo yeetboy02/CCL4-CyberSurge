@@ -80,7 +80,6 @@ public class BirdMovement : MonoBehaviour {
         while(currState == BirdState.Idle) {
             // SET RANDOM IDLE ANIMATION
             animator.SetInteger("state", (int)Mathf.Round(Random.Range(0.0f, idleAnimationCount)));
-            Debug.Log(Mathf.Round(Random.Range(0.0f, idleAnimationCount)));
 
             // WAIT FOR IDLE TIME
             yield return new WaitForSeconds(Random.Range(idleTimeConstraints.x, idleTimeConstraints.y));

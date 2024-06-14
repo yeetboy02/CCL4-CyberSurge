@@ -733,7 +733,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304050526}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.26999998, z: 16.91}
+  m_LocalPosition: {x: 0, y: 10.04, z: -15.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -782,10 +782,10 @@ MonoBehaviour:
   minSpeed: 5
   maxSpeed: 10
   acceleration: 0.1
-  airMovementFactor: 0.25
+  airMovementFactor: 0.05
   airMovementScaling: 0.05
   minAirSpeed: 0
-  maxAirSpeed: 7
+  maxAirSpeed: 1
   airAcceleration: 0.1
   jumpPower: 4
   jumpScaling: 0.25
@@ -936,7 +936,6 @@ GameObject:
   - component: {fileID: 1476542478}
   - component: {fileID: 1476542480}
   - component: {fileID: 1476542481}
-  - component: {fileID: 1476542483}
   - component: {fileID: 1476542485}
   - component: {fileID: 1476542484}
   - component: {fileID: 1476542486}
@@ -1027,9 +1026,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeedX: 1.5
   rotationSpeedY: 1.5
-  rotationYConstraints: {x: 2, y: 75}
+  rotationYConstraints: {x: 1, y: 75}
   offset: {x: 0, y: 3.5, z: -7}
-  minDistanceToPlayer: 1
+  minDistanceToPlayer: 2
   player: {fileID: 1304050530}
 --- !u!114 &1476542481
 MonoBehaviour:
@@ -1061,33 +1060,6 @@ MonoBehaviour:
   m_DefaultActionMap: Camera
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!54 &1476542483
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1476542476}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1476542484
 MonoBehaviour:
   m_ObjectHideFlags: 0
