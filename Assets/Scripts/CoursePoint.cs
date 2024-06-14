@@ -23,7 +23,8 @@ public class CoursePoint : MonoBehaviour {
         if (other.gameObject.CompareTag("Player")) {
             switch (type) {
                 case "Start":
-                    parentCourse.CourseStart();
+                    GameManager.instance.currMenuCourse = parentCourse;
+                    GameManager.instance.OpenCourseMenu();
                     break;
                 case "Checkpoint":
                     parentCourse.CourseCheckpoint(checkpointIndex);
@@ -32,6 +33,13 @@ public class CoursePoint : MonoBehaviour {
                     parentCourse.CourseEnd();
                     break;
             }
+        }
+    }
+
+    void OnTriggerExit(Collider other) {
+        if (other.gameObject.CompareTag("Player") && type == "Start") {
+            GameManager.instance.currMenuCourse = null;
+            GameManager.instance.CloseCourseMenu();
         }
     }
     #endregion

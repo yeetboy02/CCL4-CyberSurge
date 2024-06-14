@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System;
+using UnityEngine.InputSystem;
 
 public class GameManager: MonoBehaviour {
 
@@ -12,6 +13,16 @@ public class GameManager: MonoBehaviour {
 
         public Course currCourse = null;
 
+        public Course currMenuCourse = null;
+
+        [SerializeField] private CourseMenu courseMenu;
+
+        #endregion
+
+        #region PlayerParameters
+
+        [SerializeField] private GameObject player;
+
         #endregion
 
         #region TimerParameters
@@ -19,7 +30,11 @@ public class GameManager: MonoBehaviour {
         private bool timerActive = false;
         public float currTime = 0.0f;
 
+        [SerializeField] private GameObject timerText;
+
         #endregion 
+
+        private PlayerInput playerInput;
 
 
         void Start() {
@@ -28,6 +43,8 @@ public class GameManager: MonoBehaviour {
                 instance = this;
                 
                 DontDestroyOnLoad(gameObject);
+
+                playerInput = player.GetComponent<PlayerInput>();
         }
 
         #region JSON Logic
@@ -44,6 +61,7 @@ public class GameManager: MonoBehaviour {
         void Update() {
                 if (timerActive) {
                         currTime += Time.deltaTime;
+                        timerText.GetComponent<TMPro.TextMeshProUGUI>().text = ConvertTime(currTime);
                 }
         }
 
@@ -53,6 +71,7 @@ public class GameManager: MonoBehaviour {
                 if (!timerActive) {
                         currTime = 0.0f;
                         timerActive = true;
+                        timerText.SetActive(true);
                 }
         }
 
@@ -61,7 +80,13 @@ public class GameManager: MonoBehaviour {
                         timerActive = false;
                         Debug.Log("Time: " + ConvertTime(currTime));
                         SaveTime();
+                        StartCoroutine(HideTimer());
                 }
+        }
+
+        IEnumerator HideTimer() {
+                yield return new WaitForSeconds(5.0f);
+                timerText.SetActive(false);
         }
 
         public void SaveTime() {
@@ -89,6 +114,34 @@ public class GameManager: MonoBehaviour {
         public string ConvertTime(float floatTime) {
                 TimeSpan time = TimeSpan.FromSeconds(floatTime);
                 return time.ToString(@"mm\:ss\:ff");
+        }
+
+        #endregion
+
+        #region CourseMenu
+
+        public void OpenCourseMenu() {
+                if (currCourse != null) return;
+                courseMenu.SetMenuActive(true);
+        }
+
+        public void CloseCourseMenu() {
+                if (currCourse != null) return;
+                courseMenu.SetMenuActive(false);
+        }
+
+        #endregion
+
+        #region CourseHandling
+
+        public void PrepareCourse() {
+                player.transform.position = new Vector3(currCourse.start.position[0], currCourse.start.position[1], currCourse.start.position[2]);
+                player.transform.rotation = Quaternion.Euler(new Vector3(currCourse.start.rotation[0], currCourse.start.rotation[1], currCourse.start.rotation[2]));
+                playerInput.actions.FindAction("Movement").Disable();
+        }
+
+        public void StartCourse() {
+                playerInput.actions.FindAction("Movement").Enable();
         }
 
         #endregion

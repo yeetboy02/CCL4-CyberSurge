@@ -69,12 +69,19 @@ public class Course : MonoBehaviour {
 
     #region CourseStart
 
-    public void CourseStart() {
+    public void PrepareCourse() {
         if (GameManager.instance.currCourse == null) {
-            GameManager.instance.StartTimer();
             GameManager.instance.currCourse = this;
-            currCheckpoints = 0;
             SetCourseActive(true);
+            currCheckpoints = 0;
+            GameManager.instance.PrepareCourse();
+        }
+    }
+
+    public void StartCourse() {
+        if (GameManager.instance.currCourse == this) {
+            GameManager.instance.StartCourse();
+            GameManager.instance.StartTimer();
         }
     }
 
@@ -116,8 +123,10 @@ public class Course : MonoBehaviour {
     }
 
     public void UpdateCourseTimes() {
-        currTimes.Add(GameManager.instance.currTime);
-        times = currTimes.ToArray();
+        float[] temp = new float[times.Length + 1];
+        times.CopyTo(temp, 0);
+        temp[temp.Length - 1] = GameManager.instance.currTime;
+        times = temp;
     }
 
     void Update() {
