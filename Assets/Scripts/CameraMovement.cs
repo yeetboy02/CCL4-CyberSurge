@@ -10,7 +10,7 @@ public class CameraMovement : MonoBehaviour {
 
     [SerializeField] private float rotationSpeedY = 1.50f;
 
-    [SerializeField] private Vector2 rotationYConstraints = new Vector2(10, 75);
+    [SerializeField] private Vector2 rotationYConstraints = new Vector2(0, 75);
 
     #endregion
 
