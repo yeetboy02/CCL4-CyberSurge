@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class BirdMovement : MonoBehaviour {
     #region States
 
@@ -18,9 +19,15 @@ public class BirdMovement : MonoBehaviour {
 
     [SerializeField] private Vector2 flyingSpeedConstraints = new Vector2(10.0f, 25.0f);
 
+    [SerializeField] private float animationFlyingSpeedFactor = 0.25f;
+
     [SerializeField] private Vector2 triggerRadiusConstraints = new Vector2(25.0f, 35.0f);
 
     [SerializeField] private Vector2 takeoffAngleConstraints = new Vector2(35.0f, 55.0f);
+
+    [SerializeField] private Vector2 idleTimeConstraints = new Vector2(1.0f, 3.0f);
+
+    [SerializeField] private int idleAnimationCount = 2;
 
     #endregion
 
@@ -36,11 +43,14 @@ public class BirdMovement : MonoBehaviour {
 
     private Vector3 startPosition;
 
+    private Animator animator;
+
     #endregion
 
     #region Initialization
 
     void Start() {
+        // SET START POSITION TO RANDOM POSITION
         startPosition = transform.position;
 
         // RANDOMIZE TRIGGER RADIUS
@@ -52,6 +62,29 @@ public class BirdMovement : MonoBehaviour {
 
         // RANDOMIZE TAKEOFF ANGLE
         takeoffAngle = Random.Range(takeoffAngleConstraints.x, takeoffAngleConstraints.y);
+
+        animator = gameObject.GetComponent<Animator>();
+
+        // START IDLE ANIMATION
+        StartCoroutine(Idle());
+    }
+
+    #endregion
+
+    #region Idle
+
+    IEnumerator Idle() {
+        // SET ANIMATION STATE TO IDLE
+        animator.SetInteger("state", 0);
+
+        while(currState == BirdState.Idle) {
+            // SET RANDOM IDLE ANIMATION
+            animator.SetInteger("state", (int)Mathf.Round(Random.Range(0.0f, idleAnimationCount)));
+            Debug.Log(Mathf.Round(Random.Range(0.0f, idleAnimationCount)));
+
+            // WAIT FOR IDLE TIME
+            yield return new WaitForSeconds(Random.Range(idleTimeConstraints.x, idleTimeConstraints.y));
+        }
     }
 
     #endregion
@@ -79,6 +112,21 @@ public class BirdMovement : MonoBehaviour {
 
     #endregion
 
+    #region Takeoff
+
+    IEnumerator TakeOff() {
+        // SET ANIMATION STATE TO FLYING
+        animator.SetInteger("state", 3);
+
+        // WAIT FOR ANIMATION TO FINISH
+        yield return new WaitForSeconds(0.3f);
+
+        // SET STATE TO FLYING
+        currState = BirdState.Flying;
+    }
+
+    #endregion
+
     #region Collision
 
     void OnTriggerEnter(Collider other) {
@@ -91,7 +139,14 @@ public class BirdMovement : MonoBehaviour {
             flyingDirection = Quaternion.AngleAxis(takeoffAngle, Vector3.right) * flyingDirection;
             flyingDirection.y = Mathf.Abs(flyingDirection.y);
 
-            currState = BirdState.Flying;
+            // SET ANIMATION SPEED RELATIVE TO FLYING SPEED
+            animator.speed = flyingSpeed * animationFlyingSpeedFactor;
+
+            // STOP IDLE
+            StopCoroutine(Idle());
+
+            // START TAKEOFF
+            StartCoroutine(TakeOff());
         }
     }
 
