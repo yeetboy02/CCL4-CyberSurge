@@ -133,8 +133,6 @@ public class PlayerMovement : MonoBehaviour {
         // SET CURRENT MOVEMENT INPUT VECTOR
         currMovementVector = new Vector3(input.x, 0, input.y);
 
-        Debug.Log(currMovementVector);
-
         if (currMovementVector == Vector3.zero) {
             StopMoving();
         }

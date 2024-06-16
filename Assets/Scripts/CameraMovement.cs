@@ -5,122 +5,124 @@ using UnityEngine.InputSystem;
 
 public class CameraMovement : MonoBehaviour {
 
+    #region MovementParameters
+
+    [SerializeField] private Vector3 offset = new Vector3(0, 3.5f, -7);
+
+
+    #endregion
+
     #region RotationParameters
+
     [SerializeField] private float rotationSpeedX = 1.50f;
 
     [SerializeField] private float rotationSpeedY = 1.50f;
 
-    [SerializeField] private Vector2 rotationYConstraints = new Vector2(0, 75);
+    [SerializeField] private Vector2 rotationYConstraints = new Vector2(-45, 45);
 
     #endregion
-
-    #region MovementParameters
-    [SerializeField] private Vector3 offset = new Vector3(0, 3.5f, -7);
-
-    [SerializeField] private float minDistanceToPlayer = 1.0f;
-
-    #endregion
-
 
     #region Variables
+
     [SerializeField] private Transform player;
 
-    private float baseDistanceToPlayer;
+    private Transform playerCamera;
 
-    private float currDistanceToPlayer;
+    private Quaternion currRotation;
 
-    private Vector3 currPlayerOffset;
+    private float baseCameraDistance;
 
-    private Vector3 prevPlayerOffset;
-
+    private float currCameraDistance;
 
     #endregion
 
-    void Start () {
-        currPlayerOffset = offset;
-        ApplyOffset();
-        baseDistanceToPlayer = Vector3.Distance(transform.position, player.position);
-        currDistanceToPlayer = baseDistanceToPlayer;
-        prevPlayerOffset = currPlayerOffset;
-        SetOffset();
+    void Start() {
+        playerCamera = gameObject.transform.GetChild(0).gameObject.transform;
+
+        // SET INITIAL OFFSET
+        playerCamera.position = offset;
+
+        // GET CURRENT ROTATION
+        currRotation = gameObject.transform.localRotation;
+
+        // SET INITIAL CAMERA DISTANCE
+        baseCameraDistance = Vector3.Distance(player.position, playerCamera.position);
+        currCameraDistance = baseCameraDistance;
     }
 
     void Update() {
-        SetZoom();
-        ApplyOffset();
+        MoveWithPlayer();
+        SetCameraDistance();
+        SetCameraOffset();
+        Rotate();
         LookAtPlayer();
     }
 
     #region Movement
-    public void SetOffset() {
-        currPlayerOffset = gameObject.transform.position - player.position;
-        currPlayerOffset.Normalize();
-        currPlayerOffset *= currDistanceToPlayer;
+
+    public void MoveWithPlayer() {
+        // SET CAMERA CONTAINER POSITION TO PLAYER POSITION
+        gameObject.transform.position = player.position;
     }
 
-    void SetZoom() {
-        RaycastHit hit;
-        Physics.Raycast(player.position, currPlayerOffset, out hit, currDistanceToPlayer + 0.50001f);
-
-        if (hit.collider != null && hit.collider.gameObject != player.gameObject && hit.collider.gameObject != gameObject) {
-            if (hit.distance < minDistanceToPlayer) {
-                ResetOffset();
-            }
-            else if (hit.distance > baseDistanceToPlayer) {
-                currDistanceToPlayer = baseDistanceToPlayer;
-            }
-            else {
-                currDistanceToPlayer = hit.distance;
-            }
-            SetOffset();
-        }
-        else {
-            currDistanceToPlayer = baseDistanceToPlayer;
-        }
-    }
-
-    void ApplyOffset() {
-        gameObject.transform.position = player.position + currPlayerOffset;
-    }
-
-    void ResetOffset() {
-        currPlayerOffset = prevPlayerOffset;
-        currDistanceToPlayer = baseDistanceToPlayer;
+    public void LookAtPlayer() {
+        // SET CAMERA CONTAINER ROTATION TO LOOK AT PLAYER
+        playerCamera.LookAt(player);
     }
 
     #endregion
 
-    #region Rotations
+    #region Rotation
 
-    void LookAtPlayer() {
-        gameObject.transform.LookAt(player);
-    }
+    void Rotate() {
+        // APPLY CAMERA CONTAINER ROTATION
+        gameObject.transform.localRotation = Quaternion.Euler(currRotation.x, currRotation.y, 0);
+    }        
 
     void OnCameraRotation(InputValue value) {
+        // RETRIEVE INPUT VALUES
         Vector2 input = value.Get<Vector2>();
-        // X ROTATION
-        gameObject.transform.RotateAround(player.transform.position, Vector3.up, input.x * rotationSpeedX);
 
-        // Y ROTATION
-        Vector3 currRotations = gameObject.transform.rotation.eulerAngles;
-        float nextYRotation = input.y;
-        if (currRotations.x + input.y * rotationSpeedY >= rotationYConstraints.y) {
-            if (input.y > 0) {
-                nextYRotation = 0;
-            }
-        }
-        else if (currRotations.x + input.y * rotationSpeedY <= rotationYConstraints.x) {
-            if (input.y < 0) {
-                nextYRotation = 0;
-            }
+        // SET CURRENT X ROTATION
+        currRotation.x += input.y * rotationSpeedX;
+
+        // CLAMP CURRENT X ROTATION
+        currRotation.x = Mathf.Clamp(currRotation.x, rotationYConstraints.x, rotationYConstraints.y);
+
+        // SET CURRENT Y ROTATION
+        currRotation.y += input.x * rotationSpeedY;
+    }
+
+    #endregion
+
+    #region CameraDistance
+
+    void SetCameraDistance() {
+        // GET CAMERA WORLD POSITION
+        Vector3 cameraWorldPosition = player.position + (Quaternion.Euler(currRotation.x, currRotation.y, 0) * offset);
+
+        // CHECK IF CAMERA IS OBSTRUCTED
+        if (Physics.Linecast(player.position, cameraWorldPosition, out RaycastHit hit, Physics.AllLayers, QueryTriggerInteraction.Ignore) && hit.collider.gameObject != player.gameObject && hit.collider.gameObject != gameObject) {
+            Debug.Log(hit.collider.gameObject.name + " ---- " + hit.distance);
+            // SET CAMERA DISTANCE TO NEW HIT POINT INSIDE CLEAR SPHERE
+            currCameraDistance = Mathf.Abs(hit.distance - 0.5f);
         }
         else {
-            nextYRotation = input.y * rotationSpeedY;
+            // RESET CAMERA DISTANCE TO BASE DISTANCE
+            currCameraDistance = Mathf.Lerp(currCameraDistance, baseCameraDistance, Time.deltaTime);
         }
-        gameObject.transform.RotateAround(player.transform.position, gameObject.transform.right, nextYRotation);
+    }
 
+    void SetCameraOffset() {
+        // GET CURRENT OFFSET
+        Vector3 currOffset = offset;
 
-        SetOffset();
+        // SCALE OFFSET TO THE CURRENT CAMERA DISTANCE
+        currOffset.Normalize();
+        currOffset *= currCameraDistance;
+
+        // APPLY OFFSET
+        playerCamera.localPosition = currOffset;
     }
 
     #endregion
