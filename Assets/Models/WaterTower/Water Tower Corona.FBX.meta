@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8f8cf10a623dd6148bc0a0bf9e2fb2b8
+guid: c9d65450ad8a0c849a96299f17a35942
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,13 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: fan_box
-    second: {fileID: 2100000, guid: 7c15b996c8476e14dbbea1ece06ec692, type: 2}
+      name: Concrete Weathered
+    second: {fileID: 2100000, guid: b53ac86ec54380b4aa51ae15a3116131, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: pipes_n_wires
-    second: {fileID: 2100000, guid: 828f016b690c57a439e0a118c369119e, type: 2}
+      name: Material #19
+    second: {fileID: 2100000, guid: f062585cb9affaa4295234363716463c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
