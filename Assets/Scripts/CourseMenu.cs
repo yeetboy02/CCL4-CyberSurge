@@ -5,82 +5,159 @@ using System;
 
 public class CourseMenu : MonoBehaviour {
 
+    #region TextObjects
+
+    [SerializeField] private GameObject courseMenuText;
+
+    [SerializeField] private GameObject scoreBoardText;
+
+    [SerializeField] private GameObject countDownText;
+
+    #endregion
+
     #region Parameters
 
-    [SerializeField] private float countdownTime = 3.0f;
-
-    [SerializeField] private int scoreboardLength = 5;
-
-    [SerializeField] private GameObject menuText;
-    [SerializeField] private GameObject countdownText;
-    [SerializeField] private GameObject scoreboardText;
+    [SerializeField] private int scoreBoardLength = 5;
 
     #endregion
 
-    private float[] times;
+    #region Singleton
 
-    private Course currCourse;
+    public static CourseMenu instance;
 
-    public void SetMenuActive(bool active) {
-        gameObject.SetActive(active);
-        if (active) {
-            countdownText.SetActive(false);
-            scoreboardText.SetActive(true);
-            menuText.SetActive(true);
-            currCourse = GameManager.instance.currMenuCourse;
-            times = currCourse.times;
-            FillScoreboard();
-        }
-        else {
-            GameManager.instance.currMenuCourse = null;
-        }
-    }
-    
     void Start() {
-        gameObject.SetActive(false);
-    }
+        if (instance != null)
+            return;
+        instance = this;
 
-    void OnEnterPress() {
-        currCourse.PrepareCourse();
-        StartCoroutine(Countdown());
-    }
-
-    #region Countdown 
-
-    IEnumerator Countdown() {
-        menuText.SetActive(false);
-        countdownText.SetActive(true);
-        scoreboardText.SetActive(false);
-        for (int i = 0; i < countdownTime; i++) {
-            countdownText.GetComponent<TMPro.TextMeshProUGUI>().text = (countdownTime - i).ToString();
-            yield return new WaitForSeconds(1f);
-        }
-
-        currCourse.StartCourse();
-        gameObject.SetActive(false);
+        // SET START MENU STATE
+        CourseHandler.instance.SetCourseState(CourseHandler.CourseState.Inactive);
     }
 
     #endregion
 
-    #region Scoreboard
+    #region StartMenuState
 
-    void FillScoreboard() {
+    public void StartMenuState() {
+        // ACTIVATE COURSE MENU
+        gameObject.SetActive(true);
+
+        // ACTIVATE COURSE MENU TEXT
+        courseMenuText.SetActive(true);
+
+        // ACTIVATE SCOREBOARD TEXT
+        scoreBoardText.SetActive(true);
+
+        // DEACTIVATE COUNTDOWN TEXT
+        countDownText.SetActive(false);
+    }
+
+    #endregion
+
+    #region CountDownState
+
+    public void CountDownState() {
+        // ACTIVATE COURSE MENU
+        gameObject.SetActive(true);
+
+        // DEACTIVATE COURSE MENU TEXT
+        courseMenuText.SetActive(false);
+
+        // DEACTIVATE SCOREBOARD TEXT
+        scoreBoardText.SetActive(false);
+
+        // ACTIVATE COUNTDOWN TEXT
+        countDownText.SetActive(true);
+    }
+
+    #endregion 
+
+    #region RacingState
+
+    public void RacingState() {
+        // DEACTIVATE COURSE MENU
+        gameObject.SetActive(false);
+
+        // DEACTIVATE COURSE MENU TEXT
+        courseMenuText.SetActive(false);
+
+        // DEACTIVATE SCOREBOARD TEXT
+        scoreBoardText.SetActive(false);
+
+        // DEACTIVATE COUNTDOWN TEXT
+        countDownText.SetActive(false);
+    }
+
+    #endregion
+
+    #region EndMenuState
+
+    public void EndMenuState() {
+        // ACTIVATE COURSE MENU
+        gameObject.SetActive(true);
+
+        // ACTIVATE COURSE MENU TEXT
+        courseMenuText.SetActive(false);
+
+        // ACTIVATE SCOREBOARD TEXT
+        scoreBoardText.SetActive(true);
+
+        // DEACTIVATE COUNTDOWN TEXT
+        countDownText.SetActive(false);
+    }
+
+    #endregion
+
+    #region InactiveState
+
+    public void InactiveState() {
+        // DEACTIVATE COURSE MENU
+        gameObject.SetActive(false);
+
+        // DEACTIVATE COURSE MENU TEXT
+        courseMenuText.SetActive(false);
+
+        // DEACTIVATE SCOREBOARD TEXT
+        scoreBoardText.SetActive(false);
+
+        // DEACTIVATE COUNTDOWN TEXT
+        countDownText.SetActive(false);
+    }
+
+    #endregion
+
+    #region CountDown
+
+    public void SetCountDownTime(int time) {
+        countDownText.GetComponent<TMPro.TextMeshProUGUI>().text = time.ToString();
+    }
+
+    #endregion
+
+    #region ScoreBoard
+
+    public void UpdateScoreBoard(float[] times) {
+        // UPDATE SCOREBOARD TEXT
         if (times.Length == 0) {
-            scoreboardText.GetComponent<TMPro.TextMeshProUGUI>().text = "No scores yet...";
+            // DISPLAY NO SCORES TEXT IF NO TIMES YET
+            scoreBoardText.GetComponent<TMPro.TextMeshProUGUI>().text = "No scores yet...";
         }
         else {
-            string scoreboardString = "";
+            string scoreBoardString = "";
             int i = 0;
 
+            // SORT TIMES
             Array.Sort(times);
 
-            while (i < times.Length && i < scoreboardLength) {
-                scoreboardString += i + 1 + ". " + GameManager.instance.ConvertTime(times[i]) + "\n";
+            // ASSEMBLE SCOREBOARD STRING WITH THE TOP 5 TIMES
+            while (i < times.Length && i < scoreBoardLength) {
+                scoreBoardString += i + 1 + ". " + Timer.instance.ConvertTimeToString(times[i]) + "\n";
                 
                 i++;
             }
 
-            scoreboardText.GetComponent<TMPro.TextMeshProUGUI>().text = scoreboardString;
+            // DISPLAY SCOREBOARD STRING
+            scoreBoardText.GetComponent<TMPro.TextMeshProUGUI>().text = scoreBoardString;
         }
     }
 

@@ -4,43 +4,47 @@ using UnityEngine;
 
 public class CoursePoint : MonoBehaviour {
 
-    [SerializeField] private string type;
+    #region Variables
 
-    public int? checkpointIndex = null;
+    public string type;
+
+    public int? checkpointIndex;
 
     private Course parentCourse;
 
-    void Start() {
-        parentCourse = transform.parent.GetComponent<Course>();
+    #endregion
 
+    void Start() {
+        // DEACTIVATE IF NOT STARTING POINT
         if (type != "Start") {
-            gameObject.SetActive(false);
+            Activate(false);
         }
+
+        // SET PARENT COURSE
+        parentCourse = transform.parent.GetComponent<Course>();
     }
 
+    public void Activate(bool active) {
+        // ACTIVATE/DEACTIVATE GAMEOBJECT
+        gameObject.SetActive(active);
+    }
+
+
     #region Collision
+
     void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Player")) {
-            switch (type) {
-                case "Start":
-                    GameManager.instance.currMenuCourse = parentCourse;
-                    GameManager.instance.OpenCourseMenu();
-                    break;
-                case "Checkpoint":
-                    parentCourse.CourseCheckpoint(checkpointIndex);
-                    break;
-                case "End":
-                    parentCourse.CourseEnd();
-                    break;
-            }
+        // CHECK IF PLAYER
+        if (other.CompareTag("Player")) {
+            CourseHandler.instance.CoursePointEnter(type, checkpointIndex, parentCourse);
         }
     }
 
     void OnTriggerExit(Collider other) {
-        if (other.gameObject.CompareTag("Player") && type == "Start") {
-            GameManager.instance.currMenuCourse = null;
-            GameManager.instance.CloseCourseMenu();
+        // CHECK IF PLAYER
+        if (other.CompareTag("Player")) {
+            CourseHandler.instance.CoursePointExit(type, checkpointIndex, parentCourse);
         }
     }
+
     #endregion
 }

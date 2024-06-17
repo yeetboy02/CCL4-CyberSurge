@@ -37,7 +37,7 @@ RectTransform:
   - {fileID: 363181177527551979}
   - {fileID: 7022872717023315954}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -119,10 +119,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 414fe909ff18d4d2184db97f475d0d01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  courseMenuText: {fileID: 7202378944130128589}
+  scoreBoardText: {fileID: 7367816197052174207}
+  countDownText: {fileID: 8409524195536740450}
+  scoreBoardLength: 5
   countdownTime: 3
-  menuText: {fileID: 7202378944130128589}
-  countdownText: {fileID: 8409524195536740450}
-  scoreboardText: {fileID: 7367816197052174207}
 --- !u!114 &7036894286863251531
 MonoBehaviour:
   m_ObjectHideFlags: 0

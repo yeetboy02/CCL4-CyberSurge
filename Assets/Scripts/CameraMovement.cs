@@ -103,7 +103,6 @@ public class CameraMovement : MonoBehaviour {
 
         // CHECK IF CAMERA IS OBSTRUCTED
         if (Physics.Linecast(player.position, cameraWorldPosition, out RaycastHit hit, Physics.AllLayers, QueryTriggerInteraction.Ignore) && hit.collider.gameObject != player.gameObject && hit.collider.gameObject != gameObject) {
-            Debug.Log(hit.collider.gameObject.name + " ---- " + hit.distance);
             // SET CAMERA DISTANCE TO NEW HIT POINT INSIDE CLEAR SPHERE
             currCameraDistance = Mathf.Abs(hit.distance - 0.5f);
         }

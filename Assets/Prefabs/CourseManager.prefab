@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7267840250873708525}
   - component: {fileID: 3810766719317670263}
+  - component: {fileID: 8631274668471430113}
+  - component: {fileID: 7435971250602989618}
   m_Layer: 0
   m_Name: CourseManager
   m_TagString: Untagged
@@ -30,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3810766719317670263
 MonoBehaviour:
@@ -44,5 +46,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3570676913d346a19481962f07a65c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  courseSetupDir: Assets/CoursesSetup/
+  courseSetupDir: Assets/CoursesSetup/DevCourses
   Course: {fileID: 8768530057027063787, guid: 9e4df79e4ef434b348c6ca9ff1e70fd7, type: 3}
+--- !u!114 &8631274668471430113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779583087941104890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8a8fd24f8274334a0c88d654e0a87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  countdownTime: 3
+--- !u!114 &7435971250602989618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779583087941104890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 1c2f4089b5c81470291a82eae91667ac, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: UI
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}

@@ -18,11 +18,6 @@ public class Course : MonoBehaviour {
 
     #region CourseState
 
-    private bool courseActive = false;
-    private int currCheckpoints = 0;
-
-    private List<float> currTimes = new List<float>();
-
     #endregion
 
     [SerializeField] private GameObject courseStart, courseCheckpoint, courseEnd;
@@ -41,23 +36,34 @@ public class Course : MonoBehaviour {
         InstantiateCourse();
     }
 
+    #region Getters
+
+    public Vector3 GetStartPoint() {
+        return startObject.transform.position;
+    }
+
+    #endregion
+
     #region CourseSetup
     void InstantiateCourse() {
-        // COURSE START
+        // INSTANTIATE COURSE START
         startObject = InstantiateCoursePoint(courseStart, start);
 
 
-        // COURSE CHECKPOINTS
+        // INSTANTIATE COURSE CHECKPOINTS
         for (int i = 0; i < checkpoints.Length; i++) {
             checkpointObjects.Add(InstantiateCoursePoint(courseCheckpoint, checkpoints[i], i));
         }
 
-        // COURSE END
+        // INSTANTIATE COURSE END
         endObject = InstantiateCoursePoint(courseEnd, end);
     }
 
     GameObject InstantiateCoursePoint(GameObject coursePoint, CoursePointData point, int? index = null) {
+        // INSTANTIATE COURSE POINT
         GameObject coursePointObject = Instantiate(coursePoint, this.transform);
+
+        // SET COURSE POINT DATA
         coursePointObject.GetComponent<CoursePoint>().checkpointIndex = index;
         coursePointObject.transform.position = new Vector3(point.position[0], point.position[1], point.position[2]);
         coursePointObject.transform.rotation = Quaternion.Euler(point.rotation[0], point.rotation[1], point.rotation[2]);
@@ -67,78 +73,81 @@ public class Course : MonoBehaviour {
 
     #endregion
 
-    #region CourseStart
-
-    public void PrepareCourse() {
-        if (GameManager.instance.currCourse == null) {
-            GameManager.instance.currCourse = this;
-            SetCourseActive(true);
-            currCheckpoints = 0;
-            GameManager.instance.PrepareCourse();
-        }
-    }
-
-    public void StartCourse() {
-        if (GameManager.instance.currCourse == this) {
-            GameManager.instance.StartCourse();
-            GameManager.instance.StartTimer();
-        }
-    }
-
-    #endregion
-
-    #region CourseCheckpoint
-
-    public void CourseCheckpoint(int? index) {
-        if (index == currCheckpoints) {
-            currCheckpoints++;
-            checkpointObjects[(int)index].SetActive(false);
-        }
-    }
-
-    #endregion
-
-    #region CourseEnd
-
-    public void CourseEnd() {
-        if (currCheckpoints == checkpoints.Length && GameManager.instance.currCourse == this) {
-            GameManager.instance.StopTimer();
-            GameManager.instance.currCourse = null;
-            currCheckpoints = 0;
-            SetCourseActive(false);
-        }
-    }
-
-    #endregion
-
-    #region CourseHandling
-
-    void SetCourseActive(bool active) {
-        courseActive = active;
-        startObject.SetActive(!active);
-        foreach (GameObject checkpoint in checkpointObjects) {
-            checkpoint.SetActive(active);
-        }
-        endObject.SetActive(active);
-    }
-
-    public void UpdateCourseTimes() {
-        float[] temp = new float[times.Length + 1];
-        times.CopyTo(temp, 0);
-        temp[temp.Length - 1] = GameManager.instance.currTime;
-        times = temp;
-    }
-
     void Update() {
-        if (GameManager.instance.currCourse != this && GameManager.instance.currCourse != null) {
-            startObject.SetActive(false);
-        }
-        else {
-            if (!courseActive) {
-                startObject.SetActive(true);
+        UpdateCourseState();
+    }
+
+    #region CheckState
+
+    public void UpdateCourseState() {
+        // GET CURRENT STATE
+        CourseHandler.CourseState currState = CourseHandler.instance.GetCurrState();
+
+        // GET CURRENT COURSE
+        Course currCourse = CourseHandler.instance.GetCurrCourse();
+
+        // GET CURRENT CHECKPOINT
+        int currCheckpoint = CourseHandler.instance.GetCurrCheckpoint();
+
+        if (currCourse == this) {
+            // CHECK CURRENT STATE
+            switch (currState) {
+                case CourseHandler.CourseState.StartMenu:
+                    // ACTIVATE START POINT
+                    startObject.GetComponent<CoursePoint>().Activate(true);
+
+                    // DEACTIVATE ALL CHECKPOINTS
+                    checkpointObjects.ForEach(checkpoint => checkpoint.GetComponent<CoursePoint>().Activate(false));
+
+                    // DEACTIVATE END POINT
+                    endObject.GetComponent<CoursePoint>().Activate(false);
+
+                    break;
+
+                case CourseHandler.CourseState.CountDown:
+                    // DEACTIVATE START POINT
+                    startObject.GetComponent<CoursePoint>().Activate(false);
+
+                    // ACTIVATE ALL CHECKPOINTS
+                    checkpointObjects.ForEach(checkpoint => checkpoint.GetComponent<CoursePoint>().Activate(true));
+
+                    // ACTIVATE END POINT
+                    endObject.GetComponent<CoursePoint>().Activate(true);
+
+                    break;
+                
+                case CourseHandler.CourseState.Racing:
+                    // DEACTIVATE START POINT
+                    startObject.GetComponent<CoursePoint>().Activate(false);
+
+                    // ACTIVATE CURRENT CHECKPOINT
+                    checkpointObjects.ForEach(checkpoint => {
+                        if (checkpoint.GetComponent<CoursePoint>().checkpointIndex >= currCheckpoint) {
+                            checkpoint.GetComponent<CoursePoint>().Activate(true);
+                        }
+                        else {
+                            checkpoint.GetComponent<CoursePoint>().Activate(false);
+                            
+                        }
+                    });
+
+
+                    break;
             }
         }
+        else {
+            // ACTIVATE START POINT
+            startObject.GetComponent<CoursePoint>().Activate(true);
+
+            // DEACTIVATE ALL CHECKPOINTS
+            checkpointObjects.ForEach(checkpoint => checkpoint.GetComponent<CoursePoint>().Activate(false));
+
+            // DEACTIVATE END POINT
+            endObject.GetComponent<CoursePoint>().Activate(false);
+        }
     }
+
+
 
     #endregion
 }
