@@ -197,8 +197,8 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void UpdateJumpVector() {
-        // Set JUMP MOVEMENT VECTOR TO CURRENT DIRECTIONAL MOVEMENT VECTOR WHEN STARTING JUMP
-        currJumpMovementVector = currDirectionalMovementVector;
+        // SET JUMP MOVEMENT VECTOR TO CURRENT VELOCITY WHEN JUMPING
+        currJumpMovementVector = new Vector3(controller.velocity.x, 0, controller.velocity.z) / currSpeed;
         totalAirMovementVector = currJumpMovementVector;
 
         // SET CURRENT AIR SPEED TO CURRENT GROUND SPEED WHEN STARTING JUMP
