@@ -227,14 +227,18 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     IEnumerator CheckForGround() {
-        RaycastHit hit;
+        RaycastHit sphereHit, boxHit;
 
         while (true) {
-            // RAYCAST TO GROUND
-            bool raycastSuccess = Physics.Raycast(transform.position, transform.up * -1, out hit);
 
-            // CHECK IF GROUNDED
-            if (raycastSuccess && hit.collider.gameObject.CompareTag("Ground") && hit.distance <= playerDistanceToGround + 0.00001f) {
+            // SPHERECAST TO GROUND
+            bool sphereCastSuccess = Physics.SphereCast(transform.position, controller.radius, Vector3.down, out sphereHit, playerDistanceToGround - controller.radius + 0.1f); 
+
+            // BOXCAST TO GROUND
+            bool boxCastSuccess = Physics.BoxCast(transform.position, controller.bounds.extents, Vector3.down, out boxHit, Quaternion.identity, playerDistanceToGround - controller.bounds.extents.y + 0.1f);
+
+            // CHECK IF GROUNDED BY COMBINING SPHERECAST AND BOXCAST
+            if ((boxCastSuccess && boxHit.collider.gameObject.CompareTag("Ground")) || (sphereCastSuccess && sphereHit.collider.gameObject.CompareTag("Ground"))) {
                 grounded = true;
             }
             else {
