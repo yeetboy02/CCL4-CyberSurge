@@ -162,6 +162,9 @@ public class CourseHandler : MonoBehaviour {
 
         // START TIMER
         Timer.instance.StartTimer();
+
+        // DISPLAY TIMER
+        Timer.instance.SetTimerActive(true);
     }
 
     void StopCourse() {
