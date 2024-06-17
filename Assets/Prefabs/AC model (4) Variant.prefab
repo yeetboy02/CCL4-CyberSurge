@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 628569a7125ca694da8f515170d391bb, type: 3}
       propertyPath: m_RootOrder
-      value: 46
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 628569a7125ca694da8f515170d391bb, type: 3}
       propertyPath: m_LocalScale.x
@@ -63,6 +63,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 628569a7125ca694da8f515170d391bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1513414954100570084, guid: 628569a7125ca694da8f515170d391bb, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 628569a7125ca694da8f515170d391bb, type: 3}
       propertyPath: m_Name
