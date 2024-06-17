@@ -131,6 +131,17 @@ public class Course : MonoBehaviour {
                         }
                     });
 
+                    break;
+
+                case CourseHandler.CourseState.EndMenu:
+                    // DEACTIVATE START POINT
+                    startObject.GetComponent<CoursePoint>().Activate(false);
+
+                    // DEACTIVATE ALL CHECKPOINTS
+                    checkpointObjects.ForEach(checkpoint => checkpoint.GetComponent<CoursePoint>().Activate(false));
+
+                    // DEACTIVATE END POINT
+                    endObject.GetComponent<CoursePoint>().Activate(false);
 
                     break;
             }

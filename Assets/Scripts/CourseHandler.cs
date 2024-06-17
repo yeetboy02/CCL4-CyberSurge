@@ -73,6 +73,9 @@ public class CourseHandler : MonoBehaviour {
     void InactiveState() {
         // Update Course Menu
         CourseMenu.instance.InactiveState();
+
+        // UNFREEZE PLAYER
+        player.EnableMovement(true);
     }
 
     #endregion
@@ -82,6 +85,9 @@ public class CourseHandler : MonoBehaviour {
     void StartMenuState() {
         // Update Course Menu
         CourseMenu.instance.StartMenuState();
+
+        // UPDATE SCOREBOARD
+        CourseMenu.instance.UpdateScoreBoard(currCourse.times);
     }
 
     #endregion
@@ -112,6 +118,9 @@ public class CourseHandler : MonoBehaviour {
     void EndMenuState() {
         // Update Course Menu
         CourseMenu.instance.EndMenuState();
+
+        // FREEZE PLAYER
+        player.EnableMovement(false);
     }
 
     #endregion
@@ -175,6 +184,9 @@ public class CourseHandler : MonoBehaviour {
             // SAVE TIME
             SaveTime();
 
+            // UPDATE END SCREEN SCOREBOARD
+            CourseMenu.instance.UpdateEndScreen(currCourse.times, Timer.instance.GetCurrTime());
+
             // SET COURSE STATE
             SetCourseState(CourseState.EndMenu);
 
@@ -209,10 +221,10 @@ public class CourseHandler : MonoBehaviour {
         // CHECK WHICH TYPE OF COURSE POINT
         switch (type) {
             case "Start":
-                SetCourseState(CourseState.StartMenu);
-
                 // SET CURRENT COURSE
                 currCourse = parentCourse;
+
+                SetCourseState(CourseState.StartMenu);
                 break;
 
             case "Checkpoint":
@@ -235,25 +247,14 @@ public class CourseHandler : MonoBehaviour {
 
     public void CoursePointExit(string type, int? checkpointIndex, Course parentCourse) {
         // CHECK WHICH TYPE OF COURSE POINT
-        switch (type) {
-            case "Start":
-                // DEACTIVE ON START LEAVE WHEN COURSE IS NOT STARTED
-                if (currState == CourseState.StartMenu) {
-                    SetCourseState(CourseState.Inactive);
+        if (type == "Start") {
+            // DEACTIVE ON START LEAVE WHEN COURSE IS NOT STARTED
+            if (currState == CourseState.StartMenu) {
+                SetCourseState(CourseState.Inactive);
 
-                    // SET CURRENT COURSE
-                    currCourse = null;
-                }
-                break;
-            case "End":
-                // DEACTIVE ON END LEAVE WHEN COURSE IS FINISHED
-                if (currState == CourseState.EndMenu) {
-                    SetCourseState(CourseState.Inactive);
-
-                    // SET CURRENT COURSE
-                    currCourse = null;
-                }
-                break;
+                // SET CURRENT COURSE
+                currCourse = null;
+            }
         }
     }
 
@@ -265,6 +266,12 @@ public class CourseHandler : MonoBehaviour {
         // CHECK CURRENT STATE
         if (currState == CourseState.StartMenu) {
             SetCourseState(CourseState.CountDown);
+        }
+        else if (currState == CourseState.EndMenu) {
+            // SET CURRENT COURSE
+            currCourse = null;
+
+            SetCourseState(CourseState.Inactive);
         }
     }
 

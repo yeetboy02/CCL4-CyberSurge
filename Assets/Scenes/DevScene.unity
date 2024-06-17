@@ -304,6 +304,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aacee58c4c1e2433fbb8791013f0387f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &247599079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1407802355780156829, guid: 6d5c5164a72764b6fbc0da92136f8294, type: 3}
+  m_PrefabInstance: {fileID: 4916059823181726419}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &706542272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,6 +1287,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1047049546014941012, guid: 6d5c5164a72764b6fbc0da92136f8294, type: 3}
+      propertyPath: endScreenText
+      value: 
+      objectReference: {fileID: 247599079}
     - target: {fileID: 1385651641732227908, guid: 6d5c5164a72764b6fbc0da92136f8294, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1369,6 +1378,13 @@ PrefabInstance:
     - target: {fileID: 5130925376894064159, guid: 6d5c5164a72764b6fbc0da92136f8294, type: 3}
       propertyPath: m_Name
       value: CourseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 7733735445105683856, guid: 6d5c5164a72764b6fbc0da92136f8294, type: 3}
+      propertyPath: m_text
+      value: 'Do you want to start this course?
+
+
+        Press Enter to Play!'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -13,6 +13,8 @@ public class CourseMenu : MonoBehaviour {
 
     [SerializeField] private GameObject countDownText;
 
+    [SerializeField] private GameObject endScreenText;
+
     #endregion
 
     #region Parameters
@@ -50,6 +52,9 @@ public class CourseMenu : MonoBehaviour {
 
         // DEACTIVATE COUNTDOWN TEXT
         countDownText.SetActive(false);
+
+        // DEACTIVATE END SCREEN TEXT
+        endScreenText.SetActive(false);
     }
 
     #endregion
@@ -68,6 +73,9 @@ public class CourseMenu : MonoBehaviour {
 
         // ACTIVATE COUNTDOWN TEXT
         countDownText.SetActive(true);
+
+        // DEACTIVATE END SCREEN TEXT
+        endScreenText.SetActive(false);
     }
 
     #endregion 
@@ -86,6 +94,9 @@ public class CourseMenu : MonoBehaviour {
 
         // DEACTIVATE COUNTDOWN TEXT
         countDownText.SetActive(false);
+
+        // DEACTIVATE END SCREEN TEXT
+        endScreenText.SetActive(false);
     }
 
     #endregion
@@ -100,10 +111,13 @@ public class CourseMenu : MonoBehaviour {
         courseMenuText.SetActive(false);
 
         // ACTIVATE SCOREBOARD TEXT
-        scoreBoardText.SetActive(true);
+        scoreBoardText.SetActive(false);
 
         // DEACTIVATE COUNTDOWN TEXT
         countDownText.SetActive(false);
+
+        // ACTIVATE END SCREEN TEXT
+        endScreenText.SetActive(true);
     }
 
     #endregion
@@ -122,6 +136,9 @@ public class CourseMenu : MonoBehaviour {
 
         // DEACTIVATE COUNTDOWN TEXT
         countDownText.SetActive(false);
+
+        // DEACTIVATE END SCREEN TEXT
+        endScreenText.SetActive(false);
     }
 
     #endregion
@@ -162,4 +179,43 @@ public class CourseMenu : MonoBehaviour {
     }
 
     #endregion
+
+    #region EndScreen
+
+    public void UpdateEndScreen(float[] times, float currTime) {
+        string endScreenString = "";
+        int i = 0;
+        bool currTimeAdded = false;
+
+        // SORT TIMES
+        Array.Sort(times);
+
+        // ASSEMBLE END SCREEN STRING WITH THE TOP 5 TIMES
+        while (i < times.Length && i < scoreBoardLength) {
+            int currNumber = i + 1;
+            if (times[i] != currTime) {
+                endScreenString += currNumber + ". " + Timer.instance.ConvertTimeToString(times[i]) + "\n";
+            }
+            else {
+                currTimeAdded = true;
+                endScreenString += "<color=green>" + currNumber + ". " + Timer.instance.ConvertTimeToString(times[i]) + "</color>\n";
+            }
+            
+            i++;
+        }
+
+        if (!currTimeAdded) {
+            int currTimeRank = Array.IndexOf(times, currTime) + 1;
+            endScreenString += "<color=green>" + currTimeRank + ". " + Timer.instance.ConvertTimeToString(currTime) + "</color>\n";
+        }
+
+        endScreenString += "\nPress Enter To Continue";
+
+
+        // DISPLAY END SCREEN STRING
+        endScreenText.GetComponent<TMPro.TextMeshProUGUI>().text = endScreenString;
+    }
+
+    #endregion
+
 }
