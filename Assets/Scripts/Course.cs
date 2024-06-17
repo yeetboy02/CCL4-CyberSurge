@@ -147,7 +147,16 @@ public class Course : MonoBehaviour {
         }
     }
 
+    #endregion
 
+    #region AddTime
+
+    public void AddTime(float time) {
+        // ADD TIME TO ARRAY
+        List<float> timeList = new List<float>(times);
+        timeList.Add(time);
+        times = timeList.ToArray();
+    }
 
     #endregion
 }

@@ -60,11 +60,11 @@ public class CourseSetup : MonoBehaviour {
         course.start = currCourse.start;
         course.checkpoints = currCourse.checkpoints;
         course.end = currCourse.end;
-        course.times = new float[currCourse.times.Length + 1];
-        if (currCourse.times.Length > 0) {
-                currCourse.times.CopyTo(course.times, 0);
-        }
-        course.times[course.times.Length - 1] = time;
+
+        // EXTEND ARRAY AND ADD NEW TIME
+        currCourse.AddTime(time);
+        course.times = currCourse.times;
+
 
         string jsonCourseObject = JsonUtility.ToJson(course);
         WriteJSON(path, jsonCourseObject);
