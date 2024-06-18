@@ -10517,7 +10517,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  - {fileID: 2100000, guid: 88c1350b82f4c1d4b82adbbda3e2e74c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27516,7 +27516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12b015c6408404100847ac4945919d6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 5, z: -10}
   rotationSpeedX: 1.5
   rotationSpeedY: 1.5
   rotationYConstraints: {x: -45, y: 45}
