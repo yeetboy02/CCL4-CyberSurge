@@ -4,7 +4,17 @@
 		<WorkUnit Name="Default Work Unit" ID="{686BDB33-2D2D-433B-B3C9-78DC68461382}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="CyberSurge" ID="{4BC315E1-64B2-4512-BD8F-C887C89B33C5}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Finish" ID="{0CCCDB31-E32F-42AA-9C45-28412B8E1287}" WorkUnitID="{3EC24D1A-77A4-4760-BDCB-879E3AAF123E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Cyberpunk_Beat_Quiet" ID="{C0FC1387-37C0-45FF-8485-81937792D501}" WorkUnitID="{3EC24D1A-77A4-4760-BDCB-879E3AAF123E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Achievement_sound" ID="{A9235D9E-1FF1-46E5-B661-E23DF22539BA}" WorkUnitID="{3EC24D1A-77A4-4760-BDCB-879E3AAF123E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_thrusters_loop" ID="{66A2245C-4017-478B-8924-09906CFA8AEE}" WorkUnitID="{3EC24D1A-77A4-4760-BDCB-879E3AAF123E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_AmbientNoise" ID="{8568B287-0463-47B6-A2A4-1BEAF52162ED}" WorkUnitID="{3EC24D1A-77A4-4760-BDCB-879E3AAF123E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Chinese_Violin" ID="{0DF35CE6-80F0-4888-A97C-3E56B646C8AA}" WorkUnitID="{3EC24D1A-77A4-4760-BDCB-879E3AAF123E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Cyberpunk_Beat" ID="{D7069E42-44E9-4EAB-8B1B-426D71540D87}" WorkUnitID="{3EC24D1A-77A4-4760-BDCB-879E3AAF123E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Landing" ID="{F67A689B-AADB-4EBE-8DB9-E0A376AF96AB}" WorkUnitID="{3EC24D1A-77A4-4760-BDCB-879E3AAF123E}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_HoloRobo" ID="{10A41C4D-8620-4FE4-A394-91B25EFEB025}" WorkUnitID="{3EC24D1A-77A4-4760-BDCB-879E3AAF123E}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

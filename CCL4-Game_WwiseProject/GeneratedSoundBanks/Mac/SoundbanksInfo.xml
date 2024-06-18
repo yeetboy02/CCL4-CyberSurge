@@ -22,10 +22,147 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3944981190" Type="User" Language="SFX" Hash="{E3E1B159-5932-3351-058A-93B4F543EED9}">
+		<SoundBank Id="3944981190" Type="User" Language="SFX" Hash="{F947FA38-CD96-74A7-9E61-11E4945C8DA2}">
 			<ShortName>CyberSurge</ShortName>
 			<Path>CyberSurge.bnk</Path>
+			<Media>
+				<File Id="96789415" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Landing On The Ground [1].wav</ShortName>
+					<CachePath>SFX/Landing On The Ground [1]_10C4C929.wem</CachePath>
+				</File>
+				<File Id="127988684" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Countdown-001.wav</ShortName>
+					<CachePath>SFX/Countdown-001_8347025C.wem</CachePath>
+				</File>
+				<File Id="244058664" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Landing On The Ground [7].wav</ShortName>
+					<CachePath>SFX/Landing On The Ground [7]_10C4C929.wem</CachePath>
+				</File>
+				<File Id="412349323" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>CityAmbience.wav</ShortName>
+					<Path>Media/412349323.wem</Path>
+					<CachePath>SFX/CityAmbience_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="430139319" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>alert3 (version 11).wav</ShortName>
+					<CachePath>SFX/alert3 (version 11)_10C4C929.wem</CachePath>
+				</File>
+				<File Id="482367142" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>Cyberpunk Beat.wav</ShortName>
+					<Path>Media/482367142.wem</Path>
+					<CachePath>SFX/Cyberpunk Beat_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="531600051" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Landing_Stone_1.wav</ShortName>
+					<CachePath>SFX/Landing_Stone_1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="592530725" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Landing On The Ground [2].wav</ShortName>
+					<CachePath>SFX/Landing On The Ground [2]_10C4C929.wem</CachePath>
+				</File>
+				<File Id="613313089" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Chinese Violin - The Enchanted Sound of the Erhu.wav</ShortName>
+					<CachePath>SFX/Chinese Violin - The Enchanted Sound of the Erhu_10C4C929.wem</CachePath>
+				</File>
+				<File Id="711410964" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Countdown-004.wav</ShortName>
+					<CachePath>SFX/Countdown-004_10C4C929.wem</CachePath>
+				</File>
+				<File Id="728538383" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>thrusters_loop.wav</ShortName>
+					<CachePath>SFX/thrusters_loop_8FF02A22.wem</CachePath>
+				</File>
+				<File Id="859789295" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Achievement sound 1.wav</ShortName>
+					<CachePath>SFX/Achievement sound 1_B623FC6A.wem</CachePath>
+				</File>
+				<File Id="882248691" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ambience, metro, wagon, train, interior, city, Moscow.wav</ShortName>
+					<CachePath>SFX/ambience, metro, wagon, train, interior, city, Moscow_10C4C929.wem</CachePath>
+				</File>
+				<File Id="897840081" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Robo Bird.wav</ShortName>
+					<CachePath>SFX/Robo Bird_DAE2277A.wem</CachePath>
+				</File>
+				<File Id="945103821" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Landing On The Ground [6].wav</ShortName>
+					<CachePath>SFX/Landing On The Ground [6]_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1028041429" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Countdown-002.wav</ShortName>
+					<CachePath>SFX/Countdown-002_8347025C.wem</CachePath>
+				</File>
+				<File Id="1054905388" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Countdown-003.wav</ShortName>
+					<CachePath>SFX/Countdown-003_8347025C.wem</CachePath>
+				</File>
+				<File Id="1061541565" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Street Noise in the city 1.wav</ShortName>
+					<CachePath>SFX/Street Noise in the city 1_CEB89FD2.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3241291351" Name="Play_Achievement_sound" DurationType="OneShot" DurationMin="0.8869781" DurationMax="0.8869781">
+					<MediaRefs>
+						<MediaRef Id="859789295"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3154490300" Name="Play_AmbientNoise" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="412349323"/>
+						<MediaRef Id="882248691"/>
+						<MediaRef Id="1061541565"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4044939577" Name="Play_Chinese_Violin" DurationType="OneShot" DurationMin="80.42839" DurationMax="80.42839">
+					<MediaRefs>
+						<MediaRef Id="613313089"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2175797879" Name="Play_Countdown" DurationType="OneShot" DurationMin="5" DurationMax="5">
+					<MediaRefs>
+						<MediaRef Id="127988684"/>
+						<MediaRef Id="711410964"/>
+						<MediaRef Id="1028041429"/>
+						<MediaRef Id="1054905388"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="454602296" Name="Play_Cyberpunk_Beat" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="482367142"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="792531229" Name="Play_Cyberpunk_Beat_Quiet" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="482367142"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1793765179" Name="Play_Finish" DurationType="OneShot" DurationMin="5.2582088" DurationMax="5.2582088">
+					<MediaRefs>
+						<MediaRef Id="430139319"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1682706162" Name="Play_HoloRobo" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="897840081"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2323405115" Name="Play_Landing" DurationType="OneShot" DurationMin="0.22156462" DurationMax="0.843375">
+					<MediaRefs>
+						<MediaRef Id="96789415"/>
+						<MediaRef Id="244058664"/>
+						<MediaRef Id="531600051"/>
+						<MediaRef Id="592530725"/>
+						<MediaRef Id="945103821"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1682802373" Name="Play_thrusters_loop" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="728538383"/>
+					</MediaRefs>
+				</Event>
+			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BC73158D-946F-F2D3-893A-12A1C4FBA782}</FileHash>
+	<FileHash>{5832A653-52B7-457E-66A8-3C651A37A868}</FileHash>
 </SoundBanksInfo>

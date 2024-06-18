@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 33db6b682d2d3b43b3c978dc68461382
     GuidInternal: 
-    m_lastTime: -8584830870794716012
+    m_lastTime: -8584828942094575805
     List:
     - name: CyberSurge
       guid: e115c34bb2641245bd8fc887c89b33c5
@@ -94,8 +94,161 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1a4dc23ea4776047bdcb879e3aaf123e
     GuidInternal: 
-    m_lastTime: -8584830870794811144
-    List: []
+    m_lastTime: -8584828942094679909
+    List:
+    - name: Play_Achievement_sound
+      guid: 9e5d23a9f11fe546b661e23df22539ba
+      id: 3241291351
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1a4dc23ea4776047bdcb879e3aaf123e
+      - ElementName: Play_Achievement_sound
+        ObjectType: 3
+        guid: 9e5d23a9f11fe546b661e23df22539ba
+      Path: Events\Default Work Unit\Play_Achievement_sound
+      maxAttenuation: 0
+      maxDuration: 0.8869781
+      minDuration: 0.8869781
+    - name: Play_AmbientNoise
+      guid: 87b268856304b647a2a41beaf52162ed
+      id: 3154490300
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1a4dc23ea4776047bdcb879e3aaf123e
+      - ElementName: Play_AmbientNoise
+        ObjectType: 3
+        guid: 87b268856304b647a2a41beaf52162ed
+      Path: Events\Default Work Unit\Play_AmbientNoise
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Chinese_Violin
+      guid: e65cf30df0808848a97c3e56b646c8aa
+      id: 4044939577
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1a4dc23ea4776047bdcb879e3aaf123e
+      - ElementName: Play_Chinese_Violin
+        ObjectType: 3
+        guid: e65cf30df0808848a97c3e56b646c8aa
+      Path: Events\Default Work Unit\Play_Chinese_Violin
+      maxAttenuation: 0
+      maxDuration: 80.42839
+      minDuration: 80.42839
+    - name: Play_Cyberpunk_Beat
+      guid: 429e06d7e944ab4e8b1b426d71540d87
+      id: 454602296
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1a4dc23ea4776047bdcb879e3aaf123e
+      - ElementName: Play_Cyberpunk_Beat
+        ObjectType: 3
+        guid: 429e06d7e944ab4e8b1b426d71540d87
+      Path: Events\Default Work Unit\Play_Cyberpunk_Beat
+      maxAttenuation: 0
+      maxDuration: 31.219479
+      minDuration: 31.219479
+    - name: Play_Cyberpunk_Beat_Quiet
+      guid: 8713fcc0c037ff45848581937792d501
+      id: 792531229
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1a4dc23ea4776047bdcb879e3aaf123e
+      - ElementName: Play_Cyberpunk_Beat_Quiet
+        ObjectType: 3
+        guid: 8713fcc0c037ff45848581937792d501
+      Path: Events\Default Work Unit\Play_Cyberpunk_Beat_Quiet
+      maxAttenuation: 0
+      maxDuration: 31.219479
+      minDuration: 31.219479
+    - name: Play_Finish
+      guid: 31dbcc0c2fe3aa429c4528412b8e1287
+      id: 1793765179
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1a4dc23ea4776047bdcb879e3aaf123e
+      - ElementName: Play_Finish
+        ObjectType: 3
+        guid: 31dbcc0c2fe3aa429c4528412b8e1287
+      Path: Events\Default Work Unit\Play_Finish
+      maxAttenuation: 0
+      maxDuration: 5.2582088
+      minDuration: 5.2582088
+    - name: Play_HoloRobo
+      guid: 4d1ca4102086e44fa39491b25efeb025
+      id: 1682706162
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1a4dc23ea4776047bdcb879e3aaf123e
+      - ElementName: Play_HoloRobo
+        ObjectType: 3
+        guid: 4d1ca4102086e44fa39491b25efeb025
+      Path: Events\Default Work Unit\Play_HoloRobo
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Landing
+      guid: 9b687af6dbaabe4e8db9e0a376af96ab
+      id: 2323405115
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1a4dc23ea4776047bdcb879e3aaf123e
+      - ElementName: Play_Landing
+        ObjectType: 3
+        guid: 9b687af6dbaabe4e8db9e0a376af96ab
+      Path: Events\Default Work Unit\Play_Landing
+      maxAttenuation: 0
+      maxDuration: 0.843375
+      minDuration: 0.22156462
+    - name: Play_thrusters_loop
+      guid: 5c24a26617408b47892409906cfa8aee
+      id: 1682802373
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1a4dc23ea4776047bdcb879e3aaf123e
+      - ElementName: Play_thrusters_loop
+        ObjectType: 3
+        guid: 5c24a26617408b47892409906cfa8aee
+      Path: Events\Default Work Unit\Play_thrusters_loop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -153,7 +306,7 @@ MonoBehaviour:
     m_lastTime: -8584830870794696017
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 10000000110000001200000013000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -11,6 +11,20 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID PLAY_ACHIEVEMENT_SOUND = 3241291351U;
+        static const AkUniqueID PLAY_AMBIENTNOISE = 3154490300U;
+        static const AkUniqueID PLAY_CHINESE_VIOLIN = 4044939577U;
+        static const AkUniqueID PLAY_COUNTDOWN = 2175797879U;
+        static const AkUniqueID PLAY_CYBERPUNK_BEAT = 454602296U;
+        static const AkUniqueID PLAY_CYBERPUNK_BEAT_QUIET = 792531229U;
+        static const AkUniqueID PLAY_FINISH = 1793765179U;
+        static const AkUniqueID PLAY_HOLOROBO = 1682706162U;
+        static const AkUniqueID PLAY_LANDING = 2323405115U;
+        static const AkUniqueID PLAY_THRUSTERS_LOOP = 1682802373U;
+    } // namespace EVENTS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;

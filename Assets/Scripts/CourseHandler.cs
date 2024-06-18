@@ -140,6 +140,7 @@ public class CourseHandler : MonoBehaviour {
 
     IEnumerator CountDown() {
         // START COUNTDOWN
+        AkSoundEngine.PostEvent("Play_Countdown", gameObject);
         for (int i = 0; i < countdownTime; i++) {
             // UPDATE COUNTDOWN TEXT
             CourseMenu.instance.SetCountDownTime(countdownTime - i);

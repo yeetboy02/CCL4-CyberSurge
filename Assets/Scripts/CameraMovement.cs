@@ -47,7 +47,7 @@ public class CameraMovement : MonoBehaviour {
 
         // SET INITIAL CAMERA DISTANCE
         baseCameraDistance = Vector3.Distance(player.position, playerCamera.position);
-        Debug.Log(baseCameraDistance);
+        //Debug.Log(baseCameraDistance);
         currCameraDistance = baseCameraDistance;
     }
 
@@ -100,11 +100,11 @@ public class CameraMovement : MonoBehaviour {
 
     void SetCameraDistance() {
 
-        currCameraDistance = Mathf.Lerp(currCameraDistance, baseCameraDistance, Time.deltaTime);
-        //Debug.Log(currCameraDistance);
-        //Debug.Log("----");
-        //Debug.Log(baseCameraDistance);
-        return;
+        //currCameraDistance = Mathf.Lerp(currCameraDistance, baseCameraDistance, Time.deltaTime);
+        ////Debug.Log(currCameraDistance);
+        ////Debug.Log("----");
+        ////Debug.Log(baseCameraDistance);
+        //return;
 
         // GET CAMERA WORLD POSITION
         Vector3 cameraWorldPosition = player.position + (Quaternion.Euler(currRotation.x, currRotation.y, 0) * offset);

@@ -1,6 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{3EC24D1A-77A4-4760-BDCB-879E3AAF123E}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{3EC24D1A-77A4-4760-BDCB-879E3AAF123E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{3EC24D1A-77A4-4760-BDCB-879E3AAF123E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Chinese_Violin" ID="{0DF35CE6-80F0-4888-A97C-3E56B646C8AA}">
+					<ChildrenList>
+						<Action Name="" ID="{D49AE9CB-2B46-4CD8-905D-67C5F2BA8426}" ShortID="197350763">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chinese Violin" ID="{0DA743D3-4F9A-4B31-82AA-3F80B33FF112}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Cyberpunk_Beat" ID="{D7069E42-44E9-4EAB-8B1B-426D71540D87}">
+					<ChildrenList>
+						<Action Name="" ID="{8617F05F-3DD0-4EAC-89B5-B6E060AF1D72}" ShortID="562421545">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cyberpunk Beat" ID="{7BF5C8A7-333A-4400-A545-D001520EC586}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Landing" ID="{F67A689B-AADB-4EBE-8DB9-E0A376AF96AB}">
+					<ChildrenList>
+						<Action Name="" ID="{AF9D7990-96A1-4A3D-92E0-7E9386133FC6}" ShortID="986903484">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Landing" ID="{450F4E2B-5DD7-4872-B1E9-F64A676FBE66}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_HoloRobo" ID="{10A41C4D-8620-4FE4-A394-91B25EFEB025}">
+					<ChildrenList>
+						<Action Name="" ID="{FAA1DEA4-66DC-44CB-8397-960549505963}" ShortID="1070034151">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HoloRobo" ID="{C51DC6FE-D1F7-4F29-959F-E78466B952EC}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_thrusters_loop" ID="{66A2245C-4017-478B-8924-09906CFA8AEE}">
+					<ChildrenList>
+						<Action Name="" ID="{1CA8CB0C-5E79-40E4-B7AF-6DF52D5966BC}" ShortID="328181404">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="thrusters_loop" ID="{D6EE9486-A769-4DE0-BA31-A3418BADE635}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AmbientNoise" ID="{8568B287-0463-47B6-A2A4-1BEAF52162ED}">
+					<ChildrenList>
+						<Action Name="" ID="{E2FA9F36-8BE3-486F-B894-53F06CC75B1C}" ShortID="336150863">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AmbientNoise" ID="{C91BB026-0EBE-467B-8C2E-ED846DFF1DC2}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Cyberpunk_Beat_Quiet" ID="{C0FC1387-37C0-45FF-8485-81937792D501}">
+					<ChildrenList>
+						<Action Name="" ID="{52125095-EC56-4FA9-B124-E7F6BF3EE88D}" ShortID="688628703">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cyberpunk Beat Quiet" ID="{E2D4764E-595D-4BA1-8007-F0C1C643B0D7}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Achievement_sound" ID="{A9235D9E-1FF1-46E5-B661-E23DF22539BA}">
+					<ChildrenList>
+						<Action Name="" ID="{92190CB9-9E6A-479D-84AC-F7473638F165}" ShortID="942849601">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Achievement sound" ID="{0915944E-06E5-48D5-8A57-1A751BFD2635}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Finish" ID="{0CCCDB31-E32F-42AA-9C45-28412B8E1287}">
+					<ChildrenList>
+						<Action Name="" ID="{3EFC0E94-B43B-4DBB-9C0A-946A301A5396}" ShortID="251145973">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Finish" ID="{9A571934-0246-4EFA-8ED6-473878C4E14D}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
