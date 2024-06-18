@@ -102,6 +102,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Countdown" ID="{7EBB1714-5E12-42D8-9A22-501FC9426BAC}">
+					<ChildrenList>
+						<Action Name="" ID="{3D2E514A-D934-4B3B-AEE8-43F0940926AD}" ShortID="490097396">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Countdown" ID="{33657302-ED39-4C44-B808-0CA6E7C30913}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

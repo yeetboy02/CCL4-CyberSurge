@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3944981190" Type="User" Language="SFX" Hash="{F947FA38-CD96-74A7-9E61-11E4945C8DA2}">
+		<SoundBank Id="3944981190" Type="User" Language="SFX" Hash="{3AA833C1-F18E-856E-6187-663C4A7125DF}">
 			<ShortName>CyberSurge</ShortName>
 			<Path>CyberSurge.bnk</Path>
 			<Media>
@@ -47,11 +47,6 @@
 					<ShortName>alert3 (version 11).wav</ShortName>
 					<CachePath>SFX/alert3 (version 11)_10C4C929.wem</CachePath>
 				</File>
-				<File Id="482367142" Language="SFX" Streaming="true" Location="Loose">
-					<ShortName>Cyberpunk Beat.wav</ShortName>
-					<Path>Media/482367142.wem</Path>
-					<CachePath>SFX/Cyberpunk Beat_D79FB2B7.wem</CachePath>
-				</File>
 				<File Id="531600051" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Landing_Stone_1.wav</ShortName>
 					<CachePath>SFX/Landing_Stone_1_10C4C929.wem</CachePath>
@@ -70,11 +65,11 @@
 				</File>
 				<File Id="728538383" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thrusters_loop.wav</ShortName>
-					<CachePath>SFX/thrusters_loop_8FF02A22.wem</CachePath>
+					<CachePath>SFX/thrusters_loop_7D204FDB.wem</CachePath>
 				</File>
 				<File Id="859789295" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Achievement sound 1.wav</ShortName>
-					<CachePath>SFX/Achievement sound 1_B623FC6A.wem</CachePath>
+					<CachePath>SFX/Achievement sound 1_98825A70.wem</CachePath>
 				</File>
 				<File Id="882248691" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ambience, metro, wagon, train, interior, city, Moscow.wav</ShortName>
@@ -82,11 +77,15 @@
 				</File>
 				<File Id="897840081" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Robo Bird.wav</ShortName>
-					<CachePath>SFX/Robo Bird_DAE2277A.wem</CachePath>
+					<CachePath>SFX/Robo Bird_DA93DA21.wem</CachePath>
 				</File>
 				<File Id="945103821" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Landing On The Ground [6].wav</ShortName>
 					<CachePath>SFX/Landing On The Ground [6]_10C4C929.wem</CachePath>
+				</File>
+				<File Id="950820286" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cyberpunk Beat.wav</ShortName>
+					<CachePath>SFX/Cyberpunk Beat_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1028041429" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Countdown-002.wav</ShortName>
@@ -98,11 +97,11 @@
 				</File>
 				<File Id="1061541565" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Street Noise in the city 1.wav</ShortName>
-					<CachePath>SFX/Street Noise in the city 1_CEB89FD2.wem</CachePath>
+					<CachePath>SFX/Street Noise in the city 1_E542090B.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3241291351" Name="Play_Achievement_sound" DurationType="OneShot" DurationMin="0.8869781" DurationMax="0.8869781">
+				<Event Id="3241291351" Name="Play_Achievement_sound" DurationType="OneShot" DurationMin="0.87704396" DurationMax="0.87704396">
 					<MediaRefs>
 						<MediaRef Id="859789295"/>
 					</MediaRefs>
@@ -127,14 +126,14 @@
 						<MediaRef Id="1054905388"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="454602296" Name="Play_Cyberpunk_Beat" DurationType="Infinite">
+				<Event Id="454602296" Name="Play_Cyberpunk_Beat" DurationType="OneShot" DurationMin="31.219479" DurationMax="31.219479">
 					<MediaRefs>
-						<MediaRef Id="482367142"/>
+						<MediaRef Id="950820286"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="792531229" Name="Play_Cyberpunk_Beat_Quiet" DurationType="Infinite">
+				<Event Id="792531229" Name="Play_Cyberpunk_Beat_Quiet" DurationType="OneShot" DurationMin="31.219479" DurationMax="31.219479">
 					<MediaRefs>
-						<MediaRef Id="482367142"/>
+						<MediaRef Id="950820286"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1793765179" Name="Play_Finish" DurationType="OneShot" DurationMin="5.2582088" DurationMax="5.2582088">
@@ -164,5 +163,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4470A3BB-5618-3A5B-7D85-BBCC5501D601}</FileHash>
+	<FileHash>{1DB78806-DDEA-0594-E2FB-C38841639D23}</FileHash>
 </SoundBanksInfo>

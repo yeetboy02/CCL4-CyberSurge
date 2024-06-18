@@ -19,16 +19,16 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	592530725	Landing On The Ground [2]	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Landing On The Ground [2]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [2]		51516
 	613313089	Chinese Violin	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Chinese Violin - The Enchanted Sound of the Erhu_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chinese Violin		14187664
 	711410964	Countdown-004	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Countdown-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-004		352896
-	728538383	thrusters_loop	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\thrusters_loop_8FF02A22.wem		\Actor-Mixer Hierarchy\Default Work Unit\thrusters_loop		3838400
-	859789295	Achievement sound	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Achievement sound 1_B623FC6A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Achievement sound		156560
+	728538383	thrusters_loop	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\thrusters_loop_7D204FDB.wem		\Actor-Mixer Hierarchy\Default Work Unit\thrusters_loop		3838400
+	859789295	Achievement sound	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Achievement sound 1_98825A70.wem		\Actor-Mixer Hierarchy\Default Work Unit\Achievement sound		154808
 	882248691	Ambience-metro	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\ambience, metro, wagon, train, interior, city, Moscow_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbientNoise\Ambience-metro		4492896
-	897840081	HoloRobo	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Robo Bird_DAE2277A.wem		\Actor-Mixer Hierarchy\Default Work Unit\HoloRobo		70668
+	897840081	HoloRobo	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Robo Bird_DA93DA21.wem		\Actor-Mixer Hierarchy\Default Work Unit\HoloRobo		70668
 	945103821	Landing On The Ground [6]	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Landing On The Ground [6]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [6]		162024
+	950820286	Cyberpunk Beat Quiet	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Cyberpunk Beat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cyberpunk Beat Quiet		5507212
 	1028041429	Countdown-002	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Countdown-002_8347025C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-002		176496
 	1054905388	Countdown-003	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Countdown-003_8347025C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-003		176496
-	1061541565	Street Noise in the city 1	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Street Noise in the city 1_CEB89FD2.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbientNoise\Street Noise in the city 1		8429812
+	1061541565	Street Noise in the city 1	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Street Noise in the city 1_E542090B.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbientNoise\Street Noise in the city 1		8429812
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	412349323	CityAmbience	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\CityAmbience_D79FB2B7.wem	412349323.wem	\Actor-Mixer Hierarchy\Default Work Unit\AmbientNoise\CityAmbience	
-	482367142	Cyberpunk Beat Quiet	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Cyberpunk Beat_D79FB2B7.wem	482367142.wem	\Actor-Mixer Hierarchy\Default Work Unit\Cyberpunk Beat Quiet	
 

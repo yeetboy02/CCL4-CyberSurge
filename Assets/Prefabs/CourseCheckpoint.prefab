@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7735035283433589365}
   - component: {fileID: 6655004218683731122}
   - component: {fileID: 5808288110093419403}
-  - component: {fileID: 4309018518055648099}
   m_Layer: 2
   m_Name: CourseCheckpoint
   m_TagString: Untagged
@@ -71,18 +70,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: Checkpoint
---- !u!114 &4309018518055648099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6117527427934329034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98a9592933df7a440a35be8d0f05c2e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &8616450037342934858
 PrefabInstance:
   m_ObjectHideFlags: 0

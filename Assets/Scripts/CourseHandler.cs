@@ -179,6 +179,8 @@ public class CourseHandler : MonoBehaviour {
 
     void StopCourse() {
         if (currCheckpoint == currCourse.checkpoints.Length) {
+            AkSoundEngine.PostEvent("Play_Finish", gameObject);
+
             // STOP TIMER
             Timer.instance.StopTimer();
 
@@ -233,6 +235,7 @@ public class CourseHandler : MonoBehaviour {
                 if (currState == CourseState.Racing) {
                     // CHECK IF CHECKPOINT IS NEXT
                     if (checkpointIndex == currCheckpoint) {
+                        AkSoundEngine.PostEvent("Play_Achievement_sound", gameObject);
                         // INCREMENT CHECKPOINT
                         currCheckpoint++;
                     }

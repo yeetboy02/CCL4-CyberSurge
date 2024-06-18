@@ -563,6 +563,11 @@
 				<Sound Name="Achievement sound" ID="{0915944E-06E5-48D5-8A57-1A751BFD2635}" ShortID="491818305">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -575,9 +580,8 @@
 					<ChildrenList>
 						<AudioFileSource Name="Achievement sound 1" ID="{5D04E945-9C4A-474F-9228-188CB326D59A}">
 							<PropertyList>
-								<Property Name="LoopBegin" Type="Real64" Value="0.204359756906664"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.204359756906664"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.214293911756294"/>
 							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Achievement sound 1.wav</AudioFile>
@@ -861,6 +865,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Countdown-001" ID="{E3BC04B5-6689-4591-BF59-BCA43FCF0C35}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Countdown-001.wav</AudioFile>
 									<MediaIDList>
@@ -883,6 +892,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Countdown-002" ID="{018BADC9-3402-4111-967A-8DB7047B18B6}">
+									<PropertyList>
+										<Property Name="TrimEnd" Type="Real64" Value="1"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Countdown-002.wav</AudioFile>
 									<MediaIDList>
@@ -905,6 +917,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Countdown-003" ID="{4CA8F6F5-915C-4401-932B-03FDE21B0B13}">
+									<PropertyList>
+										<Property Name="TrimEnd" Type="Real64" Value="1"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Countdown-003.wav</AudioFile>
 									<MediaIDList>
