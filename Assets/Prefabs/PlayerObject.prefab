@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 4619212139760174021}
   - component: {fileID: 5492535023561027700}
   - component: {fileID: 8386927289201400321}
+  - component: {fileID: 3126768501568628881}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -291,7 +292,6 @@ MonoBehaviour:
   jumpScaling: 0.25
   playerGravity: 9.8
   gravityScaling: 3
-  grounded: 0
 --- !u!114 &5492535023561027700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,6 +330,20 @@ CharacterController:
   m_SkinWidth: 0.01
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.25, z: 0}
+--- !u!114 &3126768501568628881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6221826635741072937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9065d3b77eb44fe28b3fea897f0c5dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2426906060995909237}
+  runningAnimationSpeed: 1.2
 --- !u!1 &7527895928221503400
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +506,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc4a5d844dc2dfb459c0ec68d5e31763, type: 3}
+--- !u!95 &2426906060995909237 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: dc4a5d844dc2dfb459c0ec68d5e31763, type: 3}
+  m_PrefabInstance: {fileID: 8125777535362919396}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8596869077645560847 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dc4a5d844dc2dfb459c0ec68d5e31763, type: 3}
