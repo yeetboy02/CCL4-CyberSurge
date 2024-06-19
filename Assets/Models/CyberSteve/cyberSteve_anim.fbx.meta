@@ -3,7 +3,42 @@ guid: 1e00dc8880c9fc4448be42a15be2361d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Arms
+    second: {fileID: 2100000, guid: 6a43c98682b3db640a6dc155d13e5342, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body_extras
+    second: {fileID: 2100000, guid: 31e51ad4a5a90ae4fb7becc12358177d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: feet
+    second: {fileID: 2100000, guid: a01b7dcc814c79b469c44d7a2890a4c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: head
+    second: {fileID: 2100000, guid: 9d826fe9d4fa1e345a512fcf53bc4b0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mainBody
+    second: {fileID: 2100000, guid: 8328f1b8ffa3ada41bf11fa75eae42c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tube
+    second: {fileID: 2100000, guid: bd6bfd8e7746c7a4f9b1b5985a247968, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tubeKnob
+    second: {fileID: 2100000, guid: b9cf98a177dcc084ea8f55eef723c6c4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
