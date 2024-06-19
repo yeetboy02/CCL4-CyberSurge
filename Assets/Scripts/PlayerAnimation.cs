@@ -90,9 +90,6 @@ public class PlayerAnimation : MonoBehaviour {
     void Start() {
         // GET PLAYER MOVEMENT SCRIPT
         movement = GetComponent<PlayerMovement>();
-
-        // SET INITIAL STATE TO FALLING
-        SetAnimationState(AnimationState.Falling);
     }
 
     #endregion
