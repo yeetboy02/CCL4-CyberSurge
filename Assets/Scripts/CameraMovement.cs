@@ -34,6 +34,16 @@ public class CameraMovement : MonoBehaviour {
 
     private float currCameraDistance;
 
+    private bool cameraLocked = false;
+
+    #endregion
+
+    #region GetterSetter
+
+    public void SetCameraLock(bool state) {
+        cameraLocked = state;
+    }
+
     #endregion
 
     void Start() {
@@ -52,7 +62,9 @@ public class CameraMovement : MonoBehaviour {
     }
 
     void Update() {
-        MoveWithPlayer();
+        if (!cameraLocked) {
+            MoveWithPlayer();
+        }
         SetCameraDistance();
         SetCameraOffset();
         Rotate();
@@ -99,12 +111,6 @@ public class CameraMovement : MonoBehaviour {
     #region CameraDistance
 
     void SetCameraDistance() {
-
-        //currCameraDistance = Mathf.Lerp(currCameraDistance, baseCameraDistance, Time.deltaTime);
-        ////Debug.Log(currCameraDistance);
-        ////Debug.Log("----");
-        ////Debug.Log(baseCameraDistance);
-        //return;
 
         // GET CAMERA WORLD POSITION
         Vector3 cameraWorldPosition = player.position + (Quaternion.Euler(currRotation.x, currRotation.y, 0) * offset);

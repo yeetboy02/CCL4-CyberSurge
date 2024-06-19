@@ -50,7 +50,9 @@ public class CourseHandler : MonoBehaviour {
 
     #region Variables
 
-    [SerializeField] private PlayerController player;
+    [SerializeField] private PlayerController playerController;
+
+    [SerializeField] private PlayerRespawn playerRespawn;
 
     [SerializeField] private int countdownTime = 3;
 
@@ -75,7 +77,7 @@ public class CourseHandler : MonoBehaviour {
         CourseMenu.instance.InactiveState();
 
         // UNFREEZE PLAYER
-        player.EnableMovement(true);
+        playerController.EnableMovement(true);
     }
 
     #endregion
@@ -120,10 +122,10 @@ public class CourseHandler : MonoBehaviour {
         CourseMenu.instance.EndMenuState();
 
         // FREEZE PLAYER
-        player.EnableMovement(false);
+        playerController.EnableMovement(false);
 
         // PLAY PLAYER WIN ANIMATION
-        player.gameObject.GetComponent<PlayerAnimation>().TriggerVictoryAnimation();
+        playerController.gameObject.GetComponent<PlayerAnimation>().TriggerVictoryAnimation();
     }
 
     #endregion
@@ -132,10 +134,10 @@ public class CourseHandler : MonoBehaviour {
 
     void StartCountDown() {
         // FREEZE PLAYER
-        player.EnableMovement(false);
+        playerController.EnableMovement(false);
 
         // SET PLAYER POSITION
-        player.SetPosition(currCourse.GetStartPoint());
+        playerController.SetPosition(currCourse.GetStartPoint());
 
         // START COUNTDOWN
         StartCoroutine(CountDown());
@@ -156,7 +158,7 @@ public class CourseHandler : MonoBehaviour {
 
     void StopCountDown() {
         // UNFREEZE PLAYER
-        player.EnableMovement(true);
+        playerController.EnableMovement(true);
 
         // START COURSE
         StartCourse();
@@ -230,6 +232,9 @@ public class CourseHandler : MonoBehaviour {
                 // SET CURRENT COURSE
                 currCourse = parentCourse;
 
+                // SET CURRENT RESPAWN POINT
+                playerRespawn.SetCurrRespawnPoint(currCourse.GetStartPoint());
+
                 SetCourseState(CourseState.StartMenu);
                 break;
 
@@ -239,6 +244,10 @@ public class CourseHandler : MonoBehaviour {
                     // CHECK IF CHECKPOINT IS NEXT
                     if (checkpointIndex == currCheckpoint) {
                         AkSoundEngine.PostEvent("Play_Achievement_sound", gameObject);
+
+                        // SET CURRENT RESPAWN POINT
+                        playerRespawn.SetCurrRespawnPoint(parentCourse.GetCheckpointPoint(currCheckpoint));
+
                         // INCREMENT CHECKPOINT
                         currCheckpoint++;
                     }

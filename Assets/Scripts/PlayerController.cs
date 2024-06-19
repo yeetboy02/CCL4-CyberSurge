@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
         controller = GetComponent<CharacterController>();
     }
 
-    #region CountDown
+    #region Methods
 
     public void EnableMovement(bool enabled) {
         // ENABLE/DISABLE PLAYER MOVEMENT INPUT
@@ -26,6 +26,15 @@ public class PlayerController : MonoBehaviour {
             playerInput.actions.FindAction("Movement").Enable();
         } else {
             playerInput.actions.FindAction("Movement").Disable();
+        }
+    }
+
+    public void EnableJump(bool enabled) {
+        // ENABLE/DISABLE PLAYER JUMP INPUT
+        if (enabled) {
+            playerInput.actions.FindAction("Jump").Enable();
+        } else {
+            playerInput.actions.FindAction("Jump").Disable();
         }
     }
 
