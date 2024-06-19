@@ -15,6 +15,8 @@ public class CourseMenu : MonoBehaviour {
 
     [SerializeField] private GameObject endScreenText;
 
+    [SerializeField] private GameObject continueBtn;
+
     #endregion
 
     #region Parameters
@@ -55,6 +57,7 @@ public class CourseMenu : MonoBehaviour {
 
         // DEACTIVATE END SCREEN TEXT
         endScreenText.SetActive(false);
+        continueBtn.SetActive(false);
     }
 
     #endregion
@@ -76,6 +79,7 @@ public class CourseMenu : MonoBehaviour {
 
         // DEACTIVATE END SCREEN TEXT
         endScreenText.SetActive(false);
+        continueBtn.SetActive(false);
     }
 
     #endregion 
@@ -97,6 +101,7 @@ public class CourseMenu : MonoBehaviour {
 
         // DEACTIVATE END SCREEN TEXT
         endScreenText.SetActive(false);
+        continueBtn.SetActive(false);
     }
 
     #endregion
@@ -118,6 +123,7 @@ public class CourseMenu : MonoBehaviour {
 
         // ACTIVATE END SCREEN TEXT
         endScreenText.SetActive(true);
+        continueBtn.SetActive(true);
     }
 
     #endregion
@@ -139,6 +145,7 @@ public class CourseMenu : MonoBehaviour {
 
         // DEACTIVATE END SCREEN TEXT
         endScreenText.SetActive(false);
+        continueBtn.SetActive(false);
     }
 
     #endregion
@@ -198,7 +205,7 @@ public class CourseMenu : MonoBehaviour {
             }
             else {
                 currTimeAdded = true;
-                endScreenString += "<color=green>" + currNumber + ". " + Timer.instance.ConvertTimeToString(times[i]) + "</color>\n";
+                endScreenString += "<color=white>" + currNumber + ". " + Timer.instance.ConvertTimeToString(times[i]) + "</color>\n";
             }
             
             i++;
@@ -206,11 +213,8 @@ public class CourseMenu : MonoBehaviour {
 
         if (!currTimeAdded) {
             int currTimeRank = Array.IndexOf(times, currTime) + 1;
-            endScreenString += "<color=green>" + currTimeRank + ". " + Timer.instance.ConvertTimeToString(currTime) + "</color>\n";
+            endScreenString += "\n" + "<color=white>" + currTimeRank + ". " + Timer.instance.ConvertTimeToString(currTime) + "</color>\n";
         }
-
-        endScreenString += "\nPress Enter To Continue";
-
 
         // DISPLAY END SCREEN STRING
         endScreenText.GetComponent<TMPro.TextMeshProUGUI>().text = endScreenString;
