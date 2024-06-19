@@ -78,6 +78,20 @@ public class PlayerMovement : MonoBehaviour {
 
     #endregion
 
+    #region GetterSetter
+
+    public bool GetGrounded() {
+        return grounded;
+    }
+
+    public float GetMaxSpeed() {
+        return maxSpeed;
+    }
+
+    #endregion
+
+    #region Setup
+
     void Start() {
         controller = GetComponent<CharacterController>();
         
@@ -87,10 +101,12 @@ public class PlayerMovement : MonoBehaviour {
         StartCoroutine(CheckForGround());
     }
 
+    #endregion
+
 
     #region Movement
 
-    void Update() {
+    void FixedUpdate() {
         ApplyGravity();
         UpdateMovementVectorDirection();
         Move();
@@ -176,10 +192,8 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void FaceForward() {
-        if (currMovementVector != Vector3.zero) {
-            // ROTATE PLAYER TO THE FORWARD DIRECTION
-            transform.forward = Vector3.Lerp(transform.forward, currDirectionalMovementVector, rotationSpeed * Time.deltaTime);
-        }
+        // ROTATE PLAYER TO THE FORWARD DIRECTION
+        transform.forward = Vector3.Lerp(transform.forward, currDirectionalMovementVector, rotationSpeed * Time.deltaTime);
     }
 
     #endregion
