@@ -39,8 +39,14 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void SetPosition(Vector3 position) {
+        // RESET PLAYER VELOCITY
+        controller.enabled = false;
+
         // SET PLAYER POSITION
-        controller.Move(position - transform.position);
+        gameObject.transform.position = position;
+
+        // REACTIVE PLAYER CONTROLLER
+        controller.enabled = true;
     }
 
     #endregion

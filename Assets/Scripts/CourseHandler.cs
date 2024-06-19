@@ -141,6 +141,9 @@ public class CourseHandler : MonoBehaviour {
 
         // START COUNTDOWN
         StartCoroutine(CountDown());
+
+        // SET RESPAWN POINT TO START POINT
+        playerRespawn.SetCurrRespawnPoint(currCourse.GetStartPoint());
     }
 
     IEnumerator CountDown() {
@@ -231,9 +234,6 @@ public class CourseHandler : MonoBehaviour {
             case "Start":
                 // SET CURRENT COURSE
                 currCourse = parentCourse;
-
-                // SET CURRENT RESPAWN POINT
-                playerRespawn.SetCurrRespawnPoint(currCourse.GetStartPoint());
 
                 SetCourseState(CourseState.StartMenu);
                 break;
