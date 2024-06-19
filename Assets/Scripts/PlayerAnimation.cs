@@ -109,4 +109,13 @@ public class PlayerAnimation : MonoBehaviour {
     }
 
     #endregion
+
+    #region AnimationEvents
+
+    public void TriggerVictoryAnimation() {
+        // SET VICTORY ANIMATION
+        animator.SetTrigger("victory");
+    }
+
+    #endregion
 }

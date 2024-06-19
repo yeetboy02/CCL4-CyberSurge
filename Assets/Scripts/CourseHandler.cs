@@ -121,6 +121,9 @@ public class CourseHandler : MonoBehaviour {
 
         // FREEZE PLAYER
         player.EnableMovement(false);
+
+        // PLAY PLAYER WIN ANIMATION
+        player.gameObject.GetComponent<PlayerAnimation>().TriggerVictoryAnimation();
     }
 
     #endregion
