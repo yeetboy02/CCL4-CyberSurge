@@ -91,8 +91,8 @@ public class PlayerAnimation : MonoBehaviour {
         // GET PLAYER MOVEMENT SCRIPT
         movement = GetComponent<PlayerMovement>();
 
-        // SET INITIAL STATE TO IDLE
-        SetAnimationState(AnimationState.Idle);
+        // SET INITIAL STATE TO FALLING
+        SetAnimationState(AnimationState.Falling);
     }
 
     #endregion

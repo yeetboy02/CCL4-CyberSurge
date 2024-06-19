@@ -238,6 +238,7 @@ GameObject:
   - component: {fileID: 5492535023561027700}
   - component: {fileID: 8386927289201400321}
   - component: {fileID: 3126768501568628881}
+  - component: {fileID: 4001117658145094583}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -367,8 +368,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9065d3b77eb44fe28b3fea897f0c5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 7763899025461436146}
   runningAnimationSpeed: 1.2
+--- !u!114 &4001117658145094583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6221826635741072937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3b31ce2522d49be8e9544923e8e175, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  respawnDelay: 2
 --- !u!1 &7527895928221503400
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,6 +394,7 @@ GameObject:
   - component: {fileID: 7589471210054511770}
   - component: {fileID: 4850747426251408733}
   - component: {fileID: 8489522092551823334}
+  - component: {fileID: 4210800877348565382}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -450,6 +465,18 @@ MonoBehaviour:
   rotationSpeedY: 1.5
   rotationYConstraints: {x: -45, y: 45}
   player: {fileID: 4254114342655706551}
+--- !u!114 &4210800877348565382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527895928221503400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee22480ed58aa44cb84778ba434a58cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8552678359112854861
 PrefabInstance:
   m_ObjectHideFlags: 0
