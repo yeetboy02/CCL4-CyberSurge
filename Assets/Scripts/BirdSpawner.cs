@@ -44,8 +44,6 @@ public class BirdSpawner : MonoBehaviour {
         else {
             visible = true;
         }
-
-        Debug.Log("VISIBLE:" + visible);
     }
 
     bool CheckRay() {
