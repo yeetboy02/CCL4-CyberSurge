@@ -699,6 +699,7 @@ GameObject:
   - component: {fileID: 38263658}
   - component: {fileID: 38263657}
   - component: {fileID: 38263660}
+  - component: {fileID: 38263661}
   m_Layer: 0
   m_Name: BigHouse.002 (51)
   m_TagString: Ground
@@ -726,7 +727,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  - {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -792,6 +793,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000002, z: 0}
+--- !u!114 &38263661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38263656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &39920429
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,6 +989,7 @@ GameObject:
   - component: {fileID: 47488402}
   - component: {fileID: 47488401}
   - component: {fileID: 47488404}
+  - component: {fileID: 47488405}
   m_Layer: 0
   m_Name: HighHouse (13)
   m_TagString: Ground
@@ -1063,6 +1083,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000001, z: -0.0000019073486}
+--- !u!114 &47488405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47488400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &50965863
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,6 +1196,7 @@ GameObject:
   - component: {fileID: 54441704}
   - component: {fileID: 54441703}
   - component: {fileID: 54441706}
+  - component: {fileID: 54441707}
   m_Layer: 0
   m_Name: BroadSmallerHouse.001 (9)
   m_TagString: Ground
@@ -1251,6 +1290,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000005, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0.99999946, z: 0.0000019073486}
+--- !u!114 &54441707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54441702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &78852398
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,6 +1320,7 @@ GameObject:
   - component: {fileID: 78852400}
   - component: {fileID: 78852399}
   - component: {fileID: 78852402}
+  - component: {fileID: 78852403}
   m_Layer: 0
   m_Name: HigherHouse.001 (15)
   m_TagString: Ground
@@ -1290,7 +1348,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  - {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1356,6 +1414,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 1.9999999, z: 2}
   m_Center: {x: -0.0000038146973, y: 1.0000002, z: -0.00000023841858}
+--- !u!114 &78852403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78852398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &81863983
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,6 +1527,7 @@ GameObject:
   - component: {fileID: 82681602}
   - component: {fileID: 82681601}
   - component: {fileID: 82681604}
+  - component: {fileID: 82681605}
   m_Layer: 0
   m_Name: BigHouse.002 (50)
   m_TagString: Ground
@@ -1544,6 +1621,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000002, z: 0.00000071525574}
+--- !u!114 &82681605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82681600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1001 &112263985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1951,6 +2046,7 @@ GameObject:
   - component: {fileID: 122379529}
   - component: {fileID: 122379528}
   - component: {fileID: 122379531}
+  - component: {fileID: 122379532}
   m_Layer: 0
   m_Name: SmallerHouse.002 (19)
   m_TagString: Ground
@@ -2044,6 +2140,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2.0000002, z: 2}
   m_Center: {x: 0, y: 1.0000024, z: 0.00000047683716}
+--- !u!114 &122379532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122379527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &124977517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2222,6 +2336,7 @@ GameObject:
   - component: {fileID: 137114110}
   - component: {fileID: 137114109}
   - component: {fileID: 137114112}
+  - component: {fileID: 137114113}
   m_Layer: 0
   m_Name: BigHouse.002 (52)
   m_TagString: Ground
@@ -2315,6 +2430,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9999999, y: 2, z: 2}
   m_Center: {x: 1.4574174e-23, y: 1.0000002, z: -0.0000009536743}
+--- !u!114 &137114113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137114108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &149252822
 GameObject:
   m_ObjectHideFlags: 0
@@ -2642,6 +2775,7 @@ GameObject:
   - component: {fileID: 160737649}
   - component: {fileID: 160737648}
   - component: {fileID: 160737651}
+  - component: {fileID: 160737652}
   m_Layer: 0
   m_Name: LongHouse.003 (41)
   m_TagString: Ground
@@ -2735,6 +2869,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000007, y: 2, z: 2.0000005}
   m_Center: {x: -0.0000009536743, y: 1, z: 0}
+--- !u!114 &160737652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160737647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &160742547
 GameObject:
   m_ObjectHideFlags: 0
@@ -3223,6 +3375,7 @@ GameObject:
   - component: {fileID: 191567692}
   - component: {fileID: 191567691}
   - component: {fileID: 191567694}
+  - component: {fileID: 191567695}
   m_Layer: 0
   m_Name: BroadSmallerHouse (4)
   m_TagString: Ground
@@ -3316,6 +3469,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2.0000002, z: 2}
   m_Center: {x: 0, y: 0.9999998, z: 0}
+--- !u!114 &191567695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191567690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &203020033
 GameObject:
   m_ObjectHideFlags: 0
@@ -3555,6 +3726,7 @@ GameObject:
   - component: {fileID: 223023705}
   - component: {fileID: 223023704}
   - component: {fileID: 223023707}
+  - component: {fileID: 223023708}
   m_Layer: 0
   m_Name: BigHouse.001 (15)
   m_TagString: Ground
@@ -3648,6 +3820,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 1.8091159e-23, y: 1.0000012, z: 0}
+--- !u!114 &223023708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223023703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &229482581
 GameObject:
   m_ObjectHideFlags: 0
@@ -4058,6 +4248,7 @@ GameObject:
   - component: {fileID: 241068484}
   - component: {fileID: 241068483}
   - component: {fileID: 241068486}
+  - component: {fileID: 241068487}
   m_Layer: 0
   m_Name: LongHouse.002 (28)
   m_TagString: Ground
@@ -4151,6 +4342,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2, z: 2.0000005}
   m_Center: {x: -0.0000007748604, y: 1.0000011, z: 0}
+--- !u!114 &241068487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241068482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &243009664
 GameObject:
   m_ObjectHideFlags: 0
@@ -4163,6 +4372,7 @@ GameObject:
   - component: {fileID: 243009666}
   - component: {fileID: 243009665}
   - component: {fileID: 243009668}
+  - component: {fileID: 243009669}
   m_Layer: 0
   m_Name: HighHouse (17)
   m_TagString: Ground
@@ -4256,6 +4466,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000001, z: -0.0000019073486}
+--- !u!114 &243009669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243009664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &253292336
 GameObject:
   m_ObjectHideFlags: 0
@@ -5066,6 +5294,7 @@ GameObject:
   - component: {fileID: 301718974}
   - component: {fileID: 301718973}
   - component: {fileID: 301718976}
+  - component: {fileID: 301718977}
   m_Layer: 0
   m_Name: LongSmallerHouse.001 (39)
   m_TagString: Ground
@@ -5159,6 +5388,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2, z: 1.9999999}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &301718977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301718972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &308176303
 GameObject:
   m_ObjectHideFlags: 0
@@ -6559,6 +6806,7 @@ GameObject:
   - component: {fileID: 371103056}
   - component: {fileID: 371103055}
   - component: {fileID: 371103058}
+  - component: {fileID: 371103059}
   m_Layer: 0
   m_Name: LongHouse.002 (23)
   m_TagString: Ground
@@ -6652,6 +6900,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2, z: 2.0000005}
   m_Center: {x: -0.00000023841858, y: 1.0000011, z: 0}
+--- !u!114 &371103059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371103054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &379179468
 GameObject:
   m_ObjectHideFlags: 0
@@ -6747,6 +7013,7 @@ GameObject:
   - component: {fileID: 381523632}
   - component: {fileID: 381523631}
   - component: {fileID: 381523634}
+  - component: {fileID: 381523635}
   m_Layer: 0
   m_Name: SmallerHouse.002 (18)
   m_TagString: Ground
@@ -6840,6 +7107,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2.0000002, z: 2.0000005}
   m_Center: {x: 0.0000009536743, y: 1.0000024, z: 0}
+--- !u!114 &381523635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381523630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &384796528
 GameObject:
   m_ObjectHideFlags: 0
@@ -7900,6 +8185,7 @@ GameObject:
   - component: {fileID: 444958360}
   - component: {fileID: 444958359}
   - component: {fileID: 444958362}
+  - component: {fileID: 444958363}
   m_Layer: 0
   m_Name: BigHouse.002 (49)
   m_TagString: Ground
@@ -7993,6 +8279,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000002, z: 0.0000009536743}
+--- !u!114 &444958363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444958358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1001 &449049910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8592,6 +8896,7 @@ GameObject:
   - component: {fileID: 467022715}
   - component: {fileID: 467022714}
   - component: {fileID: 467022717}
+  - component: {fileID: 467022718}
   m_Layer: 0
   m_Name: LongHouse.003 (40)
   m_TagString: Ground
@@ -8685,6 +8990,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000014, z: 0.00000047683716}
+--- !u!114 &467022718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467022713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &479600573
 GameObject:
   m_ObjectHideFlags: 0
@@ -8863,6 +9186,7 @@ GameObject:
   - component: {fileID: 481909832}
   - component: {fileID: 481909831}
   - component: {fileID: 481909834}
+  - component: {fileID: 481909835}
   m_Layer: 0
   m_Name: LongHouse.002 (24)
   m_TagString: Ground
@@ -8956,6 +9280,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2, z: 2.0000005}
   m_Center: {x: -0.0000009536743, y: 1.0000011, z: 0}
+--- !u!114 &481909835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481909830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1001 &487735479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9068,6 +9410,7 @@ GameObject:
   - component: {fileID: 488110033}
   - component: {fileID: 488110032}
   - component: {fileID: 488110035}
+  - component: {fileID: 488110036}
   m_Layer: 0
   m_Name: LongHouse.002 (26)
   m_TagString: Ground
@@ -9161,6 +9504,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 8.091927e-24, y: 1.0000011, z: 0.00000023841858}
+--- !u!114 &488110036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488110031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1001 &491110616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9317,6 +9678,7 @@ GameObject:
   - component: {fileID: 504315096}
   - component: {fileID: 504315095}
   - component: {fileID: 504315098}
+  - component: {fileID: 504315099}
   m_Layer: 0
   m_Name: LongHouse.001 (6)
   m_TagString: Ground
@@ -9410,6 +9772,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000005, y: 2.0000002, z: 2.0000002}
   m_Center: {x: -0.0000009536743, y: 0.9999998, z: -0.0000019073486}
+--- !u!114 &504315099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504315094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &518594912
 GameObject:
   m_ObjectHideFlags: 0
@@ -9976,6 +10356,7 @@ GameObject:
   - component: {fileID: 547669348}
   - component: {fileID: 547669347}
   - component: {fileID: 547669350}
+  - component: {fileID: 547669351}
   m_Layer: 0
   m_Name: HighHouse (18)
   m_TagString: Ground
@@ -10069,6 +10450,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000001, z: -0.0000019073486}
+--- !u!114 &547669351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547669346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1001 &549866472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10391,6 +10790,7 @@ GameObject:
   - component: {fileID: 559451569}
   - component: {fileID: 559451568}
   - component: {fileID: 559451571}
+  - component: {fileID: 559451572}
   m_Layer: 0
   m_Name: HigherHouse (33)
   m_TagString: Ground
@@ -10418,7 +10818,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 88c1350b82f4c1d4b82adbbda3e2e74c, type: 2}
+  - {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10484,6 +10884,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.99999994, z: 0}
+--- !u!114 &559451572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559451567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &566234322
 GameObject:
   m_ObjectHideFlags: 0
@@ -11055,6 +11473,7 @@ GameObject:
   - component: {fileID: 619149438}
   - component: {fileID: 619149437}
   - component: {fileID: 619149440}
+  - component: {fileID: 619149441}
   m_Layer: 0
   m_Name: LongHouse (22)
   m_TagString: Ground
@@ -11082,7 +11501,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  - {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11148,6 +11567,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2.0000002, z: 2}
   m_Center: {x: 0, y: 0.9999998, z: 0.00000047683716}
+--- !u!114 &619149441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619149436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &620151163
 GameObject:
   m_ObjectHideFlags: 0
@@ -11160,6 +11597,7 @@ GameObject:
   - component: {fileID: 620151165}
   - component: {fileID: 620151164}
   - component: {fileID: 620151167}
+  - component: {fileID: 620151168}
   m_Layer: 0
   m_Name: BigHouse.002 (57)
   m_TagString: Ground
@@ -11253,6 +11691,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 3.373159e-23, y: 1, z: 2.646978e-23}
+--- !u!114 &620151168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620151163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &620618437
 GameObject:
   m_ObjectHideFlags: 0
@@ -11658,6 +12114,7 @@ GameObject:
   - component: {fileID: 659483437}
   - component: {fileID: 659483436}
   - component: {fileID: 659483439}
+  - component: {fileID: 659483440}
   m_Layer: 0
   m_Name: BroadHouse.001 (10)
   m_TagString: Ground
@@ -11751,6 +12208,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.9999995, z: 0}
+--- !u!114 &659483440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659483435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &659845600
 GameObject:
   m_ObjectHideFlags: 0
@@ -11763,6 +12238,7 @@ GameObject:
   - component: {fileID: 659845602}
   - component: {fileID: 659845601}
   - component: {fileID: 659845604}
+  - component: {fileID: 659845605}
   m_Layer: 0
   m_Name: LongHouse (25)
   m_TagString: Ground
@@ -11856,6 +12332,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2.0000002, z: 2}
   m_Center: {x: -0.0000038146973, y: 0.9999998, z: 0.00000023841858}
+--- !u!114 &659845605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659845600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1001 &660077574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12029,6 +12523,7 @@ GameObject:
   - component: {fileID: 664276233}
   - component: {fileID: 664276232}
   - component: {fileID: 664276235}
+  - component: {fileID: 664276236}
   m_Layer: 0
   m_Name: LongHouse (24)
   m_TagString: Ground
@@ -12122,6 +12617,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2.0000002, z: 2}
   m_Center: {x: 9.396785e-24, y: 0.9999998, z: 0}
+--- !u!114 &664276236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664276231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &666169202
 GameObject:
   m_ObjectHideFlags: 0
@@ -13417,6 +13930,7 @@ GameObject:
   - component: {fileID: 717900656}
   - component: {fileID: 717900655}
   - component: {fileID: 717900658}
+  - component: {fileID: 717900659}
   m_Layer: 0
   m_Name: BigHouse.002 (59)
   m_TagString: Ground
@@ -13510,6 +14024,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000002, z: 0.0000009536743}
+--- !u!114 &717900659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717900654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1001 &718292017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14142,6 +14674,7 @@ GameObject:
   - component: {fileID: 742593666}
   - component: {fileID: 742593665}
   - component: {fileID: 742593668}
+  - component: {fileID: 742593669}
   m_Layer: 0
   m_Name: HigherHouse (34)
   m_TagString: Ground
@@ -14235,6 +14768,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0.0000038146973, y: 0.99999994, z: 0}
+--- !u!114 &742593669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742593664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &746229594
 GameObject:
   m_ObjectHideFlags: 0
@@ -14247,6 +14798,7 @@ GameObject:
   - component: {fileID: 746229596}
   - component: {fileID: 746229595}
   - component: {fileID: 746229598}
+  - component: {fileID: 746229599}
   m_Layer: 0
   m_Name: BroadSmallerHouse.001 (8)
   m_TagString: Ground
@@ -14340,6 +14892,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 0.99999946, z: 0.0000019073486}
+--- !u!114 &746229599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746229594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &749234189
 GameObject:
   m_ObjectHideFlags: 0
@@ -14750,6 +15320,7 @@ GameObject:
   - component: {fileID: 766041934}
   - component: {fileID: 766041933}
   - component: {fileID: 766041936}
+  - component: {fileID: 766041937}
   m_Layer: 0
   m_Name: SmallerHouse.002 (17)
   m_TagString: Ground
@@ -14843,6 +15414,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2.0000002, z: 2}
   m_Center: {x: -0.0000038146973, y: 1.0000024, z: 0.00000047683716}
+--- !u!114 &766041937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766041932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &770307279
 GameObject:
   m_ObjectHideFlags: 0
@@ -15021,6 +15610,7 @@ GameObject:
   - component: {fileID: 776502316}
   - component: {fileID: 776502315}
   - component: {fileID: 776502318}
+  - component: {fileID: 776502319}
   m_Layer: 0
   m_Name: LongSmallerHouse.001 (37)
   m_TagString: Ground
@@ -15114,6 +15704,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 1.9999999, z: 1.9999999}
   m_Center: {x: 0, y: 0.99999946, z: 0}
+--- !u!114 &776502319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776502314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &780684625
 GameObject:
   m_ObjectHideFlags: 0
@@ -15773,6 +16381,7 @@ GameObject:
   - component: {fileID: 818277069}
   - component: {fileID: 818277068}
   - component: {fileID: 818277071}
+  - component: {fileID: 818277072}
   m_Layer: 0
   m_Name: HigherHouse (30)
   m_TagString: Ground
@@ -15866,6 +16475,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.99999994, z: 0}
+--- !u!114 &818277072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818277067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &822037629
 GameObject:
   m_ObjectHideFlags: 0
@@ -17207,6 +17834,7 @@ GameObject:
   - component: {fileID: 886246572}
   - component: {fileID: 886246571}
   - component: {fileID: 886246574}
+  - component: {fileID: 886246575}
   m_Layer: 0
   m_Name: LongHouse.003 (38)
   m_TagString: Ground
@@ -17300,6 +17928,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 1.0000014, z: 0}
+--- !u!114 &886246575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886246570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1001 &891206678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17688,6 +18334,7 @@ GameObject:
   - component: {fileID: 954304169}
   - component: {fileID: 954304168}
   - component: {fileID: 954304171}
+  - component: {fileID: 954304172}
   m_Layer: 0
   m_Name: LongHouse (26)
   m_TagString: Ground
@@ -17781,6 +18428,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2.0000002, z: 2.0000005}
   m_Center: {x: -0.0000009536743, y: 0.9999998, z: 0}
+--- !u!114 &954304172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954304167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &955624190
 GameObject:
   m_ObjectHideFlags: 0
@@ -18032,6 +18697,7 @@ GameObject:
   - component: {fileID: 975662737}
   - component: {fileID: 975662736}
   - component: {fileID: 975662739}
+  - component: {fileID: 975662740}
   m_Layer: 0
   m_Name: BigHouse.002 (47)
   m_TagString: Ground
@@ -18125,6 +18791,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.0000038146973, y: 1.0000002, z: 0.0000009536743}
+--- !u!114 &975662740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975662735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &977665707
 GameObject:
   m_ObjectHideFlags: 0
@@ -18547,6 +19231,7 @@ GameObject:
   - component: {fileID: 996892059}
   - component: {fileID: 996892058}
   - component: {fileID: 996892061}
+  - component: {fileID: 996892062}
   m_Layer: 0
   m_Name: LongHouse.002 (25)
   m_TagString: Ground
@@ -18574,7 +19259,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  - {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18640,6 +19325,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 1.0000011, z: 0}
+--- !u!114 &996892062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996892057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &1000904810
 GameObject:
   m_ObjectHideFlags: 0
@@ -19150,6 +19853,7 @@ GameObject:
   - component: {fileID: 1024675200}
   - component: {fileID: 1024675199}
   - component: {fileID: 1024675201}
+  - component: {fileID: 1024675202}
   m_Layer: 0
   m_Name: BigHouse.002 (60)
   m_TagString: Ground
@@ -19243,6 +19947,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 3.373159e-23, y: 1, z: 2.646978e-23}
+--- !u!114 &1024675202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024675197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &1030574016
 GameObject:
   m_ObjectHideFlags: 0
@@ -19255,6 +19977,7 @@ GameObject:
   - component: {fileID: 1030574018}
   - component: {fileID: 1030574017}
   - component: {fileID: 1030574020}
+  - component: {fileID: 1030574021}
   m_Layer: 0
   m_Name: LongSmallerHouse.001 (36)
   m_TagString: Ground
@@ -19348,6 +20071,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 1.9999999, z: 1.9999999}
   m_Center: {x: 0, y: 0.99999946, z: -0.000000059604645}
+--- !u!114 &1030574021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030574016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1001 &1032910098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19429,6 +20170,7 @@ GameObject:
   - component: {fileID: 1045294113}
   - component: {fileID: 1045294112}
   - component: {fileID: 1045294115}
+  - component: {fileID: 1045294116}
   m_Layer: 0
   m_Name: BigHouse.002 (48)
   m_TagString: Ground
@@ -19522,6 +20264,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000002, z: 0}
+--- !u!114 &1045294116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045294111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &1048301422
 GameObject:
   m_ObjectHideFlags: 0
@@ -19534,6 +20294,7 @@ GameObject:
   - component: {fileID: 1048301424}
   - component: {fileID: 1048301423}
   - component: {fileID: 1048301426}
+  - component: {fileID: 1048301427}
   m_Layer: 0
   m_Name: SmallerHouse.001 (4)
   m_TagString: Ground
@@ -19627,6 +20388,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9999999, y: 2.0000002, z: 2}
   m_Center: {x: 0, y: 1.0000024, z: 0}
+--- !u!114 &1048301427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048301422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &1052293794
 GameObject:
   m_ObjectHideFlags: 0
@@ -20459,6 +21238,7 @@ GameObject:
   - component: {fileID: 1107600722}
   - component: {fileID: 1107600721}
   - component: {fileID: 1107600724}
+  - component: {fileID: 1107600725}
   m_Layer: 0
   m_Name: BigHouse.001 (16)
   m_TagString: Ground
@@ -20552,6 +21332,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2.0000002, z: 1.9999998}
   m_Center: {x: -7.2759576e-11, y: 1.0000013, z: 0.00000047683716}
+--- !u!114 &1107600725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107600720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &1108681088
 GameObject:
   m_ObjectHideFlags: 0
@@ -20564,6 +21362,7 @@ GameObject:
   - component: {fileID: 1108681090}
   - component: {fileID: 1108681089}
   - component: {fileID: 1108681092}
+  - component: {fileID: 1108681093}
   m_Layer: 0
   m_Name: BigHouse.002 (58)
   m_TagString: Ground
@@ -20657,6 +21456,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0.0000038146973, y: 1, z: 2.646978e-23}
+--- !u!114 &1108681093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108681088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1001 &1110440125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22540,6 +23357,7 @@ GameObject:
   - component: {fileID: 1174469971}
   - component: {fileID: 1174469970}
   - component: {fileID: 1174469973}
+  - component: {fileID: 1174469974}
   m_Layer: 0
   m_Name: HighHouse (16)
   m_TagString: Ground
@@ -22633,6 +23451,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000001, z: -0.0000038146973}
+--- !u!114 &1174469974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174469969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &1180530090
 GameObject:
   m_ObjectHideFlags: 0
@@ -23170,6 +24006,7 @@ GameObject:
   - component: {fileID: 1203877727}
   - component: {fileID: 1203877726}
   - component: {fileID: 1203877729}
+  - component: {fileID: 1203877730}
   m_Layer: 0
   m_Name: LongHouse (21)
   m_TagString: Ground
@@ -23263,6 +24100,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2.0000002, z: 2}
   m_Center: {x: 0, y: 0.9999998, z: 0}
+--- !u!114 &1203877730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203877725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &1205980925
 GameObject:
   m_ObjectHideFlags: 0
@@ -25025,6 +25880,7 @@ GameObject:
   - component: {fileID: 1313377169}
   - component: {fileID: 1313377168}
   - component: {fileID: 1313377171}
+  - component: {fileID: 1313377172}
   m_Layer: 0
   m_Name: LongSmallerHouse.001 (34)
   m_TagString: Ground
@@ -25118,6 +25974,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000005, y: 1.9999999, z: 2.0000005}
   m_Center: {x: 0, y: 0.99999946, z: 0}
+--- !u!114 &1313377172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313377167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &1314504601
 GameObject:
   m_ObjectHideFlags: 0
@@ -25130,6 +26004,7 @@ GameObject:
   - component: {fileID: 1314504603}
   - component: {fileID: 1314504602}
   - component: {fileID: 1314504605}
+  - component: {fileID: 1314504606}
   m_Layer: 0
   m_Name: HighHouse (14)
   m_TagString: Ground
@@ -25223,6 +26098,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000001, z: -0.0000019073486}
+--- !u!114 &1314504606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314504601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &1317938290
 GameObject:
   m_ObjectHideFlags: 0
@@ -25401,6 +26294,7 @@ GameObject:
   - component: {fileID: 1320266486}
   - component: {fileID: 1320266485}
   - component: {fileID: 1320266488}
+  - component: {fileID: 1320266489}
   m_Layer: 0
   m_Name: BigHouse.002 (54)
   m_TagString: Ground
@@ -25494,6 +26388,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 3.373159e-23, y: 1, z: -0.0000019073486}
+--- !u!114 &1320266489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320266484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &1324688781
 GameObject:
   m_ObjectHideFlags: 0
@@ -25672,6 +26584,7 @@ GameObject:
   - component: {fileID: 1325719612}
   - component: {fileID: 1325719611}
   - component: {fileID: 1325719614}
+  - component: {fileID: 1325719615}
   m_Layer: 0
   m_Name: SmallerHouse.002 (20)
   m_TagString: Ground
@@ -25765,6 +26678,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2.0000002, z: 2}
   m_Center: {x: 0, y: 1.0000024, z: -0.00000047683716}
+--- !u!114 &1325719615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325719610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &1328921682
 GameObject:
   m_ObjectHideFlags: 0
@@ -25943,6 +26874,7 @@ GameObject:
   - component: {fileID: 1337156959}
   - component: {fileID: 1337156958}
   - component: {fileID: 1337156961}
+  - component: {fileID: 1337156962}
   m_Layer: 0
   m_Name: BigHouse.001 (13)
   m_TagString: Ground
@@ -26036,6 +26968,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000012, z: 0}
+--- !u!114 &1337156962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337156957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &1338619820
 GameObject:
   m_ObjectHideFlags: 0
@@ -26702,6 +27652,7 @@ GameObject:
   - component: {fileID: 1361881679}
   - component: {fileID: 1361881678}
   - component: {fileID: 1361881680}
+  - component: {fileID: 1361881681}
   m_Layer: 0
   m_Name: LongHouse.003 (44)
   m_TagString: Ground
@@ -26795,6 +27746,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000007, y: 2, z: 2.0000005}
   m_Center: {x: 0, y: 1, z: -0.0000009536743}
+--- !u!114 &1361881681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361881676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1001 &1368126438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27178,6 +28147,7 @@ GameObject:
   - component: {fileID: 1376373383}
   - component: {fileID: 1376373382}
   - component: {fileID: 1376373385}
+  - component: {fileID: 1376373386}
   m_Layer: 0
   m_Name: LongSmallerHouse.001 (40)
   m_TagString: Ground
@@ -27271,6 +28241,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2, z: 1.9999999}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1376373386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376373381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &1379015854
 GameObject:
   m_ObjectHideFlags: 0
@@ -27735,6 +28723,7 @@ GameObject:
   - component: {fileID: 1397567742}
   - component: {fileID: 1397567741}
   - component: {fileID: 1397567744}
+  - component: {fileID: 1397567745}
   m_Layer: 0
   m_Name: SmallerHouse (6)
   m_TagString: Ground
@@ -27828,6 +28817,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2.0000002, z: 2}
   m_Center: {x: 0, y: 0.9999998, z: 0}
+--- !u!114 &1397567745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397567740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &1399773852
 GameObject:
   m_ObjectHideFlags: 0
@@ -28743,6 +29750,7 @@ GameObject:
   - component: {fileID: 1436364248}
   - component: {fileID: 1436364247}
   - component: {fileID: 1436364250}
+  - component: {fileID: 1436364251}
   m_Layer: 0
   m_Name: BigHouse.002 (53)
   m_TagString: Ground
@@ -28836,6 +29844,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 1.6488834e-23, y: 1.0000002, z: 0.0000019073486}
+--- !u!114 &1436364251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436364246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &1438237149
 GameObject:
   m_ObjectHideFlags: 0
@@ -28848,6 +29874,7 @@ GameObject:
   - component: {fileID: 1438237151}
   - component: {fileID: 1438237150}
   - component: {fileID: 1438237153}
+  - component: {fileID: 1438237154}
   m_Layer: 0
   m_Name: LongHouse.003 (43)
   m_TagString: Ground
@@ -28941,6 +29968,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2, z: 2.0000005}
   m_Center: {x: -0.0000009536743, y: 1.0000014, z: 0}
+--- !u!114 &1438237154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438237149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &1443396563
 GameObject:
   m_ObjectHideFlags: 0
@@ -28953,6 +29998,7 @@ GameObject:
   - component: {fileID: 1443396565}
   - component: {fileID: 1443396564}
   - component: {fileID: 1443396567}
+  - component: {fileID: 1443396568}
   m_Layer: 0
   m_Name: HigherHouse (28)
   m_TagString: Ground
@@ -29046,6 +30092,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.99999994, z: 0}
+--- !u!114 &1443396568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443396563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1001 &1445509051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30132,6 +31196,7 @@ GameObject:
   - component: {fileID: 1477278757}
   - component: {fileID: 1477278756}
   - component: {fileID: 1477278759}
+  - component: {fileID: 1477278760}
   m_Layer: 0
   m_Name: LongHouse.003 (42)
   m_TagString: Ground
@@ -30225,6 +31290,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 6.6844287e-25, y: 1.0000014, z: 3.3087225e-24}
+--- !u!114 &1477278760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477278755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &1489332634
 GameObject:
   m_ObjectHideFlags: 0
@@ -30464,6 +31547,7 @@ GameObject:
   - component: {fileID: 1497600623}
   - component: {fileID: 1497600622}
   - component: {fileID: 1497600625}
+  - component: {fileID: 1497600626}
   m_Layer: 0
   m_Name: HigherHouse (29)
   m_TagString: Ground
@@ -30557,6 +31641,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.99999994, z: 0}
+--- !u!114 &1497600626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497600621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1001 &1503304190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30779,6 +31881,7 @@ GameObject:
   - component: {fileID: 1508643171}
   - component: {fileID: 1508643170}
   - component: {fileID: 1508643173}
+  - component: {fileID: 1508643174}
   m_Layer: 0
   m_Name: BroadHouse (5)
   m_TagString: Ground
@@ -30872,6 +31975,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9999999, y: 2.0000002, z: 2}
   m_Center: {x: -2.727392e-25, y: 0.9999998, z: 0.00000023841858}
+--- !u!114 &1508643174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508643169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1001 &1509266131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32062,6 +33183,7 @@ GameObject:
   - component: {fileID: 1561192382}
   - component: {fileID: 1561192381}
   - component: {fileID: 1561192384}
+  - component: {fileID: 1561192385}
   m_Layer: 0
   m_Name: BroadHouse.001 (11)
   m_TagString: Ground
@@ -32155,6 +33277,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2.0000002, z: 2}
   m_Center: {x: 3.619764e-24, y: 0.9999998, z: 0.00000071525574}
+--- !u!114 &1561192385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561192380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1001 &1562238788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33301,6 +34441,7 @@ GameObject:
   - component: {fileID: 1611635538}
   - component: {fileID: 1611635537}
   - component: {fileID: 1611635540}
+  - component: {fileID: 1611635541}
   m_Layer: 0
   m_Name: BroadHouse.002 (8)
   m_TagString: Ground
@@ -33394,6 +34535,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 1.9999999, z: 2}
   m_Center: {x: -0.0000019073486, y: 1.000001, z: 0}
+--- !u!114 &1611635541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611635536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &1617671797
 GameObject:
   m_ObjectHideFlags: 0
@@ -33960,6 +35119,7 @@ GameObject:
   - component: {fileID: 1660779792}
   - component: {fileID: 1660779791}
   - component: {fileID: 1660779794}
+  - component: {fileID: 1660779795}
   m_Layer: 0
   m_Name: LongSmallerHouse.001 (38)
   m_TagString: Ground
@@ -34053,6 +35213,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000005, y: 1.9999999, z: 2.0000005}
   m_Center: {x: -0.0000019073486, y: 0.99999946, z: 0.0000019073486}
+--- !u!114 &1660779795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660779790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &1664303703
 GameObject:
   m_ObjectHideFlags: 0
@@ -34598,6 +35776,7 @@ GameObject:
   - component: {fileID: 1708444203}
   - component: {fileID: 1708444202}
   - component: {fileID: 1708444205}
+  - component: {fileID: 1708444206}
   m_Layer: 0
   m_Name: LongHouse.003 (39)
   m_TagString: Ground
@@ -34691,6 +35870,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000014, z: 0.00000047683716}
+--- !u!114 &1708444206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708444201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &1710748055
 GameObject:
   m_ObjectHideFlags: 0
@@ -35262,6 +36459,7 @@ GameObject:
   - component: {fileID: 1728162470}
   - component: {fileID: 1728162469}
   - component: {fileID: 1728162472}
+  - component: {fileID: 1728162473}
   m_Layer: 0
   m_Name: BigHouse.001 (14)
   m_TagString: Ground
@@ -35355,6 +36553,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000012, z: 0}
+--- !u!114 &1728162473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728162468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &1730490189
 GameObject:
   m_ObjectHideFlags: 0
@@ -35424,6 +36640,7 @@ GameObject:
   - component: {fileID: 1731020290}
   - component: {fileID: 1731020289}
   - component: {fileID: 1731020292}
+  - component: {fileID: 1731020293}
   m_Layer: 0
   m_Name: SmallerHouse (7)
   m_TagString: Ground
@@ -35517,6 +36734,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2.0000002, z: 2}
   m_Center: {x: 0, y: 0.9999998, z: 0.0000038146973}
+--- !u!114 &1731020293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731020288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &1735310279
 GameObject:
   m_ObjectHideFlags: 0
@@ -36311,6 +37546,7 @@ GameObject:
   - component: {fileID: 1803096523}
   - component: {fileID: 1803096522}
   - component: {fileID: 1803096525}
+  - component: {fileID: 1803096526}
   m_Layer: 0
   m_Name: HigherHouse.001 (16)
   m_TagString: Ground
@@ -36404,6 +37640,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 1.9999999, z: 2}
   m_Center: {x: -0.0000038146973, y: 1.0000002, z: -0.0000009536743}
+--- !u!114 &1803096526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803096521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &1804889380
 GameObject:
   m_ObjectHideFlags: 0
@@ -37463,6 +38717,7 @@ GameObject:
   - component: {fileID: 1836666542}
   - component: {fileID: 1836666541}
   - component: {fileID: 1836666544}
+  - component: {fileID: 1836666545}
   m_Layer: 0
   m_Name: LongHouse (23)
   m_TagString: Ground
@@ -37556,6 +38811,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2.0000002, z: 2}
   m_Center: {x: -1.3534834e-24, y: 0.9999998, z: 0}
+--- !u!114 &1836666545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836666540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &1842457078
 GameObject:
   m_ObjectHideFlags: 0
@@ -37874,6 +39147,7 @@ GameObject:
   - component: {fileID: 1851634474}
   - component: {fileID: 1851634473}
   - component: {fileID: 1851634476}
+  - component: {fileID: 1851634477}
   m_Layer: 0
   m_Name: HighHouse (15)
   m_TagString: Ground
@@ -37967,6 +39241,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000001, z: 0}
+--- !u!114 &1851634477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851634472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &1852229511
 GameObject:
   m_ObjectHideFlags: 0
@@ -37979,6 +39271,7 @@ GameObject:
   - component: {fileID: 1852229513}
   - component: {fileID: 1852229512}
   - component: {fileID: 1852229515}
+  - component: {fileID: 1852229516}
   m_Layer: 0
   m_Name: BigHouse.002 (46)
   m_TagString: Ground
@@ -38072,6 +39365,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000002, z: 0.00000059604645}
+--- !u!114 &1852229516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852229511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &1854363312
 GameObject:
   m_ObjectHideFlags: 0
@@ -39215,6 +40526,7 @@ GameObject:
   - component: {fileID: 1922330794}
   - component: {fileID: 1922330793}
   - component: {fileID: 1922330796}
+  - component: {fileID: 1922330797}
   m_Layer: 0
   m_Name: HigherHouse (32)
   m_TagString: Ground
@@ -39308,6 +40620,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.0000038146973, y: 0.99999994, z: 0}
+--- !u!114 &1922330797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922330792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &1928109762
 GameObject:
   m_ObjectHideFlags: 0
@@ -40077,6 +41407,7 @@ GameObject:
   - component: {fileID: 1995272594}
   - component: {fileID: 1995272593}
   - component: {fileID: 1995272596}
+  - component: {fileID: 1995272597}
   m_Layer: 0
   m_Name: BigHouse.002 (55)
   m_TagString: Ground
@@ -40170,6 +41501,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0.0000038146973, y: 1.0000002, z: 0.0000009536743}
+--- !u!114 &1995272597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995272592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1001 &1995722709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40248,6 +41597,7 @@ GameObject:
   - component: {fileID: 2000200643}
   - component: {fileID: 2000200642}
   - component: {fileID: 2000200645}
+  - component: {fileID: 2000200646}
   m_Layer: 0
   m_Name: LongHouse.002 (27)
   m_TagString: Ground
@@ -40341,6 +41691,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000002, y: 2, z: 2.0000005}
   m_Center: {x: -0.0000019073486, y: 1.0000011, z: 0.0000019073486}
+--- !u!114 &2000200646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000200641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &2005113747
 GameObject:
   m_ObjectHideFlags: 0
@@ -40580,6 +41948,7 @@ GameObject:
   - component: {fileID: 2029994063}
   - component: {fileID: 2029994062}
   - component: {fileID: 2029994064}
+  - component: {fileID: 2029994065}
   m_Layer: 0
   m_Name: HighHouse (19)
   m_TagString: Ground
@@ -40673,6 +42042,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9999999, y: 2, z: 2}
   m_Center: {x: -0.0000038146973, y: 0.99999976, z: -0.0000009536743}
+--- !u!114 &2029994065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029994060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1001 &2030670332
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40751,6 +42138,7 @@ GameObject:
   - component: {fileID: 2031544971}
   - component: {fileID: 2031544970}
   - component: {fileID: 2031544973}
+  - component: {fileID: 2031544974}
   m_Layer: 0
   m_Name: BigHouse.002 (56)
   m_TagString: Ground
@@ -40844,6 +42232,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0.0000038146973, y: 1.0000002, z: 1.323489e-23}
+--- !u!114 &2031544974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031544969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1001 &2040720412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41111,6 +42517,7 @@ GameObject:
   - component: {fileID: 2049978897}
   - component: {fileID: 2049978896}
   - component: {fileID: 2049978899}
+  - component: {fileID: 2049978900}
   m_Layer: 0
   m_Name: LongSmallerHouse.001 (35)
   m_TagString: Ground
@@ -41204,6 +42611,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.9999994, z: 0}
+--- !u!114 &2049978900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049978895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &2053119600
 GameObject:
   m_ObjectHideFlags: 0
@@ -41455,6 +42880,7 @@ GameObject:
   - component: {fileID: 2057756321}
   - component: {fileID: 2057756320}
   - component: {fileID: 2057756323}
+  - component: {fileID: 2057756324}
   m_Layer: 0
   m_Name: HigherHouse (31)
   m_TagString: Ground
@@ -41548,6 +42974,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0.99999994, z: 0}
+--- !u!114 &2057756324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057756319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &2059746975
 GameObject:
   m_ObjectHideFlags: 0
@@ -41643,6 +43087,7 @@ GameObject:
   - component: {fileID: 2066083285}
   - component: {fileID: 2066083284}
   - component: {fileID: 2066083287}
+  - component: {fileID: 2066083288}
   m_Layer: 0
   m_Name: HigherHouse.001 (14)
   m_TagString: Ground
@@ -41736,6 +43181,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 1.9999999, z: 2}
   m_Center: {x: 0, y: 1.0000002, z: 0.0000009536743}
+--- !u!114 &2066083288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066083283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &2077691092
 GameObject:
   m_ObjectHideFlags: 0
@@ -41748,6 +43211,7 @@ GameObject:
   - component: {fileID: 2077691094}
   - component: {fileID: 2077691093}
   - component: {fileID: 2077691096}
+  - component: {fileID: 2077691097}
   m_Layer: 0
   m_Name: LongSmallerHouse.001 (41)
   m_TagString: Ground
@@ -41841,6 +43305,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 1.9999999, z: 1.9999999}
   m_Center: {x: 0, y: 0.99999946, z: 0}
+--- !u!114 &2077691097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077691092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 348cc31e3bc669e43bbfe031cbc2657b, type: 2}
+  matBlue: {fileID: 2100000, guid: f282c139742edf94bb1bdd984a256e0e, type: 2}
+  matYellow: {fileID: 2100000, guid: 3ffa643a4ab8eba4aaa1b1fd273acdb3, type: 2}
+  matPurple: {fileID: 2100000, guid: bbcda6544a70a2d47b2126f6d327781e, type: 2}
+  matGreen: {fileID: 2100000, guid: 89b0a6029dcf77240a92e4a4f55b395f, type: 2}
+  matOrange: {fileID: 2100000, guid: c596a67ff4e944b408cbf1abdfb95ac8, type: 2}
 --- !u!1 &2082634553
 GameObject:
   m_ObjectHideFlags: 0
@@ -42092,6 +43574,7 @@ GameObject:
   - component: {fileID: 2099739264}
   - component: {fileID: 2099739263}
   - component: {fileID: 2099739266}
+  - component: {fileID: 2099739267}
   m_Layer: 0
   m_Name: LongHouse.003 (37)
   m_TagString: Ground
@@ -42185,6 +43668,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 1.0000014, z: 0.00000023841858}
+--- !u!114 &2099739267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2099739262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055498e9658b004581113d65190622a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  matRed: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
+  matBlue: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
+  matYellow: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
+  matPurple: {fileID: 2100000, guid: d44a7059b2e775942ae0034ed98770ef, type: 2}
+  matGreen: {fileID: 2100000, guid: be540d4037a903e40abed505830b4f25, type: 2}
+  matOrange: {fileID: 2100000, guid: f4f107a7eb757ee4c8eacbfb32f055df, type: 2}
 --- !u!1 &2103846504
 GameObject:
   m_ObjectHideFlags: 0
