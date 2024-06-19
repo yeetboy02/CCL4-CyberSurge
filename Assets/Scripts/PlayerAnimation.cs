@@ -15,8 +15,6 @@ public class PlayerAnimation : MonoBehaviour {
 
     private PlayerMovement movement;
 
-    private CharacterController controller;
-
     private float currHorizontalSpeed = 0.0f;
 
     private float currVerticalSpeed = 0.0f;
@@ -58,33 +56,30 @@ public class PlayerAnimation : MonoBehaviour {
 
     private void GetStateByPlayerSpeed() {
         // RETRIEVE HORIZONTAL SPEED
-        currHorizontalSpeed = new Vector3(controller.velocity.x, 0.0f, controller.velocity.z).magnitude;
+        currHorizontalSpeed = movement.GetHorizontalVelocity();
 
         // RETRIEVE VERTICAL SPEED
-        currVerticalSpeed = controller.velocity.y;
-
-        // GET IF PLAYER IS GROUNDED
-        grounded = movement.GetGrounded();
+        currVerticalSpeed = movement.GetVerticalVelocity();
 
         // CHECK IF PLAYER IS GROUNDED
-        if (grounded) {
-            // CHECK IF PLAYER IS MOVING
-            if (currHorizontalSpeed > 0.0f) {
-                // SET ANIMATION STATE TO RUNNING
-                SetAnimationState(AnimationState.Running);
-            } else {
-                // SET ANIMATION STATE TO IDLE
-                SetAnimationState(AnimationState.Idle);
-            }
-        } else {
-            // CHECK IF PLAYER IS JUMPING
-            if (currVerticalSpeed > 0.0f) {
-                // SET ANIMATION STATE TO JUMPING
-                SetAnimationState(AnimationState.Jumping);
-            } else {
-                // SET ANIMATION STATE TO FALLING
-                SetAnimationState(AnimationState.Falling);
-            }
+        grounded = movement.GetGrounded();
+
+        // SET ANIMATION STATE DEPENDING ON SPEED
+        if (currVerticalSpeed == 0.0f && currHorizontalSpeed > 0.0f && grounded) {
+            // SET RUNNING STATE
+            SetAnimationState(AnimationState.Running);
+        }
+        else if (currVerticalSpeed == 0.0f && currHorizontalSpeed == 0.0f && grounded) {
+            // SET IDLE STATE
+            SetAnimationState(AnimationState.Idle);
+        }
+        else if (currVerticalSpeed > 0.0f) {
+            // SET JUMPING STATE
+            SetAnimationState(AnimationState.Jumping);
+        }
+        else if (currVerticalSpeed < 0.0f) {
+            // SET FALLING STATE
+            SetAnimationState(AnimationState.Falling);
         }
     }
 
@@ -98,9 +93,6 @@ public class PlayerAnimation : MonoBehaviour {
 
         // SET INITIAL STATE TO IDLE
         SetAnimationState(AnimationState.Idle);
-
-        // GET CHARACTER CONTROLLER
-        controller = GetComponent<CharacterController>();
     }
 
     #endregion

@@ -88,6 +88,14 @@ public class PlayerMovement : MonoBehaviour {
         return maxSpeed;
     }
 
+    public float GetHorizontalVelocity() {
+        return new Vector3(controller.velocity.x, 0.0f, controller.velocity.z).magnitude;
+    }
+
+    public float GetVerticalVelocity() {
+        return currVelocityVector.y;
+    }
+
     #endregion
 
     #region Setup
@@ -192,8 +200,19 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void FaceForward() {
-        // ROTATE PLAYER TO THE FORWARD DIRECTION
-        transform.forward = Vector3.Lerp(transform.forward, currDirectionalMovementVector, rotationSpeed * Time.deltaTime);
+
+        // CALCULATE ANGLE BETWEEN PLAYER FORWARD DIRECTION AND MOVEMENT DIRECTION
+        float angle = Vector3.Angle(transform.forward, currDirectionalMovementVector);
+
+        if (angle > 95.0f) {
+            // ROTATE PLAYER TO THE FORWARD DIRECTION APRUPTLY
+            transform.forward = currDirectionalMovementVector;
+        }
+        else {
+            // ROTATE PLAYER TO THE FORWARD DIRECTION SMOOTHLY
+            transform.forward = Vector3.Lerp(transform.forward, currDirectionalMovementVector, rotationSpeed * Time.deltaTime);
+        }
+
     }
 
     #endregion
