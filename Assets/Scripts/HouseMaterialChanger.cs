@@ -10,7 +10,7 @@ public class HouseMaterialChanger : MonoBehaviour
     [SerializeField]
     private Material matRed;
     [SerializeField]
-    private Material matBlue;
+    private Material matOrange;
     [SerializeField]
     private Material matYellow;
     //[SerializeField]
@@ -39,7 +39,7 @@ public class HouseMaterialChanger : MonoBehaviour
                 this.gameObject.GetComponent<Renderer>().material = matRed;
                 break;
             case 2:
-                this.gameObject.GetComponent<Renderer>().material = matBlue;
+                this.gameObject.GetComponent<Renderer>().material = matOrange;
                 break;
             case 3:
                 this.gameObject.GetComponent<Renderer>().material = matYellow;
