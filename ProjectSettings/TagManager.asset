@@ -8,6 +8,8 @@ TagManager:
   - ThrusterTrigger
   - CyberBertTrigger
   - ChineseSoundTrigger
+  - RightFoot
+  - LeftFoot
   layers:
   - Default
   - TransparentFX
