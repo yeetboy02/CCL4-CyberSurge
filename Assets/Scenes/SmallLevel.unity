@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2438,17 +2438,6 @@ Transform:
   m_Father: {fileID: 1851678415}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &760186145 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9008484612709593866, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
-  m_PrefabInstance: {fileID: 1351856724}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1fad9c731126450a89820f729055880, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &825182099
 GameObject:
   m_ObjectHideFlags: 0
@@ -3784,6 +3773,14 @@ PrefabInstance:
     - target: {fileID: 3874302580039538744, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4498085457235583527, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008484612709593866, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
+      propertyPath: offsetFromPlayer.y
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5317,7 +5314,7 @@ PrefabInstance:
     - target: {fileID: 8631274668471430113, guid: af8f681fa9e0c4cbcbdb2936f9f4c976, type: 3}
       propertyPath: checkpointIndicator
       value: 
-      objectReference: {fileID: 760186145}
+      objectReference: {fileID: 0}
     - target: {fileID: 8779583087941104890, guid: af8f681fa9e0c4cbcbdb2936f9f4c976, type: 3}
       propertyPath: m_Name
       value: CourseManager

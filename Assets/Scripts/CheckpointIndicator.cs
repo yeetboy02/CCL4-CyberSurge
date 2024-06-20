@@ -12,8 +12,8 @@ public class CheckpointIndicator : MonoBehaviour {
 
     #region Variables
 
-
     private GameObject indicatorObject;
+    
 
     private Vector3 nextCheckPointPosition;
 
