@@ -268,7 +268,7 @@ public class PlayerMovement : MonoBehaviour {
             bool sphereCastSuccess = Physics.SphereCast(transform.position, controller.radius, Vector3.down, out sphereHit, playerDistanceToGround - controller.radius + 0.1f); 
 
             // BOXCAST TO GROUND
-            bool boxCastSuccess = Physics.BoxCast(transform.position, controller.bounds.extents, Vector3.down, out boxHit, Quaternion.identity, playerDistanceToGround - controller.bounds.extents.y + 0.1f);
+            bool boxCastSuccess = Physics.BoxCast(transform.position, controller.bounds.extents / 2, Vector3.down, out boxHit, Quaternion.identity, playerDistanceToGround - controller.bounds.extents.y + 0.1f);
 
             // CHECK IF GROUNDED BY COMBINING SPHERECAST AND BOXCAST
             if ((boxCastSuccess && boxHit.collider.gameObject.CompareTag("Ground")) || (sphereCastSuccess && sphereHit.collider.gameObject.CompareTag("Ground"))) {
