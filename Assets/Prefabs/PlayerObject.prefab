@@ -332,11 +332,15 @@ MonoBehaviour:
   airMovementFactor: 0.1
   airMovementScaling: 0.05
   rotationSpeed: 11
-  playerDistanceToGround: 1.02
   jumpPower: 4
   jumpScaling: 0.4
   playerGravity: 9.8
   gravityScaling: 3
+  wallRunDeceleration: 0.05
+  wallRunGravity: 3
+  minWallRunSpeed: 5
+  initialWallRunBoost: 1.5
+  angleToWall: 15
 --- !u!114 &5492535023561027700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,6 +393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 7763899025461436146}
   runningAnimationSpeed: 1
+  wallRunningAnimationSpeed: 1.5
 --- !u!114 &4001117658145094583
 MonoBehaviour:
   m_ObjectHideFlags: 0

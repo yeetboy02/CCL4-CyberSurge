@@ -9,6 +9,8 @@ public class PlayerAnimation : MonoBehaviour {
 
     [SerializeField] private float runningAnimationSpeed = 1.0f;
 
+    [SerializeField] private float wallRunningAnimationSpeed = 1.0f;
+
     #endregion
 
     #region Variables
@@ -23,6 +25,10 @@ public class PlayerAnimation : MonoBehaviour {
 
     private bool jumping = false;
 
+    private bool wallRunning = false;
+
+    private bool wallRunnintRight = false;
+
     #endregion
 
     #region AnimationState
@@ -34,6 +40,8 @@ public class PlayerAnimation : MonoBehaviour {
         Running,
         Jumping,
         Falling,
+        WallRunningLeft,
+        WallRunningRight
     }
 
     public void SetAnimationState(AnimationState newState) {
@@ -69,8 +77,23 @@ public class PlayerAnimation : MonoBehaviour {
         // CHECK IF PLAYER IS JUMPING
         jumping = movement.GetJumping();
 
+        // CHECK IF PLAYER IS WALL RUNNING
+        wallRunning = movement.GetWallRunning();
+
+        // GET WALLRUNNING DIRECTION
+        wallRunnintRight = movement.GetWallRunningDirectionRight();
+
         // SET ANIMATION STATES DEPENDING ON SPEED AND GROUNDED STATE
-        if (grounded) {
+        if (wallRunning) {
+            if (wallRunnintRight) {
+                // SET WALL RUNNING RIGHT STATE
+                SetAnimationState(AnimationState.WallRunningRight);
+            } else {
+                // SET WALL RUNNING LEFT STATE
+                SetAnimationState(AnimationState.WallRunningLeft);
+            }
+        }
+        else if (grounded) {
             if (currHorizontalSpeed == 0.0f) {
                 // SET IDLE STATE
                 SetAnimationState(AnimationState.Idle);
@@ -88,8 +111,6 @@ public class PlayerAnimation : MonoBehaviour {
                 SetAnimationState(AnimationState.Falling);
             }
         }
-
-        //Debug.Log(currState);
     }
 
     #endregion
@@ -109,10 +130,17 @@ public class PlayerAnimation : MonoBehaviour {
         // GET CURRENT RUNNING SPEED
         float currSpeed = movement.GetCurrSpeed();
 
+        // GET CURRENT WALL RUNNING SPEED
+        float currWallRunSpeed = movement.GetWallRunSpeed();
+
         // SET ANIMATION SPEED DEPENDING ON RUNNING SPEED
         if (currState == AnimationState.Running) {
             animator.speed = currSpeed / movement.GetMaxSpeed() * runningAnimationSpeed;
-        } else {
+        }
+        else if (currState == AnimationState.WallRunningLeft || currState == AnimationState.WallRunningRight) {
+            animator.speed = currWallRunSpeed / movement.GetMaxSpeed() * wallRunningAnimationSpeed;
+        }
+        else {
             animator.speed = 1.0f;
         }
     }

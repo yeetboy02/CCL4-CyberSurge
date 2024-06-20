@@ -37,8 +37,6 @@ public class PlayerMovement : MonoBehaviour {
 
     #region JumpParameters
 
-    [SerializeField] private float playerDistanceToGround = 1.01f;
-
     [SerializeField] private float jumpPower = 4.0f;
 
     [SerializeField] private float jumpScaling = 0.25f;
@@ -46,6 +44,20 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private float playerGravity = 9.8f;
 
     [SerializeField] private float gravityScaling = 3.0f;
+
+    #endregion
+
+    #region WallRunParameters
+
+    [SerializeField] private float wallRunDeceleration = 0.5f;
+
+    [SerializeField] private float wallRunGravity = 0.5f;
+
+    [SerializeField] private float minWallRunSpeed = 5.0f;
+
+    [SerializeField] private float initialWallRunBoost = 1.5f;
+
+    [SerializeField] private float angleToWall = 30.0f;
 
     #endregion
 
@@ -68,15 +80,21 @@ public class PlayerMovement : MonoBehaviour {
 
     private Vector3 currVelocityVector = Vector3.zero;
 
+    private Vector3 currWallRunVector = Vector3.zero;
+
     private float currSpeed = 0.0f;
 
     private float currAirMovementSpeed = 0.0f;
 
     private float currTotalAirSpeed = 0.0f;
 
+    private float currWallRunSpeed = 0.0f;
+
     private bool grounded = false;
 
     private bool jumping = false;
+
+    private bool wallRunning = false;
 
     #endregion
 
@@ -90,6 +108,10 @@ public class PlayerMovement : MonoBehaviour {
         return jumping;
     }
 
+    public bool GetWallRunning() {
+        return wallRunning;
+    }
+
     public float GetCurrSpeed() {
         return currSpeed;
     }
@@ -98,12 +120,21 @@ public class PlayerMovement : MonoBehaviour {
         return maxSpeed;
     }
 
+    public float GetWallRunSpeed() {
+        return currWallRunSpeed;
+    }
+
     public float GetHorizontalVelocity() {
         return new Vector3(currDirectionalMovementVector.x, 0.0f, currDirectionalMovementVector.z).magnitude;
     }
 
     public float GetVerticalVelocity() {
         return currVelocityVector.y;
+    }
+
+    public bool GetWallRunningDirectionRight() {
+        Debug.Log(Vector3.Dot(currWallRunVector, transform.right) > 0);
+        return Vector3.Dot(currWallRunVector, transform.right) > 0;
     }
 
     #endregion
@@ -129,10 +160,14 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void Move() {
-        if (grounded && currMovementVector != Vector3.zero) {
+        if (wallRunning) {
+            // PLAYER WALLRUN MOVEMENT
+            controller.Move(currWallRunVector * currWallRunSpeed * initialWallRunBoost * Time.deltaTime);
+            StartCoroutine(WallRunDecceleration());
+        }
+        else if (grounded && currMovementVector != Vector3.zero) {
             // HORIZONTAL PLAYER MOVEMENT
             controller.Move(currDirectionalMovementVector * currSpeed * Time.deltaTime);
-
             StartCoroutine(Acceleration());
         }
         else if (!grounded) {
@@ -206,20 +241,24 @@ public class PlayerMovement : MonoBehaviour {
         currDirectionalAirMovementVector = cameraRotation * currAirMovementVector;
 
         FaceForward();
+
     }
 
     void FaceForward() {
 
+        // GET CURRENT FORWARD DIRECTION
+        Vector3 currForward = wallRunning ? currWallRunVector : currDirectionalMovementVector;
+
         // CALCULATE ANGLE BETWEEN PLAYER FORWARD DIRECTION AND MOVEMENT DIRECTION
-        float angle = Vector3.Angle(transform.forward, currDirectionalMovementVector);
+        float angle = Vector3.Angle(transform.forward, currForward);
 
         if (angle > 95.0f) {
             // ROTATE PLAYER TO THE FORWARD DIRECTION APRUPTLY
-            transform.forward = currDirectionalMovementVector;
+            transform.forward = currForward;
         }
         else {
             // ROTATE PLAYER TO THE FORWARD DIRECTION SMOOTHLY
-            transform.forward = Vector3.Lerp(transform.forward, currDirectionalMovementVector, rotationSpeed * Time.deltaTime);
+            transform.forward = Vector3.Lerp(transform.forward, currForward, rotationSpeed * Time.deltaTime);
         }
 
     }
@@ -242,6 +281,7 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void UpdateJumpVector() {
+
         // GET CURRENT MOVEMENT
         Vector3 currGroundMovement = currDirectionalMovementVector;
 
@@ -260,19 +300,26 @@ public class PlayerMovement : MonoBehaviour {
 
     void ApplyGravity() {
 
-        // RESET Y VELOCITY IF GROUNDED
-        if (grounded && currVelocityVector.y < 0) {
+        // RESET Y VELOCITY IF GROUNDED OR WALLRUNNING
+        if ((grounded && currVelocityVector.y < 0) || (wallRunning && !grounded)) {
             currVelocityVector.y = 0;
         }
 
         // APPLY GRAVITY
-        currVelocityVector.y -= playerGravity * gravityScaling * Time.deltaTime;
+        if (!wallRunning) {
+            currVelocityVector.y -= playerGravity * gravityScaling * Time.deltaTime;
+        }
+        else {
+            currVelocityVector.y -= wallRunGravity * gravityScaling * Time.deltaTime;
+        }
 
         // APPLY VERTICAL MOVEMENT
         controller.Move(currVelocityVector * Time.deltaTime);
 
-        // CHECK IF GROUNDED
-        CheckGround();
+        // CHECK IF GROUNDED IF NOT WALLRUNNING
+        if (!wallRunning) {
+            CheckGround();
+        }
     }
 
     void CheckGround() {
@@ -290,6 +337,52 @@ public class PlayerMovement : MonoBehaviour {
         }
         else {
             jumping = true;
+        }
+    }
+
+    #endregion
+
+    #region WallRun
+
+    IEnumerator WallRunDecceleration() {
+        while (currWallRunSpeed > minWallRunSpeed) {
+            // DECELERATE CURRENT WALLRUN SPEED EVERY FRAME
+            currWallRunSpeed -= wallRunDeceleration * Time.deltaTime;
+            yield return new WaitForEndOfFrame();
+        }
+
+        // END WALLRUNNING
+        wallRunning = false;
+    }
+
+    void UpdateWallRunVector(GameObject wall) {
+        // SET WALLRUN START SPEED
+        currWallRunSpeed = currSpeed;
+
+        // SET WALLRUN VECTOR TO WALLRUN DIRECTION
+        if (Vector3.Dot(wall.transform.right, transform.forward) > 0) {
+            currWallRunVector = Quaternion.AngleAxis(-angleToWall, Vector3.up) * wall.transform.right;
+        }
+        else {
+            currWallRunVector = Quaternion.AngleAxis(angleToWall, Vector3.up) * -wall.transform.right;
+        }
+        
+        // RESET Y VELOCITY
+        currWallRunVector.y = 0;
+    }
+
+    void OnTriggerEnter(Collider other) {
+        // CHECK IF COLLIDED WITH WALLRUN COLLIDER
+        if (other.gameObject.CompareTag("Wallrun")) {
+            wallRunning = true;
+            UpdateWallRunVector(other.gameObject);
+        }
+    }
+
+    void OnTriggerExit(Collider other) {
+        // CHECK IF STOPPED COLLIDING WITH WALLRUN COLLIDER
+        if (other.gameObject.CompareTag("Wallrun")) {
+            wallRunning = false;
         }
     }
 

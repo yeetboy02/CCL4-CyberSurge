@@ -11,6 +11,7 @@ TagManager:
   - RightFoot
   - LeftFoot
   - Pigeon
+  - Wallrun
   layers:
   - Default
   - TransparentFX
