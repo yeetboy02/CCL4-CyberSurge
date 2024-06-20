@@ -74,7 +74,9 @@ public class PlayerMovement : MonoBehaviour {
 
     private float currTotalAirSpeed = 0.0f;
 
-    private bool grounded = false;
+    public bool grounded = false;
+
+    public bool jumping = false;
 
     #endregion
 
@@ -82,6 +84,10 @@ public class PlayerMovement : MonoBehaviour {
 
     public bool GetGrounded() {
         return grounded;
+    }
+
+    public bool GetJumping() {
+        return jumping;
     }
 
     public float GetMaxSpeed() {
@@ -105,8 +111,6 @@ public class PlayerMovement : MonoBehaviour {
         
         // INITIALIZE PLAYER SPEED
         currSpeed = minSpeed;
-
-        StartCoroutine(CheckForGround());
     }
 
     #endregion
@@ -115,15 +119,16 @@ public class PlayerMovement : MonoBehaviour {
     #region Movement
 
     void FixedUpdate() {
-        ApplyGravity();
         UpdateMovementVectorDirection();
         Move();
+        ApplyGravity();
     }
 
     void Move() {
         if (grounded && currMovementVector != Vector3.zero) {
             // HORIZONTAL PLAYER MOVEMENT
             controller.Move(currDirectionalMovementVector * currSpeed * Time.deltaTime);
+
             StartCoroutine(Acceleration());
         }
         else if (!grounded) {
@@ -222,6 +227,9 @@ public class PlayerMovement : MonoBehaviour {
     void OnJump() {
         if (!grounded) return;
 
+        // SET JUMPING TO TRUE
+        jumping = true;
+
         // CALCULATE JUMPPOWER DEPENDENT ON CURRENT MOVEMENT SPEED
         float currJumpPower = jumpPower + (jumpScaling * (currSpeed - minSpeed));
 
@@ -230,8 +238,11 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void UpdateJumpVector() {
+        // GET CURRENT MOVEMENT
+        Vector3 currGroundMovement = currDirectionalMovementVector;
+
         // SET JUMP MOVEMENT VECTOR TO CURRENT VELOCITY WHEN JUMPING
-        currJumpMovementVector = new Vector3(controller.velocity.x, 0, controller.velocity.z) / currSpeed;
+        currJumpMovementVector = new Vector3(currGroundMovement.x, 0, currGroundMovement.z);
         totalAirMovementVector = currJumpMovementVector;
 
         // SET CURRENT AIR SPEED TO CURRENT GROUND SPEED WHEN STARTING JUMP
@@ -251,36 +262,30 @@ public class PlayerMovement : MonoBehaviour {
         }
 
         // APPLY GRAVITY
-        if (!grounded) {
-            currVelocityVector.y -= playerGravity * gravityScaling * Time.deltaTime;
-        }
+        currVelocityVector.y -= playerGravity * gravityScaling * Time.deltaTime;
 
         // APPLY VERTICAL MOVEMENT
         controller.Move(currVelocityVector * Time.deltaTime);
+
+        // CHECK IF GROUNDED
+        CheckGround();
     }
 
-    IEnumerator CheckForGround() {
-        RaycastHit sphereHit, boxHit;
+    void CheckGround() {
+        // UPDATE JUMP VECTOR IF BECOMING UNGROUNDED
+        if (grounded && !controller.isGrounded) {
+            UpdateJumpVector();
+        }
 
-        while (true) {
+        // CHECK IF GROUNDED
+        grounded = controller.isGrounded;
 
-            // SPHERECAST TO GROUND
-            bool sphereCastSuccess = Physics.SphereCast(transform.position, controller.radius, Vector3.down, out sphereHit, playerDistanceToGround - controller.radius + 0.1f); 
-
-            // BOXCAST TO GROUND
-            bool boxCastSuccess = Physics.BoxCast(transform.position, controller.bounds.extents / 2, Vector3.down, out boxHit, Quaternion.identity, playerDistanceToGround - controller.bounds.extents.y + 0.1f);
-
-            // CHECK IF GROUNDED BY COMBINING SPHERECAST AND BOXCAST
-            if ((boxCastSuccess && boxHit.collider.gameObject.CompareTag("Ground")) || (sphereCastSuccess && sphereHit.collider.gameObject.CompareTag("Ground"))) {
-                grounded = true;
-            }
-            else {
-                if (grounded) {
-                    UpdateJumpVector();
-                }
-                grounded = false;
-            }
-            yield return null;
+        // SET JUMPING TO FALSE IF GROUNDED
+        if (grounded) {
+            jumping = false;
+        }
+        else {
+            jumping = true;
         }
     }
 
