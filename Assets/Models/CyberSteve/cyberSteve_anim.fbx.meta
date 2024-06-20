@@ -245,8 +245,8 @@ ModelImporter:
       name: Armature.001|victory
       takeName: Armature.001|victory
       internalID: -2774293134651330185
-      firstFrame: 0
-      lastFrame: 114
+      firstFrame: 14
+      lastFrame: 64
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
