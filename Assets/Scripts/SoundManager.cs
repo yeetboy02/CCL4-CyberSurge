@@ -26,32 +26,31 @@ public class SoundManager : MonoBehaviour
 
     private void Update()
         {
-        if(SceneManager.GetActiveScene().name == "CityLevel")
+         if (SceneManager.GetActiveScene().name == "MainMenu")
         {
-            AkSoundEngine.StopPlayingID((uint)CyberpunkMusicId);
-            CyberpunkMusicId = -1;
-            if(AmbientNoiseId == -1)
+            if (MenuCyberpunkMusicId == -1)
             {
-            AmbientNoiseId = (int)AkSoundEngine.PostEvent("Play_AmbientNoise", gameObject);
+                MenuCyberpunkMusicId = (int)AkSoundEngine.PostEvent("Play_Cyberpunk_Beat_Quiet", gameObject);
             }
         }
         else if(SceneManager.GetActiveScene().name == "SmallLevel")
         {
-            AkSoundEngine.StopPlayingID((uint)AmbientNoiseId);
-            AmbientNoiseId = -1;
-
             AkSoundEngine.StopPlayingID((uint)MenuCyberpunkMusicId);
-            MenuCyberpunkMusicId = -1;
+
             if (CyberpunkMusicId == -1)
             {
                 CyberpunkMusicId = (int)AkSoundEngine.PostEvent("Play_Cyberpunk_Beat_Quiet", gameObject);
             }
         }
-        else if (SceneManager.GetActiveScene().name == "MainMenu")
+        else if(SceneManager.GetActiveScene().name == "CityLevel")
         {
-            if (MenuCyberpunkMusicId == -1)
+            AkSoundEngine.StopPlayingID((uint)CyberpunkMusicId);
+
+            AkSoundEngine.StopPlayingID((uint)MenuCyberpunkMusicId);
+
+            if (AmbientNoiseId == -1)
             {
-                MenuCyberpunkMusicId = (int)AkSoundEngine.PostEvent("Play_Cyberpunk_Beat_Quiet", gameObject);
+            AmbientNoiseId = (int)AkSoundEngine.PostEvent("Play_AmbientNoise", gameObject);
             }
         }
     }
