@@ -28,7 +28,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	96789415	Landing On The Ground [1]	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Landing On The Ground [1]_F62207C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [1]		30792
 	111255819	ConcreteStep-001	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\ConcreteStep-001_C112B401.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\ConcreteStep-001		51312
 	127988684	Countdown-001	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Countdown-001_8347025C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-001		176496
-	147213315	Pigeon-001	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Pigeon-001_63508E6D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pigeon\Pigeon-001		327068
+	147213315	Pigeon-001	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Pigeon-001_73F2DB9C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pigeon\Pigeon-001		327068
 	244058664	Landing On The Ground [7]	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Landing On The Ground [7]_31621029.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [7]		54772
 	259192915	MetalStep-006	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\MetalStep-006_2F894F0C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-006		21324
 	342673321	ConcreteStep-003	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\ConcreteStep-003_0A85F98E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\ConcreteStep-003		29496
@@ -36,7 +36,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	430139319	Finish	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\alert3 (version 11)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Finish		927644
 	433485792	MetalStep-007	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\MetalStep-007_BDA1DD00.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-007		18368
 	456990482	MetalStep-005	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\MetalStep-005_98C14DD8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-005		23056
-	464165162	Pigeon-002	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Pigeon-002_48DECB1C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pigeon\Pigeon-002		276608
+	464165162	Pigeon-002	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Pigeon-002_7C26B1A9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pigeon\Pigeon-002		276608
+	482367142	Cyberpunk Beat Quiet	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Cyberpunk Beat_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cyberpunk Beat Quiet		5507212
 	531600051	Landing_Stone_1	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Landing_Stone_1_964FDB8A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing_Stone_1		19636
 	592530725	Landing On The Ground [2]	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Landing On The Ground [2]_9443F8CF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [2]		29480
 	613313089	Chinese Violin	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Chinese Violin - The Enchanted Sound of the Erhu_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chinese Violin		14187664
@@ -50,10 +51,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	879264308	MetalStep-004	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\MetalStep-004_CBB385DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-004		18612
 	882248691	Ambience-metro	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\ambience, metro, wagon, train, interior, city, Moscow_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbientNoise\Ambience-metro		4492896
 	897840081	HoloRobo	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Robo Bird_DA93DA21.wem		\Actor-Mixer Hierarchy\Default Work Unit\HoloRobo		70668
-	950820286	Cyberpunk Beat Quiet	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Cyberpunk Beat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cyberpunk Beat Quiet		5507212
+	950820286	Cyberpunk Beat	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Cyberpunk Beat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cyberpunk Beat		5507212
 	967381246	MetalStep-001	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\MetalStep-001_B55B1500.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-001		18860
 	1028041429	Countdown-002	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Countdown-002_8347025C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-002		176496
-	1050745615	PigeonFlyingAway	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\PigeonFlyingAway_93234409.wem		\Actor-Mixer Hierarchy\Default Work Unit\PigeonFlyingAway		466332
+	1050745615	PigeonFlyingAway	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\PigeonFlyingAway_58AD9B16.wem		\Actor-Mixer Hierarchy\Default Work Unit\PigeonFlyingAway		466332
 	1054905388	Countdown-003	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Countdown-003_8347025C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-003		176496
 	1061541565	Street Noise in the city 1	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Street Noise in the city 1_E542090B.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbientNoise\Street Noise in the city 1		8429812
 

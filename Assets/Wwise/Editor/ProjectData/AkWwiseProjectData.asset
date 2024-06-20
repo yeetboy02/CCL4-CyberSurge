@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 33db6b682d2d3b43b3c978dc68461382
     GuidInternal: 
-    m_lastTime: -8584827236187313895
+    m_lastTime: -8584827212720315323
     List:
     - name: CyberSurge
       guid: e115c34bb2641245bd8fc887c89b33c5
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1a4dc23ea4776047bdcb879e3aaf123e
     GuidInternal: 
-    m_lastTime: -8584827248485892474
+    m_lastTime: -8584827212728906871
     List:
     - name: Play_Achievement_sound
       guid: 9e5d23a9f11fe546b661e23df22539ba
@@ -424,7 +424,7 @@ MonoBehaviour:
     m_lastTime: -8584828281637087322
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 140000001500000016000000170000001800000019000000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -743,6 +743,7 @@
 				</Sound>
 				<BlendContainer Name="AmbientNoise" ID="{C91BB026-0EBE-467B-8C2E-ED846DFF1DC2}" ShortID="142653605">
 					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-6</Value>
@@ -893,6 +894,7 @@
 				</BlendContainer>
 				<Sound Name="Cyberpunk Beat Quiet" ID="{E2D4764E-595D-4BA1-8007-F0C1C643B0D7}" ShortID="621818326">
 					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-14</Value>
@@ -912,7 +914,7 @@
 							<Language>SFX</Language>
 							<AudioFile>Cyberpunk Beat.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="950820286"/>
+								<MediaID ID="482367142"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
