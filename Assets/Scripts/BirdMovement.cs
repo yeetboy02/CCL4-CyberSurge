@@ -104,6 +104,7 @@ public class BirdMovement : MonoBehaviour {
 
             // CHECK FOR DISTANCE TO START POSITION
             if ((startPosition - transform.position).magnitude >= flyingDistance) {
+
                 Destroy(gameObject);
             }
         }
@@ -116,7 +117,7 @@ public class BirdMovement : MonoBehaviour {
     IEnumerator TakeOff() {
         // SET ANIMATION STATE TO FLYING
         animator.SetInteger("state", 3);
-
+        AkSoundEngine.PostEvent("Play_PigeonFlyingAway", gameObject);
         // WAIT FOR ANIMATION TO FINISH
         yield return new WaitForSeconds(0.3f);
 

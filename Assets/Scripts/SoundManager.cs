@@ -22,19 +22,19 @@ public class SoundManager : MonoBehaviour
 
     #endregion
 
-    //private void Awake()
-    //{
-    //    if(SceneManager.GetActiveScene().name == "CityLevel")
-    //    {
-    //    AkSoundEngine.PostEvent("Play_AmbientNoise", gameObject);
+    private void Awake()
+    {
+        if(SceneManager.GetActiveScene().name == "CityLevel")
+        {
+        AkSoundEngine.PostEvent("Play_AmbientNoise", gameObject);
 
-    //    }
-    //    else if(SceneManager.GetActiveScene().name == "SmallLevel")
-    //    {
-    //        AkSoundEngine.PostEvent("Play_Cyberpunk_Beat_Quiet", gameObject);
+        }
+        else if(SceneManager.GetActiveScene().name == "SmallLevel")
+        {
+            AkSoundEngine.PostEvent("Play_Cyberpunk_Beat_Quiet", gameObject);
 
-    //    }
-    //}
+        }
+    }
 
 }
 

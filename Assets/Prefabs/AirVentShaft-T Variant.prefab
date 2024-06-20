@@ -53,6 +53,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1599826595754709761, guid: a3a8a0af31c2c814791b3793aa882962, type: 3}
+      propertyPath: m_Name
+      value: AirVentShaft-T Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: -1599826595754709761, guid: a3a8a0af31c2c814791b3793aa882962, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}

@@ -15,20 +15,19 @@ public class SetGroundSwitch : MonoBehaviour
     {
         
     }
-
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if ((this.gameObject.name.Contains("AirVent") || this.gameObject.name.Contains("JumpPad")) && other.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Metal");
             AkSoundEngine.SetSwitch("Ground", "Metal", gameObject);
+            Debug.Log("Metal");
         }
         else
         {
+            AkSoundEngine.SetSwitch("Ground", "Concrete", gameObject);
             Debug.Log("Concrete");
 
-            AkSoundEngine.SetSwitch("Ground", "Concrete", gameObject);
-
         }
+        Debug.Log(collision.gameObject.name);
     }
 }
