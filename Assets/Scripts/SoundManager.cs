@@ -8,6 +8,7 @@ public class SoundManager : MonoBehaviour
 {
     private int AmbientNoiseId = -1;
     private int CyberpunkMusicId = -1;
+    private int MenuCyberpunkMusicId = -1;
     #region Singleton
 
     public static SoundManager instance;
@@ -38,7 +39,9 @@ public class SoundManager : MonoBehaviour
         {
             AkSoundEngine.StopPlayingID((uint)AmbientNoiseId);
             AmbientNoiseId = -1;
-            AkSoundEngine.StopPlayingID((uint)CyberpunkMusicId);
+
+            AkSoundEngine.StopPlayingID((uint)MenuCyberpunkMusicId);
+            MenuCyberpunkMusicId = -1;
             if (CyberpunkMusicId == -1)
             {
                 CyberpunkMusicId = (int)AkSoundEngine.PostEvent("Play_Cyberpunk_Beat_Quiet", gameObject);
@@ -46,9 +49,9 @@ public class SoundManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "MainMenu")
         {
-            if (CyberpunkMusicId == -1)
+            if (MenuCyberpunkMusicId == -1)
             {
-                CyberpunkMusicId = (int)AkSoundEngine.PostEvent("Play_Cyberpunk_Beat_Quiet", gameObject);
+                MenuCyberpunkMusicId = (int)AkSoundEngine.PostEvent("Play_Cyberpunk_Beat_Quiet", gameObject);
             }
         }
     }

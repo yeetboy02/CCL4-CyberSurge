@@ -257,7 +257,6 @@ GameObject:
   - component: {fileID: 8386927289201400321}
   - component: {fileID: 3126768501568628881}
   - component: {fileID: 4001117658145094583}
-  - component: {fileID: 2188793962454880997}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -404,18 +403,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnDelay: 2
   cameraController: {fileID: 4210800877348565382}
---- !u!114 &2188793962454880997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6221826635741072937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd52aa6f77b68df41b881f37ff25228f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7527895928221503400
 GameObject:
   m_ObjectHideFlags: 0
