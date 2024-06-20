@@ -438,6 +438,11 @@
 				<RandomSequenceContainer Name="Landing" ID="{450F4E2B-5DD7-4872-B1E9-F64A676FBE66}" ShortID="455421020">
 					<PropertyList>
 						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -459,6 +464,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Landing On The Ground [1]" ID="{5610942B-8FB6-401B-A8AC-000A6C69C7C5}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.105036769480519"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.264912012987013"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Landing On The Ground [1].wav</AudioFile>
 									<MediaIDList>
@@ -481,6 +491,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Landing On The Ground [2]" ID="{5FED09B2-21C9-4911-BC1B-B985E35F7788}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0793003246753246"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.232336038961039"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Landing On The Ground [2].wav</AudioFile>
 									<MediaIDList>
@@ -492,29 +507,14 @@
 								<ActiveSource Name="Landing On The Ground [2]" ID="{5FED09B2-21C9-4911-BC1B-B985E35F7788}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Landing On The Ground [6]" ID="{DEE17A6F-7E35-4B8A-85E7-BAF2D35EA11A}" ShortID="801768829">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Landing On The Ground [6]" ID="{711B8E22-3011-4712-92BD-DF81091F5C68}">
-									<Language>SFX</Language>
-									<AudioFile>Landing On The Ground [6].wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="945103821"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Landing On The Ground [6]" ID="{711B8E22-3011-4712-92BD-DF81091F5C68}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="Landing On The Ground [7]" ID="{AF7EB224-3454-4F5E-B48C-B6F72EA56694}" ShortID="190248288">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
@@ -525,6 +525,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Landing On The Ground [7]" ID="{5EEA5582-3118-46A9-8922-A9A3BD592EB8}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.163198538961039"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.447974512987013"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Landing On The Ground [7].wav</AudioFile>
 									<MediaIDList>
@@ -537,6 +542,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Landing_Stone_1" ID="{25E93F25-732F-4777-ABCD-BC98C1D622C7}" ShortID="870077240">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
@@ -547,6 +559,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Landing_Stone_1" ID="{23C091F2-E174-46F3-A26E-F6212081729C}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0362560296846011"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.147038342609771"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Landing_Stone_1.wav</AudioFile>
 									<MediaIDList>
@@ -969,6 +986,9 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
 						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Concrete" ID="{04D72A11-DBF8-4DE3-8FB9-AC47380452DB}" WorkUnitID="{715F559D-C699-432E-AB5C-322E8AD980D3}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
 						</Reference>
@@ -1010,6 +1030,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ConcreteStep-001" ID="{9DAAF6BB-C5D8-4761-9DC6-7A5EDD8098D4}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0806493506493506"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.370987012987013"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>ConcreteStep-001.wav</AudioFile>
 											<MediaIDList>
@@ -1032,6 +1057,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ConcreteStep-002" ID="{2A9254A4-C54D-42AF-A908-02E76BB4A382}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0752727272727272"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.284961038961039"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>ConcreteStep-002.wav</AudioFile>
 											<MediaIDList>
@@ -1054,6 +1084,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ConcreteStep-003" ID="{641E9B12-B877-4369-A660-6F16AFFFC078}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.051974025974026"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.218649350649351"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>ConcreteStep-003.wav</AudioFile>
 											<MediaIDList>
@@ -1076,6 +1111,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ConcreteStep-004" ID="{D1624F25-38CD-4D7A-942E-DBFF5C4C6F7A}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0842337662337662"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.322597402597402"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>ConcreteStep-004.wav</AudioFile>
 											<MediaIDList>
@@ -1098,6 +1138,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ConcreteStep-005" ID="{4F0A8456-CFA8-49A0-BEFE-76949C4C3E32}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.103948051948052"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.353064935064935"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>ConcreteStep-005.wav</AudioFile>
 											<MediaIDList>
@@ -1120,6 +1165,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="ConcreteStep-006" ID="{7462F5E1-B1BD-41CF-936D-F9BAF38889B5}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0663116883116883"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.29212987012987"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>ConcreteStep-006.wav</AudioFile>
 											<MediaIDList>
@@ -1136,9 +1186,19 @@
 						<RandomSequenceContainer Name="MetalSteps" ID="{31DB317A-55D6-423B-BF46-B3BA90F5B1E6}" ShortID="815751019">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>27</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>310</Value>
+										<Value>400</Value>
 									</ValueList>
 								</Property>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
@@ -1163,6 +1223,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="MetalStep-001" ID="{4DF3D3D5-F279-4D1B-BCE2-2EC23120D887}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.00979674293960009"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.116161380569544"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>MetalStep-001.wav</AudioFile>
 											<MediaIDList>
@@ -1185,6 +1250,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="MetalStep-002" ID="{3CCC6B4A-05AB-4E3C-B641-12E0250482D6}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.00979674293960008"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.0811730129281153"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>MetalStep-002.wav</AudioFile>
 											<MediaIDList>
@@ -1207,6 +1277,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="MetalStep-003" ID="{AB06A394-6BEC-4824-8105-C92C09A4FAB7}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.00839720823394292"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.155348352327944"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>MetalStep-003.wav</AudioFile>
 											<MediaIDList>
@@ -1229,6 +1304,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="MetalStep-004" ID="{34765CD5-3D7F-4A2B-B983-85C17590C4E9}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.104965102924287"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>MetalStep-004.wav</AudioFile>
 											<MediaIDList>
@@ -1251,6 +1331,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="MetalStep-005" ID="{92D8743C-AB3E-4244-A322-A4E005A1A2BF}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.130156727626115"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>MetalStep-005.wav</AudioFile>
 											<MediaIDList>
@@ -1273,6 +1358,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="MetalStep-006" ID="{D60D2468-061D-4AE2-90ED-2ADBE3E282A2}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.00699767352828577"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.127357658214801"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>MetalStep-006.wav</AudioFile>
 											<MediaIDList>
@@ -1295,6 +1385,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="MetalStep-007" ID="{05DF3BF4-D0F8-45ED-9E2F-E3731AF03534}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0125958123509144"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.116161380569544"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>MetalStep-007.wav</AudioFile>
 											<MediaIDList>

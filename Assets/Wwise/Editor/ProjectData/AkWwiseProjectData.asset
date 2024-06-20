@@ -230,8 +230,8 @@ MonoBehaviour:
         guid: cb82cb8467bc6941abf6af15fcb392d5
       Path: Events\Default Work Unit\Play_Footsteps
       maxAttenuation: 0
-      maxDuration: 1.1604371
-      minDuration: 0.90096587
+      maxDuration: 0.24414389
+      minDuration: 0.056651384
     - name: Play_HoloRobo
       guid: 4d1ca4102086e44fa39491b25efeb025
       id: 1682706162
@@ -264,8 +264,8 @@ MonoBehaviour:
         guid: 9b687af6dbaabe4e8db9e0a376af96ab
       Path: Events\Default Work Unit\Play_Landing
       maxAttenuation: 0
-      maxDuration: 0.843375
-      minDuration: 0.22156462
+      maxDuration: 0.28477597
+      minDuration: 0.11078231
     - name: Play_thrusters_loop
       guid: 5c24a26617408b47892409906cfa8aee
       id: 1682802373
@@ -390,7 +390,7 @@ MonoBehaviour:
     m_lastTime: -8584828281637087322
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
