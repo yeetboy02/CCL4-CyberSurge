@@ -240,7 +240,7 @@ Transform:
   - {fileID: 4254114342655706551}
   - {fileID: 7589471210054511770}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6221826635741072937
 GameObject:
@@ -564,7 +564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12b015c6408404100847ac4945919d6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0, y: 3, z: -3}
+  offset: {x: 0, y: 5, z: -7}
   rotationSpeedX: 0.7
   rotationSpeedY: 0.7
   rotationYConstraints: {x: -45, y: 45}
