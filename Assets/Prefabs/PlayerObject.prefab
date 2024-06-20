@@ -240,7 +240,7 @@ Transform:
   - {fileID: 4254114342655706551}
   - {fileID: 7589471210054511770}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6221826635741072937
 GameObject:
@@ -323,18 +323,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86dc3a5ac00e94484845cf20068d79a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpeed: 10
-  maxSpeed: 20
+  minSpeed: 7
+  maxSpeed: 11.5
   acceleration: 0.05
   minAirMovementSpeed: 0
   maxAirMovementSpeed: 0.4
   airAcceleration: 0.01
-  airMovementFactor: 0.005
+  airMovementFactor: 0.1
   airMovementScaling: 0.05
-  rotationSpeed: 10
+  rotationSpeed: 11
   playerDistanceToGround: 1.02
   jumpPower: 4
-  jumpScaling: 0.25
+  jumpScaling: 0.4
   playerGravity: 9.8
   gravityScaling: 3
 --- !u!114 &5492535023561027700
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 7763899025461436146}
-  runningAnimationSpeed: 1.2
+  runningAnimationSpeed: 1
 --- !u!114 &4001117658145094583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,6 +498,7 @@ GameObject:
   - component: {fileID: 4850747426251408733}
   - component: {fileID: 8489522092551823334}
   - component: {fileID: 4210800877348565382}
+  - component: {fileID: 9149727369258686979}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -563,9 +564,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12b015c6408404100847ac4945919d6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0, y: 5, z: -10}
-  rotationSpeedX: 1.5
-  rotationSpeedY: 1.5
+  offset: {x: 0, y: 5, z: -7}
+  rotationSpeedX: 0.7
+  rotationSpeedY: 0.7
   rotationYConstraints: {x: -45, y: 45}
   player: {fileID: 4254114342655706551}
 --- !u!114 &4210800877348565382
@@ -580,6 +581,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee22480ed58aa44cb84778ba434a58cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9149727369258686979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527895928221503400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 1ab061b77d0aa63438ee9a59c25f17b3, type: 2}
 --- !u!1 &8067261152260506977
 GameObject:
   m_ObjectHideFlags: 0

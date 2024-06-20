@@ -57,7 +57,6 @@ public class CameraMovement : MonoBehaviour {
         Debug.Log(player.position + " " + playerCamera.position);
         // SET INITIAL CAMERA DISTANCE
         baseCameraDistance = Vector3.Distance(player.position, playerCamera.position);
-        //Debug.Log(baseCameraDistance);
         currCameraDistance = baseCameraDistance;
     }
 

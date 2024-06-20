@@ -53823,11 +53823,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132647684}
   m_Mesh: {fileID: -3892174207043093728, guid: d219c10aedc462a48906601d8195e676, type: 3}
---- !u!95 &1133502562 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7763899025461436146, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
-  m_PrefabInstance: {fileID: 1649795095}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1134077070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75716,14 +75711,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerObject (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 3126768501568628881, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1133502562}
-    - target: {fileID: 3126768501568628881, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
-      propertyPath: runningAnimationSpeed
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3874302580039538744, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -75768,49 +75755,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4619212139760174021, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
-      propertyPath: maxSpeed
-      value: 11.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4619212139760174021, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
-      propertyPath: minSpeed
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4619212139760174021, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
-      propertyPath: jumpScaling
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4619212139760174021, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
-      propertyPath: rotationSpeed
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4619212139760174021, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
-      propertyPath: airMovementFactor
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8489522092551823334, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
-      propertyPath: offset.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8489522092551823334, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
-      propertyPath: offset.z
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8489522092551823334, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
-      propertyPath: rotationSpeedX
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8489522092551823334, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
-      propertyPath: rotationSpeedY
-      value: 0.7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7527895928221503400, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2102578301}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
 --- !u!1 &1651332285
 GameObject:
@@ -95092,28 +95040,6 @@ MonoBehaviour:
   matRed: {fileID: 2100000, guid: a8622a4c3fdb39e4e82b7f97e0385abc, type: 2}
   matOrange: {fileID: 2100000, guid: 61fee6c7c9516c7439ef31ea8660e9d9, type: 2}
   matYellow: {fileID: 2100000, guid: 0ebc8ec226420394e9a0b75b28072a17, type: 2}
---- !u!1 &2102578299 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7527895928221503400, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
-  m_PrefabInstance: {fileID: 1649795095}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2102578301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2102578299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IsGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: 1ab061b77d0aa63438ee9a59c25f17b3, type: 2}
 --- !u!1 &2105541317
 GameObject:
   m_ObjectHideFlags: 0
