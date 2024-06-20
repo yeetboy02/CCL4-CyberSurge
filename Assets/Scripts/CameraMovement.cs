@@ -54,7 +54,6 @@ public class CameraMovement : MonoBehaviour {
 
         // GET CURRENT ROTATION
         currRotation = gameObject.transform.localRotation;
-        Debug.Log(player.position + " " + playerCamera.position);
         // SET INITIAL CAMERA DISTANCE
         baseCameraDistance = Vector3.Distance(player.position, playerCamera.position);
         currCameraDistance = baseCameraDistance;
@@ -68,8 +67,6 @@ public class CameraMovement : MonoBehaviour {
         SetCameraOffset();
         Rotate();
         LookAtPlayer();
-        
-        //Debug.Log(currCameraDistance);
     }
 
     #region Movement

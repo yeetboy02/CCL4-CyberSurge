@@ -21,6 +21,8 @@ public class PlayerAnimation : MonoBehaviour {
 
     private bool grounded = false;
 
+    private bool jumping = false;
+
     #endregion
 
     #region AnimationState
@@ -64,23 +66,30 @@ public class PlayerAnimation : MonoBehaviour {
         // CHECK IF PLAYER IS GROUNDED
         grounded = movement.GetGrounded();
 
-        // SET ANIMATION STATE DEPENDING ON SPEED
-        if (currVerticalSpeed == 0.0f && currHorizontalSpeed > 0.0f && grounded) {
-            // SET RUNNING STATE
-            SetAnimationState(AnimationState.Running);
+        // CHECK IF PLAYER IS JUMPING
+        jumping = movement.GetJumping();
+
+        // SET ANIMATION STATES DEPENDING ON SPEED AND GROUNDED STATE
+        if (grounded) {
+            if (currHorizontalSpeed == 0.0f) {
+                // SET IDLE STATE
+                SetAnimationState(AnimationState.Idle);
+            } else {
+                // SET RUNNING STATE
+                SetAnimationState(AnimationState.Running);
+            }
+        } 
+        else {
+            if (currVerticalSpeed > 0.0f) {
+                // SET JUMPING STATE
+                SetAnimationState(AnimationState.Jumping);
+            } else {
+                // SET FALLING STATE
+                SetAnimationState(AnimationState.Falling);
+            }
         }
-        else if (currVerticalSpeed == 0.0f && currHorizontalSpeed == 0.0f && grounded) {
-            // SET IDLE STATE
-            SetAnimationState(AnimationState.Idle);
-        }
-        else if (currVerticalSpeed > 0.0f) {
-            // SET JUMPING STATE
-            SetAnimationState(AnimationState.Jumping);
-        }
-        else if (currVerticalSpeed < 0.0f) {
-            // SET FALLING STATE
-            SetAnimationState(AnimationState.Falling);
-        }
+
+        Debug.Log(currState);
     }
 
     #endregion
@@ -97,9 +106,12 @@ public class PlayerAnimation : MonoBehaviour {
     #region AnimationSpeed
 
     private void UpdateAnimationSpeed() {
+        // GET CURRENT RUNNING SPEED
+        float currSpeed = movement.GetCurrSpeed();
+
         // SET ANIMATION SPEED DEPENDING ON RUNNING SPEED
         if (currState == AnimationState.Running) {
-            animator.speed = currHorizontalSpeed / movement.GetMaxSpeed() * runningAnimationSpeed;
+            animator.speed = currSpeed / movement.GetMaxSpeed() * runningAnimationSpeed;
         } else {
             animator.speed = 1.0f;
         }

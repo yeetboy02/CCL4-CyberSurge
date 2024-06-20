@@ -74,9 +74,9 @@ public class PlayerMovement : MonoBehaviour {
 
     private float currTotalAirSpeed = 0.0f;
 
-    public bool grounded = false;
+    private bool grounded = false;
 
-    public bool jumping = false;
+    private bool jumping = false;
 
     #endregion
 
@@ -90,12 +90,16 @@ public class PlayerMovement : MonoBehaviour {
         return jumping;
     }
 
+    public float GetCurrSpeed() {
+        return currSpeed;
+    }
+
     public float GetMaxSpeed() {
         return maxSpeed;
     }
 
     public float GetHorizontalVelocity() {
-        return new Vector3(controller.velocity.x, 0.0f, controller.velocity.z).magnitude;
+        return new Vector3(currDirectionalMovementVector.x, 0.0f, currDirectionalMovementVector.z).magnitude;
     }
 
     public float GetVerticalVelocity() {

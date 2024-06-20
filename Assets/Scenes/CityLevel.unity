@@ -75740,6 +75740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerObject (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3126768501568628881, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
+      propertyPath: runningAnimationSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3874302580039538744, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
       propertyPath: m_RootOrder
       value: 0
