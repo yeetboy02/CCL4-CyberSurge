@@ -21,14 +21,30 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<SwitchGroups>
+				<SwitchGroup Id="2528658256" Name="Ground">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2473969246" Name="Metal"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3944981190" Type="User" Language="SFX" Hash="{3AA833C1-F18E-856E-6187-663C4A7125DF}">
+		<SoundBank Id="3944981190" Type="User" Language="SFX" Hash="{12C25AE7-F28E-7EB4-B1EF-ED6E195AC2AC}">
 			<ShortName>CyberSurge</ShortName>
 			<Path>CyberSurge.bnk</Path>
 			<Media>
+				<File Id="78387640" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ConcreteStep-006.wav</ShortName>
+					<CachePath>SFX/ConcreteStep-006_10C4C929.wem</CachePath>
+				</File>
 				<File Id="96789415" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Landing On The Ground [1].wav</ShortName>
 					<CachePath>SFX/Landing On The Ground [1]_10C4C929.wem</CachePath>
+				</File>
+				<File Id="111255819" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ConcreteStep-001.wav</ShortName>
+					<CachePath>SFX/ConcreteStep-001_10C4C929.wem</CachePath>
 				</File>
 				<File Id="127988684" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Countdown-001.wav</ShortName>
@@ -38,14 +54,34 @@
 					<ShortName>Landing On The Ground [7].wav</ShortName>
 					<CachePath>SFX/Landing On The Ground [7]_10C4C929.wem</CachePath>
 				</File>
+				<File Id="259192915" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MetalStep-006.wav</ShortName>
+					<CachePath>SFX/MetalStep-006_10C4C929.wem</CachePath>
+				</File>
+				<File Id="342673321" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ConcreteStep-003.wav</ShortName>
+					<CachePath>SFX/ConcreteStep-003_10C4C929.wem</CachePath>
+				</File>
 				<File Id="412349323" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>CityAmbience.wav</ShortName>
 					<Path>Media/412349323.wem</Path>
 					<CachePath>SFX/CityAmbience_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="418699331" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ConcreteStep-002.wav</ShortName>
+					<CachePath>SFX/ConcreteStep-002_10C4C929.wem</CachePath>
+				</File>
 				<File Id="430139319" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>alert3 (version 11).wav</ShortName>
 					<CachePath>SFX/alert3 (version 11)_10C4C929.wem</CachePath>
+				</File>
+				<File Id="433485792" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MetalStep-007.wav</ShortName>
+					<CachePath>SFX/MetalStep-007_10C4C929.wem</CachePath>
+				</File>
+				<File Id="456990482" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MetalStep-005.wav</ShortName>
+					<CachePath>SFX/MetalStep-005_10C4C929.wem</CachePath>
 				</File>
 				<File Id="531600051" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Landing_Stone_1.wav</ShortName>
@@ -59,17 +95,37 @@
 					<ShortName>Chinese Violin - The Enchanted Sound of the Erhu.wav</ShortName>
 					<CachePath>SFX/Chinese Violin - The Enchanted Sound of the Erhu_10C4C929.wem</CachePath>
 				</File>
+				<File Id="685137432" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ConcreteStep-004.wav</ShortName>
+					<CachePath>SFX/ConcreteStep-004_10C4C929.wem</CachePath>
+				</File>
 				<File Id="711410964" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Countdown-004.wav</ShortName>
 					<CachePath>SFX/Countdown-004_10C4C929.wem</CachePath>
+				</File>
+				<File Id="720720670" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MetalStep-003.wav</ShortName>
+					<CachePath>SFX/MetalStep-003_10C4C929.wem</CachePath>
 				</File>
 				<File Id="728538383" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thrusters_loop.wav</ShortName>
 					<CachePath>SFX/thrusters_loop_7D204FDB.wem</CachePath>
 				</File>
+				<File Id="816237218" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MetalStep-002.wav</ShortName>
+					<CachePath>SFX/MetalStep-002_10C4C929.wem</CachePath>
+				</File>
 				<File Id="859789295" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Achievement sound 1.wav</ShortName>
-					<CachePath>SFX/Achievement sound 1_98825A70.wem</CachePath>
+					<CachePath>SFX/Achievement sound 1_77BE2E52.wem</CachePath>
+				</File>
+				<File Id="862749239" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ConcreteStep-005.wav</ShortName>
+					<CachePath>SFX/ConcreteStep-005_10C4C929.wem</CachePath>
+				</File>
+				<File Id="879264308" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MetalStep-004.wav</ShortName>
+					<CachePath>SFX/MetalStep-004_10C4C929.wem</CachePath>
 				</File>
 				<File Id="882248691" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ambience, metro, wagon, train, interior, city, Moscow.wav</ShortName>
@@ -86,6 +142,10 @@
 				<File Id="950820286" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cyberpunk Beat.wav</ShortName>
 					<CachePath>SFX/Cyberpunk Beat_10C4C929.wem</CachePath>
+				</File>
+				<File Id="967381246" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MetalStep-001.wav</ShortName>
+					<CachePath>SFX/MetalStep-001_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1028041429" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Countdown-002.wav</ShortName>
@@ -141,6 +201,33 @@
 						<MediaRef Id="430139319"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3854155799" Name="Play_Footsteps" DurationType="OneShot" DurationMin="0.90096587" DurationMax="1.1604371">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2528658256" Id="841620460"/>
+							<MediaRefs>
+								<MediaRef Id="78387640"/>
+								<MediaRef Id="111255819"/>
+								<MediaRef Id="342673321"/>
+								<MediaRef Id="418699331"/>
+								<MediaRef Id="685137432"/>
+								<MediaRef Id="862749239"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2528658256" Id="2473969246"/>
+							<MediaRefs>
+								<MediaRef Id="259192915"/>
+								<MediaRef Id="433485792"/>
+								<MediaRef Id="456990482"/>
+								<MediaRef Id="720720670"/>
+								<MediaRef Id="816237218"/>
+								<MediaRef Id="879264308"/>
+								<MediaRef Id="967381246"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="1682706162" Name="Play_HoloRobo" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="897840081"/>
@@ -161,7 +248,15 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="2528658256" Name="Ground">
+					<Switches>
+						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2473969246" Name="Metal"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FB0F6633-C79E-2E36-959D-FAE84DBEE700}</FileHash>
+	<FileHash>{99E28EB2-799E-AD30-E912-EE733F9B8D8F}</FileHash>
 </SoundBanksInfo>

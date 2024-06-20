@@ -961,6 +961,379 @@
 						<ItemRef Name="Countdown-004" ID="{E9799F45-DD4D-4A3A-ACD3-B8A569A31D2B}"/>
 					</Playlist>
 				</RandomSequenceContainer>
+				<SwitchContainer Name="Footsteps" ID="{1A499689-FBB7-4334-AB8C-8A1ABE735647}" ShortID="51976866">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Ground" ID="{E522E4D4-CE90-43FF-AAF3-C52EB9FF32AA}" WorkUnitID="{715F559D-C699-432E-AB5C-322E8AD980D3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="ConcreteSteps" ID="{72E6F913-48B6-49C7-BFF9-AFADE5D01271}" ShortID="1009321539">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>300</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="ConcreteStep-001" ID="{231DD763-15BA-457C-BD20-0624CB47F58F}" ShortID="110200014">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ConcreteStep-001" ID="{9DAAF6BB-C5D8-4761-9DC6-7A5EDD8098D4}">
+											<Language>SFX</Language>
+											<AudioFile>ConcreteStep-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="111255819"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ConcreteStep-001" ID="{9DAAF6BB-C5D8-4761-9DC6-7A5EDD8098D4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ConcreteStep-002" ID="{6CA64ADF-346E-492C-BEFF-7AD0CA110BE9}" ShortID="136728538">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ConcreteStep-002" ID="{2A9254A4-C54D-42AF-A908-02E76BB4A382}">
+											<Language>SFX</Language>
+											<AudioFile>ConcreteStep-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="418699331"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ConcreteStep-002" ID="{2A9254A4-C54D-42AF-A908-02E76BB4A382}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ConcreteStep-003" ID="{8C4626D2-EE9D-4BD9-A303-C20731FA2A47}" ShortID="209794061">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ConcreteStep-003" ID="{641E9B12-B877-4369-A660-6F16AFFFC078}">
+											<Language>SFX</Language>
+											<AudioFile>ConcreteStep-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="342673321"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ConcreteStep-003" ID="{641E9B12-B877-4369-A660-6F16AFFFC078}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ConcreteStep-004" ID="{C2B97C6F-5F12-495E-9730-8DE6C0520D7E}" ShortID="484339539">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ConcreteStep-004" ID="{D1624F25-38CD-4D7A-942E-DBFF5C4C6F7A}">
+											<Language>SFX</Language>
+											<AudioFile>ConcreteStep-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="685137432"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ConcreteStep-004" ID="{D1624F25-38CD-4D7A-942E-DBFF5C4C6F7A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ConcreteStep-005" ID="{26779CA8-7982-4A72-9078-4B5F1A3C12B9}" ShortID="860258438">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ConcreteStep-005" ID="{4F0A8456-CFA8-49A0-BEFE-76949C4C3E32}">
+											<Language>SFX</Language>
+											<AudioFile>ConcreteStep-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="862749239"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ConcreteStep-005" ID="{4F0A8456-CFA8-49A0-BEFE-76949C4C3E32}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ConcreteStep-006" ID="{6B61E174-744E-4B35-8F34-DBF729CA76BC}" ShortID="498382554">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ConcreteStep-006" ID="{7462F5E1-B1BD-41CF-936D-F9BAF38889B5}">
+											<Language>SFX</Language>
+											<AudioFile>ConcreteStep-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="78387640"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ConcreteStep-006" ID="{7462F5E1-B1BD-41CF-936D-F9BAF38889B5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="MetalSteps" ID="{31DB317A-55D6-423B-BF46-B3BA90F5B1E6}" ShortID="815751019">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>310</Value>
+									</ValueList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="MetalStep-001" ID="{5D1D0FE8-03A7-45B0-9770-68A98512B171}" ShortID="254053396">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MetalStep-001" ID="{4DF3D3D5-F279-4D1B-BCE2-2EC23120D887}">
+											<Language>SFX</Language>
+											<AudioFile>MetalStep-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="967381246"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MetalStep-001" ID="{4DF3D3D5-F279-4D1B-BCE2-2EC23120D887}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MetalStep-002" ID="{861AA82B-691F-4D54-8BFD-009EB46D2ED3}" ShortID="789566803">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MetalStep-002" ID="{3CCC6B4A-05AB-4E3C-B641-12E0250482D6}">
+											<Language>SFX</Language>
+											<AudioFile>MetalStep-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="816237218"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MetalStep-002" ID="{3CCC6B4A-05AB-4E3C-B641-12E0250482D6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MetalStep-003" ID="{70168771-619D-4D42-8810-559B26F23DCC}" ShortID="994810836">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MetalStep-003" ID="{AB06A394-6BEC-4824-8105-C92C09A4FAB7}">
+											<Language>SFX</Language>
+											<AudioFile>MetalStep-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="720720670"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MetalStep-003" ID="{AB06A394-6BEC-4824-8105-C92C09A4FAB7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MetalStep-004" ID="{ADE64821-E531-463A-BD68-E6905F088305}" ShortID="676947964">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MetalStep-004" ID="{34765CD5-3D7F-4A2B-B983-85C17590C4E9}">
+											<Language>SFX</Language>
+											<AudioFile>MetalStep-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="879264308"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MetalStep-004" ID="{34765CD5-3D7F-4A2B-B983-85C17590C4E9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MetalStep-005" ID="{9A6C1573-5AE9-440C-AF81-918A805DB7C0}" ShortID="746117453">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MetalStep-005" ID="{92D8743C-AB3E-4244-A322-A4E005A1A2BF}">
+											<Language>SFX</Language>
+											<AudioFile>MetalStep-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="456990482"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MetalStep-005" ID="{92D8743C-AB3E-4244-A322-A4E005A1A2BF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MetalStep-006" ID="{1BA62A7C-6947-4CDE-BBCC-6C41E80B59EC}" ShortID="174082933">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MetalStep-006" ID="{D60D2468-061D-4AE2-90ED-2ADBE3E282A2}">
+											<Language>SFX</Language>
+											<AudioFile>MetalStep-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="259192915"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MetalStep-006" ID="{D60D2468-061D-4AE2-90ED-2ADBE3E282A2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MetalStep-007" ID="{8ED76DDC-C03F-4854-9396-92D3506C42E9}" ShortID="172829067">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MetalStep-007" ID="{05DF3BF4-D0F8-45ED-9E2F-E3731AF03534}">
+											<Language>SFX</Language>
+											<AudioFile>MetalStep-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="433485792"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MetalStep-007" ID="{05DF3BF4-D0F8-45ED-9E2F-E3731AF03534}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="ConcreteSteps" ID="{72E6F913-48B6-49C7-BFF9-AFADE5D01271}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="MetalSteps" ID="{31DB317A-55D6-423B-BF46-B3BA90F5B1E6}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Concrete" ID="{04D72A11-DBF8-4DE3-8FB9-AC47380452DB}"/>
+								<ItemList>
+									<ItemRef Name="ConcreteSteps" ID="{72E6F913-48B6-49C7-BFF9-AFADE5D01271}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Metal" ID="{7031C2E5-0DA5-4D8D-B75A-4C35D9B45F80}"/>
+								<ItemList>
+									<ItemRef Name="MetalSteps" ID="{31DB317A-55D6-423B-BF46-B3BA90F5B1E6}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
