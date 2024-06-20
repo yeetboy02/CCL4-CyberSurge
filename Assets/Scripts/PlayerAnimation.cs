@@ -89,7 +89,7 @@ public class PlayerAnimation : MonoBehaviour {
             }
         }
 
-        Debug.Log(currState);
+        //Debug.Log(currState);
     }
 
     #endregion

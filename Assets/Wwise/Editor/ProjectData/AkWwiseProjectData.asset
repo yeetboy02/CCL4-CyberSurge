@@ -196,8 +196,8 @@ MonoBehaviour:
         guid: 8713fcc0c037ff45848581937792d501
       Path: Events\Default Work Unit\Play_Cyberpunk_Beat_Quiet
       maxAttenuation: 0
-      maxDuration: 31.219479
-      minDuration: 31.219479
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Finish
       guid: 31dbcc0c2fe3aa429c4528412b8e1287
       id: 1793765179

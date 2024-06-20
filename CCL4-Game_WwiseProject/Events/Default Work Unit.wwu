@@ -113,17 +113,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Footsteps" ID="{84CB82CB-BC67-4169-ABF6-AF15FCB392D5}">
-					<ChildrenList>
-						<Action Name="" ID="{00304A81-CB56-4148-97D0-4212914DF4A3}" ShortID="476217786">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{1A499689-FBB7-4334-AB8C-8A1ABE735647}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Pigeon" ID="{83680ABE-4D9C-4727-B05F-521664FCCAA7}">
 					<ChildrenList>
 						<Action Name="" ID="{F3D21FC6-3C71-48D6-8880-8F7710BA4729}" ShortID="739467566">
@@ -141,6 +130,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="PigeonFlyingAway" ID="{23EE7094-7D29-4AC2-8726-68BC08986EB8}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Footsteps" ID="{FDC616E2-0684-41C0-99FC-D26C98C270EE}">
+					<ChildrenList>
+						<Action Name="" ID="{B94489AA-2FB3-4C69-839A-E5AEF8CEE34A}" ShortID="230704528">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{1A499689-FBB7-4334-AB8C-8A1ABE735647}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

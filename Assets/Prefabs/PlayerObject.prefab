@@ -257,6 +257,7 @@ GameObject:
   - component: {fileID: 8386927289201400321}
   - component: {fileID: 3126768501568628881}
   - component: {fileID: 4001117658145094583}
+  - component: {fileID: 2188793962454880997}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -403,6 +404,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnDelay: 2
   cameraController: {fileID: 4210800877348565382}
+--- !u!114 &2188793962454880997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6221826635741072937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd52aa6f77b68df41b881f37ff25228f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7527895928221503400
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,6 +703,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e00dc8880c9fc4448be42a15be2361d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7763899025461436146}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e00dc8880c9fc4448be42a15be2361d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2068537314422298589}
   m_SourcePrefab: {fileID: 100100000, guid: 1e00dc8880c9fc4448be42a15be2361d, type: 3}
 --- !u!4 &8159272217665522342 stripped
 Transform:
@@ -722,3 +738,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2068537314422298589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8822655533956370460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c2e8149b0fac7449aaa9b06cd575fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FootStep:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cf5b8898e1e39fa47801196f574d83e6, type: 2}
+  Landing:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 576fd6951e29b3b4c85c2cab1d0fc701, type: 2}

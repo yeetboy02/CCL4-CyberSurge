@@ -30,7 +30,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3944981190" Type="User" Language="SFX" Hash="{E1DBBB26-29CB-B41A-70E2-4C4B566D4DEC}">
+		<SoundBank Id="3944981190" Type="User" Language="SFX" Hash="{C80579BD-2BAA-33CD-0355-6F68720C166D}">
 			<ShortName>CyberSurge</ShortName>
 			<Path>CyberSurge.bnk</Path>
 			<Media>
@@ -221,7 +221,7 @@
 				<Event Id="3854155799" Name="Play_Footsteps" DurationType="OneShot" DurationMin="0.056651384" DurationMax="0.24414389">
 					<SwitchContainers>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="2528658256" Id="841620460" Default="true"/>
+							<SwitchValue GroupType="Switch" GroupId="2528658256" Id="841620460"/>
 							<MediaRefs>
 								<MediaRef Id="78387640"/>
 								<MediaRef Id="111255819"/>
@@ -290,5 +290,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6FAE0D64-EFED-42D5-971F-95059B178126}</FileHash>
+	<FileHash>{5FB4B6DC-F165-CC4F-396E-4044C017AAE4}</FileHash>
 </SoundBanksInfo>
