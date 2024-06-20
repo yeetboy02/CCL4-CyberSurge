@@ -36,24 +36,13 @@ public class BirdSpawner : MonoBehaviour {
     #endregion
 
     #region VisibilityCheck
-
     void CheckVisibility() {
-        if (CheckRay() || (CheckDirection() && CheckDistance())) {
+        if (CheckDirection() && CheckDistance()) {
             visible = false;
         }
         else {
             visible = true;
         }
-    }
-
-    bool CheckRay() {
-        // CAST RAY TO CAMERA TO CHECK IF VIEW IS OBSTRUCTED
-        RaycastHit hit;
-
-        if (Physics.Raycast(gameObject.transform.position, playerCam.transform.position - gameObject.transform.position, out hit, Mathf.Infinity, Physics.AllLayers, QueryTriggerInteraction.Ignore) && !hit.collider.gameObject.CompareTag("Player")) {
-            return true;
-        }
-        return false;
     }
 
     bool CheckDistance() {
