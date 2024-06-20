@@ -23,6 +23,8 @@ namespace AK
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_HOLOROBO = 1682706162U;
         static const AkUniqueID PLAY_LANDING = 2323405115U;
+        static const AkUniqueID PLAY_PIGEON = 2968327968U;
+        static const AkUniqueID PLAY_PIGEONFLYINGAWAY = 960299171U;
         static const AkUniqueID PLAY_THRUSTERS_LOOP = 1682802373U;
     } // namespace EVENTS
 

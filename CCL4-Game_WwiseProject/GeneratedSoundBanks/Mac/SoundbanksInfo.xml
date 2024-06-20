@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F56A610C-C7C4-F874-B68B-7ADDF94EBB7A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D3EC513C-F1F9-6683-7ABC-035189511D74}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -30,37 +30,41 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3944981190" Type="User" Language="SFX" Hash="{6EB9F7D8-1837-686E-8868-C7592991BB2B}">
+		<SoundBank Id="3944981190" Type="User" Language="SFX" Hash="{9015EF32-6938-BF53-9024-DEDE0872BF0F}">
 			<ShortName>CyberSurge</ShortName>
 			<Path>CyberSurge.bnk</Path>
 			<Media>
 				<File Id="78387640" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ConcreteStep-006.wav</ShortName>
-					<CachePath>SFX/ConcreteStep-006_E6E04F37.wem</CachePath>
+					<CachePath>SFX/ConcreteStep-006_4AB8B1B1.wem</CachePath>
 				</File>
 				<File Id="96789415" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Landing On The Ground [1].wav</ShortName>
-					<CachePath>SFX/Landing On The Ground [1]_3DA5FFB1.wem</CachePath>
+					<CachePath>SFX/Landing On The Ground [1]_F62207C1.wem</CachePath>
 				</File>
 				<File Id="111255819" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ConcreteStep-001.wav</ShortName>
-					<CachePath>SFX/ConcreteStep-001_290A8462.wem</CachePath>
+					<CachePath>SFX/ConcreteStep-001_C112B401.wem</CachePath>
 				</File>
 				<File Id="127988684" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Countdown-001.wav</ShortName>
 					<CachePath>SFX/Countdown-001_8347025C.wem</CachePath>
 				</File>
+				<File Id="147213315" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pigeon-001.wav</ShortName>
+					<CachePath>SFX/Pigeon-001_63508E6D.wem</CachePath>
+				</File>
 				<File Id="244058664" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Landing On The Ground [7].wav</ShortName>
-					<CachePath>SFX/Landing On The Ground [7]_A58CCF2E.wem</CachePath>
+					<CachePath>SFX/Landing On The Ground [7]_31621029.wem</CachePath>
 				</File>
 				<File Id="259192915" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MetalStep-006.wav</ShortName>
-					<CachePath>SFX/MetalStep-006_3B43D178.wem</CachePath>
+					<CachePath>SFX/MetalStep-006_2F894F0C.wem</CachePath>
 				</File>
 				<File Id="342673321" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ConcreteStep-003.wav</ShortName>
-					<CachePath>SFX/ConcreteStep-003_5CD4EBE9.wem</CachePath>
+					<CachePath>SFX/ConcreteStep-003_0A85F98E.wem</CachePath>
 				</File>
 				<File Id="412349323" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>CityAmbience.wav</ShortName>
@@ -69,7 +73,7 @@
 				</File>
 				<File Id="418699331" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ConcreteStep-002.wav</ShortName>
-					<CachePath>SFX/ConcreteStep-002_697DF164.wem</CachePath>
+					<CachePath>SFX/ConcreteStep-002_6AF3FCCA.wem</CachePath>
 				</File>
 				<File Id="430139319" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>alert3 (version 11).wav</ShortName>
@@ -77,19 +81,23 @@
 				</File>
 				<File Id="433485792" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MetalStep-007.wav</ShortName>
-					<CachePath>SFX/MetalStep-007_94AF54A5.wem</CachePath>
+					<CachePath>SFX/MetalStep-007_BDA1DD00.wem</CachePath>
 				</File>
 				<File Id="456990482" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MetalStep-005.wav</ShortName>
-					<CachePath>SFX/MetalStep-005_EE295FD9.wem</CachePath>
+					<CachePath>SFX/MetalStep-005_98C14DD8.wem</CachePath>
+				</File>
+				<File Id="464165162" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pigeon-002.wav</ShortName>
+					<CachePath>SFX/Pigeon-002_48DECB1C.wem</CachePath>
 				</File>
 				<File Id="531600051" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Landing_Stone_1.wav</ShortName>
-					<CachePath>SFX/Landing_Stone_1_8373CC93.wem</CachePath>
+					<CachePath>SFX/Landing_Stone_1_964FDB8A.wem</CachePath>
 				</File>
 				<File Id="592530725" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Landing On The Ground [2].wav</ShortName>
-					<CachePath>SFX/Landing On The Ground [2]_6E5AF743.wem</CachePath>
+					<CachePath>SFX/Landing On The Ground [2]_9443F8CF.wem</CachePath>
 				</File>
 				<File Id="613313089" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Chinese Violin - The Enchanted Sound of the Erhu.wav</ShortName>
@@ -97,7 +105,7 @@
 				</File>
 				<File Id="685137432" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ConcreteStep-004.wav</ShortName>
-					<CachePath>SFX/ConcreteStep-004_970B94DD.wem</CachePath>
+					<CachePath>SFX/ConcreteStep-004_3E483D68.wem</CachePath>
 				</File>
 				<File Id="711410964" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Countdown-004.wav</ShortName>
@@ -105,7 +113,7 @@
 				</File>
 				<File Id="720720670" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MetalStep-003.wav</ShortName>
-					<CachePath>SFX/MetalStep-003_BE27B8B2.wem</CachePath>
+					<CachePath>SFX/MetalStep-003_F4E1411C.wem</CachePath>
 				</File>
 				<File Id="728538383" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>thrusters_loop.wav</ShortName>
@@ -113,7 +121,7 @@
 				</File>
 				<File Id="816237218" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MetalStep-002.wav</ShortName>
-					<CachePath>SFX/MetalStep-002_F95DC0D6.wem</CachePath>
+					<CachePath>SFX/MetalStep-002_CBC80C10.wem</CachePath>
 				</File>
 				<File Id="859789295" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Achievement sound 1.wav</ShortName>
@@ -121,11 +129,11 @@
 				</File>
 				<File Id="862749239" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ConcreteStep-005.wav</ShortName>
-					<CachePath>SFX/ConcreteStep-005_D52499C6.wem</CachePath>
+					<CachePath>SFX/ConcreteStep-005_400CDEE8.wem</CachePath>
 				</File>
 				<File Id="879264308" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MetalStep-004.wav</ShortName>
-					<CachePath>SFX/MetalStep-004_7F6DB78C.wem</CachePath>
+					<CachePath>SFX/MetalStep-004_CBB385DB.wem</CachePath>
 				</File>
 				<File Id="882248691" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>ambience, metro, wagon, train, interior, city, Moscow.wav</ShortName>
@@ -141,11 +149,15 @@
 				</File>
 				<File Id="967381246" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MetalStep-001.wav</ShortName>
-					<CachePath>SFX/MetalStep-001_52EBE9C1.wem</CachePath>
+					<CachePath>SFX/MetalStep-001_B55B1500.wem</CachePath>
 				</File>
 				<File Id="1028041429" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Countdown-002.wav</ShortName>
 					<CachePath>SFX/Countdown-002_8347025C.wem</CachePath>
+				</File>
+				<File Id="1050745615" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PigeonFlyingAway.wav</ShortName>
+					<CachePath>SFX/PigeonFlyingAway_93234409.wem</CachePath>
 				</File>
 				<File Id="1054905388" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Countdown-003.wav</ShortName>
@@ -156,6 +168,11 @@
 					<CachePath>SFX/Street Noise in the city 1_E542090B.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="613274396" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+				</Custom>
+			</Plugins>
 			<Events>
 				<Event Id="3241291351" Name="Play_Achievement_sound" DurationType="OneShot" DurationMin="0.87704396" DurationMax="0.87704396">
 					<MediaRefs>
@@ -237,6 +254,22 @@
 						<MediaRef Id="592530725"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2968327968" Name="Play_Pigeon" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="147213315"/>
+						<MediaRef Id="464165162"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="613274396"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+				<Event Id="960299171" Name="Play_PigeonFlyingAway" DurationType="OneShot" DurationMin="2.6430697" DurationMax="2.6430697">
+					<MediaRefs>
+						<MediaRef Id="1050745615"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1682802373" Name="Play_thrusters_loop" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="728538383"/>
@@ -253,5 +286,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{77F78D30-FD62-3D61-819B-6BD4FF5528FA}</FileHash>
+	<FileHash>{0EEC798A-0B8A-E464-8D15-1E47BE02C992}</FileHash>
 </SoundBanksInfo>
