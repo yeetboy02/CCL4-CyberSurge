@@ -54,6 +54,8 @@ public class CourseHandler : MonoBehaviour {
 
     [SerializeField] private PlayerRespawn playerRespawn;
 
+    [SerializeField] private CheckpointIndicator checkpointIndicator;
+
     [SerializeField] private int countdownTime = 3;
 
     #endregion
@@ -144,6 +146,9 @@ public class CourseHandler : MonoBehaviour {
 
         // SET RESPAWN POINT TO START POINT
         playerRespawn.SetCurrRespawnPoint(currCourse.GetStartPoint());
+
+        // SET CHECKPOINT INDICATOR
+        checkpointIndicator.SetNextCheckPointPosition(currCourse.GetCheckpointPoint(0));
     }
 
     IEnumerator CountDown() {
@@ -250,6 +255,12 @@ public class CourseHandler : MonoBehaviour {
 
                         // INCREMENT CHECKPOINT
                         currCheckpoint++;
+
+                        // IF LAST CHECKPOINT SET NEXT CHECK POINT POSITION TO ENDPOINT
+                        Vector3 nextCoursePoint = currCheckpoint < currCourse.checkpoints.Length ? currCourse.GetCheckpointPoint(currCheckpoint) : currCourse.GetEndPoint();
+
+                        // SET CHECKPOINT INDICATOR
+                        checkpointIndicator.SetNextCheckPointPosition(nextCoursePoint);
                     }
                 }
                 break;
