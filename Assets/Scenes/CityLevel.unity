@@ -17901,6 +17901,10 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1606962952}
+    - target: {fileID: 8631274668471430113, guid: af8f681fa9e0c4cbcbdb2936f9f4c976, type: 3}
+      propertyPath: checkpointIndicator
+      value: 
+      objectReference: {fileID: 1649795096}
     - target: {fileID: 8779583087941104890, guid: af8f681fa9e0c4cbcbdb2936f9f4c976, type: 3}
       propertyPath: m_Name
       value: CourseManager
@@ -75760,6 +75764,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
+--- !u!114 &1649795096 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9008484612709593866, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
+  m_PrefabInstance: {fileID: 1649795095}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1fad9c731126450a89820f729055880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1651332285
 GameObject:
   m_ObjectHideFlags: 0

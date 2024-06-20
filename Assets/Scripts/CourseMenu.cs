@@ -35,7 +35,7 @@ public class CourseMenu : MonoBehaviour {
         instance = this;
 
         // SET START MENU STATE
-        CourseHandler.instance.SetCourseState(CourseHandler.CourseState.Inactive);
+        InactiveState();
     }
 
     #endregion

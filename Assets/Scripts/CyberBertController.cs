@@ -6,7 +6,6 @@ public class CyberBertController : MonoBehaviour {
 
     #region Parameters
 
-    [SerializeField] private GameObject menu;
 
     [SerializeField] private string role;
 
@@ -33,7 +32,12 @@ public class CyberBertController : MonoBehaviour {
 
     void Intro(bool start) {
         // ENABLE/DISABLE MENU
-        menu.SetActive(start);
+        if (start) {
+            TutorialMenu.instance.SetTutorialMenuState(TutorialMenu.TutorialMenuState.Intro);
+        }
+        else {
+            TutorialMenu.instance.SetTutorialMenuState(TutorialMenu.TutorialMenuState.Inactive);
+        }
     }
 
     #endregion
@@ -42,7 +46,12 @@ public class CyberBertController : MonoBehaviour {
 
     void MoveToCity(bool start) {
         // ENABLE/DISABLE MENU
-        menu.SetActive(start);
+        if (start) {
+            TutorialMenu.instance.SetTutorialMenuState(TutorialMenu.TutorialMenuState.MoveToCity);
+        }
+        else {
+            TutorialMenu.instance.SetTutorialMenuState(TutorialMenu.TutorialMenuState.Inactive);
+        }
     }
 
     #endregion
