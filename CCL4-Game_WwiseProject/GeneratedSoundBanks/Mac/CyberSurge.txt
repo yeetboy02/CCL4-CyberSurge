@@ -8,23 +8,43 @@ Event	ID	Name			Wwise Object Path	Notes
 	2323405115	Play_Landing			\Default Work Unit\Play_Landing	
 	3154490300	Play_AmbientNoise			\Default Work Unit\Play_AmbientNoise	
 	3241291351	Play_Achievement_sound			\Default Work Unit\Play_Achievement_sound	
+	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
 	4044939577	Play_Chinese_Violin			\Default Work Unit\Play_Chinese_Violin	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2528658256	Ground			\Default Work Unit\Ground	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	Concrete	Ground			
+	2473969246	Metal	Ground			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	96789415	Landing On The Ground [1]	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Landing On The Ground [1]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [1]		62460
+	78387640	ConcreteStep-006	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\ConcreteStep-006_E6E04F37.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\ConcreteStep-006		39932
+	96789415	Landing On The Ground [1]	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Landing On The Ground [1]_3DA5FFB1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [1]		30792
+	111255819	ConcreteStep-001	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\ConcreteStep-001_290A8462.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\ConcreteStep-001		51312
 	127988684	Countdown-001	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Countdown-001_8347025C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-001		176496
-	244058664	Landing On The Ground [7]	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Landing On The Ground [7]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [7]		162024
+	244058664	Landing On The Ground [7]	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Landing On The Ground [7]_A58CCF2E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [7]		54772
+	259192915	MetalStep-006	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\MetalStep-006_3B43D178.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-006		21324
+	342673321	ConcreteStep-003	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\ConcreteStep-003_5CD4EBE9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\ConcreteStep-003		29496
+	418699331	ConcreteStep-002	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\ConcreteStep-002_697DF164.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\ConcreteStep-002		37084
 	430139319	Finish	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\alert3 (version 11)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Finish		927644
-	531600051	Landing_Stone_1	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Landing_Stone_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing_Stone_1		39180
-	592530725	Landing On The Ground [2]	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Landing On The Ground [2]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [2]		51516
+	433485792	MetalStep-007	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\MetalStep-007_94AF54A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-007		18368
+	456990482	MetalStep-005	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\MetalStep-005_EE295FD9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-005		23056
+	531600051	Landing_Stone_1	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Landing_Stone_1_8373CC93.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing_Stone_1		19636
+	592530725	Landing On The Ground [2]	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Landing On The Ground [2]_6E5AF743.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [2]		29480
 	613313089	Chinese Violin	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Chinese Violin - The Enchanted Sound of the Erhu_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chinese Violin		14187664
+	685137432	ConcreteStep-004	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\ConcreteStep-004_970B94DD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\ConcreteStep-004		42144
 	711410964	Countdown-004	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Countdown-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-004		352896
+	720720670	MetalStep-003	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\MetalStep-003_BE27B8B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-003		26020
 	728538383	thrusters_loop	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\thrusters_loop_7D204FDB.wem		\Actor-Mixer Hierarchy\Default Work Unit\thrusters_loop		3838400
-	859789295	Achievement sound	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Achievement sound 1_98825A70.wem		\Actor-Mixer Hierarchy\Default Work Unit\Achievement sound		154808
+	816237218	MetalStep-002	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\MetalStep-002_F95DC0D6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-002		12688
+	859789295	Achievement sound	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Achievement sound 1_77BE2E52.wem		\Actor-Mixer Hierarchy\Default Work Unit\Achievement sound		154808
+	862749239	ConcreteStep-005	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\ConcreteStep-005_D52499C6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\ConcreteStep-005		44040
+	879264308	MetalStep-004	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\MetalStep-004_7F6DB78C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-004		18612
 	882248691	Ambience-metro	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\ambience, metro, wagon, train, interior, city, Moscow_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbientNoise\Ambience-metro		4492896
 	897840081	HoloRobo	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Robo Bird_DA93DA21.wem		\Actor-Mixer Hierarchy\Default Work Unit\HoloRobo		70668
-	945103821	Landing On The Ground [6]	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Landing On The Ground [6]_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [6]		162024
 	950820286	Cyberpunk Beat Quiet	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Cyberpunk Beat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cyberpunk Beat Quiet		5507212
+	967381246	MetalStep-001	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\MetalStep-001_52EBE9C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-001		18860
 	1028041429	Countdown-002	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Countdown-002_8347025C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-002		176496
 	1054905388	Countdown-003	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Countdown-003_8347025C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-003		176496
 	1061541565	Street Noise in the city 1	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Mac\SFX\Street Noise in the city 1_E542090B.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbientNoise\Street Noise in the city 1		8429812
