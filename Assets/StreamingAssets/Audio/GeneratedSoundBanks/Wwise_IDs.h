@@ -20,10 +20,28 @@ namespace AK
         static const AkUniqueID PLAY_CYBERPUNK_BEAT = 454602296U;
         static const AkUniqueID PLAY_CYBERPUNK_BEAT_QUIET = 792531229U;
         static const AkUniqueID PLAY_FINISH = 1793765179U;
+        static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_HOLOROBO = 1682706162U;
         static const AkUniqueID PLAY_LANDING = 2323405115U;
+        static const AkUniqueID PLAY_PIGEON = 2968327968U;
+        static const AkUniqueID PLAY_PIGEONFLYINGAWAY = 960299171U;
         static const AkUniqueID PLAY_THRUSTERS_LOOP = 1682802373U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace GROUND
+        {
+            static const AkUniqueID GROUP = 2528658256U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CONCRETE = 841620460U;
+                static const AkUniqueID METAL = 2473969246U;
+            } // namespace SWITCH
+        } // namespace GROUND
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

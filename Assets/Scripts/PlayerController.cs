@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
         controller = GetComponent<CharacterController>();
     }
 
-    #region CountDown
+    #region Methods
 
     public void EnableMovement(bool enabled) {
         // ENABLE/DISABLE PLAYER MOVEMENT INPUT
@@ -29,9 +29,24 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    public void EnableJump(bool enabled) {
+        // ENABLE/DISABLE PLAYER JUMP INPUT
+        if (enabled) {
+            playerInput.actions.FindAction("Jump").Enable();
+        } else {
+            playerInput.actions.FindAction("Jump").Disable();
+        }
+    }
+
     public void SetPosition(Vector3 position) {
+        // RESET PLAYER VELOCITY
+        controller.enabled = false;
+
         // SET PLAYER POSITION
-        controller.Move(position - transform.position);
+        gameObject.transform.position = position;
+
+        // REACTIVE PLAYER CONTROLLER
+        controller.enabled = true;
     }
 
     #endregion

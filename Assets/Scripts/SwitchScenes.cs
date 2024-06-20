@@ -6,10 +6,13 @@ using UnityEngine.SceneManagement;
 public class SwitchScenes : MonoBehaviour
 {
 
-public void ChangeScene()
-    {
+    public void GoToTutorialScene() {
         SceneManager.LoadSceneAsync(1);
     }
 
+
+    public void GoToCityScene() {
+        SceneManager.LoadSceneAsync(2);
+    }
 
 }

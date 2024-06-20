@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
-
+    private int AmbientNoiseId = -1;
+    private int CyberpunkMusicId = -1;
     #region Singleton
 
     public static SoundManager instance;
@@ -22,17 +23,25 @@ public class SoundManager : MonoBehaviour
 
     #endregion
 
-    private void Awake()
-    {
+    private void Update()
+        {
         if(SceneManager.GetActiveScene().name == "CityLevel")
         {
-        AkSoundEngine.PostEvent("Play_AmbientNoise", gameObject);
-
+            AkSoundEngine.StopPlayingID((uint)CyberpunkMusicId);
+            CyberpunkMusicId = -1;
+            if(AmbientNoiseId == -1)
+            {
+            AmbientNoiseId = (int)AkSoundEngine.PostEvent("Play_AmbientNoise", gameObject);
+            }
         }
         else if(SceneManager.GetActiveScene().name == "SmallLevel")
         {
-            AkSoundEngine.PostEvent("Play_Cyberpunk_Beat_Quiet", gameObject);
-
+            AkSoundEngine.StopPlayingID((uint)AmbientNoiseId);
+            AmbientNoiseId = -1;
+            if (CyberpunkMusicId == -1)
+            {
+                CyberpunkMusicId = (int)AkSoundEngine.PostEvent("Play_Cyberpunk_Beat_Quiet", gameObject);
+            }
         }
     }
 

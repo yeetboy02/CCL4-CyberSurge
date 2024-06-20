@@ -33,4 +33,10 @@ public class CyberSteveSound : MonoBehaviour {
             AkSoundEngine.StopPlayingID(_cyberBertId, 500);
         }
     }
+
+    private void OnDestroy()
+    {
+        AkSoundEngine.StopPlayingID(_cyberBertId);
+
+    }
 }

@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SmallLevel.unity
     guid: 87622fa5a3afa064cb96f80d350cb48f
+  - enabled: 1
+    path: Assets/Scenes/CityLevel.unity
+    guid: 8f9ba10db9cfb5348952c63df4ee8468
   m_configObjects: {}

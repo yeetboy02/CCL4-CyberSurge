@@ -15,13 +15,13 @@ public class PlayerAnimation : MonoBehaviour {
 
     private PlayerMovement movement;
 
-    private CharacterController controller;
-
     private float currHorizontalSpeed = 0.0f;
 
     private float currVerticalSpeed = 0.0f;
 
     private bool grounded = false;
+
+    private bool jumping = false;
 
     #endregion
 
@@ -58,34 +58,38 @@ public class PlayerAnimation : MonoBehaviour {
 
     private void GetStateByPlayerSpeed() {
         // RETRIEVE HORIZONTAL SPEED
-        currHorizontalSpeed = new Vector3(controller.velocity.x, 0.0f, controller.velocity.z).magnitude;
+        currHorizontalSpeed = movement.GetHorizontalVelocity();
 
         // RETRIEVE VERTICAL SPEED
-        currVerticalSpeed = controller.velocity.y;
-
-        // GET IF PLAYER IS GROUNDED
-        grounded = movement.GetGrounded();
+        currVerticalSpeed = movement.GetVerticalVelocity();
 
         // CHECK IF PLAYER IS GROUNDED
+        grounded = movement.GetGrounded();
+
+        // CHECK IF PLAYER IS JUMPING
+        jumping = movement.GetJumping();
+
+        // SET ANIMATION STATES DEPENDING ON SPEED AND GROUNDED STATE
         if (grounded) {
-            // CHECK IF PLAYER IS MOVING
-            if (currHorizontalSpeed > 0.0f) {
-                // SET ANIMATION STATE TO RUNNING
-                SetAnimationState(AnimationState.Running);
-            } else {
-                // SET ANIMATION STATE TO IDLE
+            if (currHorizontalSpeed == 0.0f) {
+                // SET IDLE STATE
                 SetAnimationState(AnimationState.Idle);
+            } else {
+                // SET RUNNING STATE
+                SetAnimationState(AnimationState.Running);
             }
-        } else {
-            // CHECK IF PLAYER IS JUMPING
+        } 
+        else {
             if (currVerticalSpeed > 0.0f) {
-                // SET ANIMATION STATE TO JUMPING
+                // SET JUMPING STATE
                 SetAnimationState(AnimationState.Jumping);
             } else {
-                // SET ANIMATION STATE TO FALLING
+                // SET FALLING STATE
                 SetAnimationState(AnimationState.Falling);
             }
         }
+
+        Debug.Log(currState);
     }
 
     #endregion
@@ -95,12 +99,6 @@ public class PlayerAnimation : MonoBehaviour {
     void Start() {
         // GET PLAYER MOVEMENT SCRIPT
         movement = GetComponent<PlayerMovement>();
-
-        // SET INITIAL STATE TO IDLE
-        SetAnimationState(AnimationState.Idle);
-
-        // GET CHARACTER CONTROLLER
-        controller = GetComponent<CharacterController>();
     }
 
     #endregion
@@ -108,12 +106,24 @@ public class PlayerAnimation : MonoBehaviour {
     #region AnimationSpeed
 
     private void UpdateAnimationSpeed() {
+        // GET CURRENT RUNNING SPEED
+        float currSpeed = movement.GetCurrSpeed();
+
         // SET ANIMATION SPEED DEPENDING ON RUNNING SPEED
         if (currState == AnimationState.Running) {
-            animator.speed = currHorizontalSpeed / movement.GetMaxSpeed() * runningAnimationSpeed;
+            animator.speed = currSpeed / movement.GetMaxSpeed() * runningAnimationSpeed;
         } else {
             animator.speed = 1.0f;
         }
+    }
+
+    #endregion
+
+    #region AnimationEvents
+
+    public void TriggerVictoryAnimation() {
+        // SET VICTORY ANIMATION
+        animator.SetTrigger("victory");
     }
 
     #endregion

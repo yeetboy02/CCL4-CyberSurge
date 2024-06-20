@@ -42,6 +42,14 @@ public class Course : MonoBehaviour {
         return startObject.transform.position;
     }
 
+    public Vector3 GetCheckpointPoint(int index) {
+        return checkpointObjects[index].transform.position;
+    }
+
+    public Vector3 GetEndPoint() {
+        return endObject.transform.position;
+    }
+
     #endregion
 
     #region CourseSetup
