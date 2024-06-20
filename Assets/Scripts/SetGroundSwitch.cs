@@ -15,19 +15,22 @@ public class SetGroundSwitch : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (collision.gameObject.name.Contains("Air") || collision.gameObject.name.Contains("Jump"))
+        if(hit.gameObject.name.Contains("Air") || hit.gameObject.name.Contains("Jump"))
         {
             AkSoundEngine.SetSwitch("Ground", "Metal", gameObject);
             Debug.Log("Metal");
+            Debug.Log(AkSoundEngine.SetSwitch("Ground", "Metal", gameObject));
         }
-        else if (collision.gameObject.name.Contains("House") || collision.gameObject.name.Contains("Floor"))
+        else if (hit.gameObject.name.Contains("House") || hit.gameObject.name.Contains("Floor"))
         {
             AkSoundEngine.SetSwitch("Ground", "Concrete", gameObject);
             Debug.Log("Concrete");
+            Debug.Log(AkSoundEngine.SetSwitch("Ground", "Concrete", gameObject));
 
         }
-        Debug.Log(collision.gameObject.name);
+
     }
 }
+

@@ -38,6 +38,14 @@ public class SoundManager : MonoBehaviour
         {
             AkSoundEngine.StopPlayingID((uint)AmbientNoiseId);
             AmbientNoiseId = -1;
+            AkSoundEngine.StopPlayingID((uint)CyberpunkMusicId);
+            if (CyberpunkMusicId == -1)
+            {
+                CyberpunkMusicId = (int)AkSoundEngine.PostEvent("Play_Cyberpunk_Beat_Quiet", gameObject);
+            }
+        }
+        else if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
             if (CyberpunkMusicId == -1)
             {
                 CyberpunkMusicId = (int)AkSoundEngine.PostEvent("Play_Cyberpunk_Beat_Quiet", gameObject);
