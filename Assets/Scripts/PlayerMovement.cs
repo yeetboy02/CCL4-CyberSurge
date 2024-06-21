@@ -298,11 +298,11 @@ public class PlayerMovement : MonoBehaviour {
             // CHECK WALLRUNNING DIRECTION
             if (GetWallRunningDirectionRight()) {
                 // ROTATE CURR MOVEMENT AWAY FROM THE WALL
-                currGroundMovement = Quaternion.AngleAxis((angleToWall + jumpOffAngle) * -1, Vector3.up) * currWallRunVector;
+                currGroundMovement = Quaternion.AngleAxis(angleToWall + jumpOffAngle, Vector3.up) * currWallRunVector;
             }
             else {
                 // ROTATE CURR MOVEMENT AWAY FROM THE WALL
-                currGroundMovement = Quaternion.AngleAxis(angleToWall + jumpOffAngle, Vector3.up) * currWallRunVector;
+                currGroundMovement = Quaternion.AngleAxis((angleToWall + jumpOffAngle) * -1, Vector3.up) * currWallRunVector;
             }
 
             // END WALLRUNNING
