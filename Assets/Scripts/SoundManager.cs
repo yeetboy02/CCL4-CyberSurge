@@ -19,7 +19,7 @@ public class SoundManager : MonoBehaviour
             return;
         instance = this;
 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
     #endregion
@@ -53,6 +53,12 @@ public class SoundManager : MonoBehaviour
             AmbientNoiseId = (int)AkSoundEngine.PostEvent("Play_AmbientNoise", gameObject);
             }
         }
+    }
+
+
+    private void OnDestroy()
+    {
+        AkSoundEngine.StopAll();
     }
 
 }
