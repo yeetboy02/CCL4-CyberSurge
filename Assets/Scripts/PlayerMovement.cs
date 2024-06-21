@@ -98,6 +98,8 @@ public class PlayerMovement : MonoBehaviour {
 
     private bool wallRunning = false;
 
+    private bool wallRunningRight = false;
+
     #endregion
 
     #region GetterSetter
@@ -135,7 +137,7 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     public bool GetWallRunningDirectionRight() {
-        return Vector3.Dot(currWallRunVector, transform.right) > 0;
+        return wallRunningRight;
     }
 
     #endregion
@@ -387,9 +389,11 @@ public class PlayerMovement : MonoBehaviour {
         // SET WALLRUN VECTOR TO WALLRUN DIRECTION
         if (Vector3.Dot(wall.transform.right, transform.forward) > 0) {
             currWallRunVector = Quaternion.AngleAxis(-angleToWall, Vector3.up) * wall.transform.right;
+            wallRunningRight = true;
         }
         else {
             currWallRunVector = Quaternion.AngleAxis(angleToWall, Vector3.up) * -wall.transform.right;
+            wallRunningRight = false;
         }
         
         // RESET Y VELOCITY
