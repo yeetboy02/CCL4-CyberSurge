@@ -389,10 +389,12 @@ public class PlayerMovement : MonoBehaviour {
         // SET WALLRUN VECTOR TO WALLRUN DIRECTION
         if (Vector3.Dot(wall.transform.right, transform.forward) > 0) {
             currWallRunVector = Quaternion.AngleAxis(-angleToWall, Vector3.up) * wall.transform.right;
+            // SET CURRENT WALLRUNNING DIRECTION TO RIGHT
             wallRunningRight = true;
         }
         else {
             currWallRunVector = Quaternion.AngleAxis(angleToWall, Vector3.up) * -wall.transform.right;
+            // SET CURRENT WALLRUNNING DIRECTION TO LEFT
             wallRunningRight = false;
         }
         
