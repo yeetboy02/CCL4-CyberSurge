@@ -59,6 +59,8 @@ public class PlayerMovement : MonoBehaviour {
 
     [SerializeField] private float angleToWall = 30.0f;
 
+    [SerializeField] private float jumpOffAngle = 20.0f;
+
     #endregion
 
     #region Variables
@@ -133,7 +135,6 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     public bool GetWallRunningDirectionRight() {
-        Debug.Log(Vector3.Dot(currWallRunVector, transform.right) > 0);
         return Vector3.Dot(currWallRunVector, transform.right) > 0;
     }
 
@@ -268,7 +269,12 @@ public class PlayerMovement : MonoBehaviour {
     #region Jumping
 
     void OnJump() {
-        if (!grounded) return;
+        if (!grounded && !wallRunning) return;
+
+        // UPDATE JUMPVECTOR IF WALLRUNNING
+        if (wallRunning) {
+            UpdateJumpVector();
+        }
 
         // SET JUMPING TO TRUE
         jumping = true;
@@ -282,8 +288,27 @@ public class PlayerMovement : MonoBehaviour {
 
     void UpdateJumpVector() {
 
-        // GET CURRENT MOVEMENT
-        Vector3 currGroundMovement = currDirectionalMovementVector;
+        Vector3 currGroundMovement = Vector3.zero;
+
+        if (!wallRunning) {
+            // SET CURRENT MOVEMENT TO CURRENT GROUND MOVEMENT
+            currGroundMovement = currDirectionalMovementVector;
+        }
+        else {
+            // CHECK WALLRUNNING DIRECTION
+            if (GetWallRunningDirectionRight()) {
+                // ROTATE CURR MOVEMENT AWAY FROM THE WALL
+                currGroundMovement = Quaternion.AngleAxis((angleToWall + jumpOffAngle) * -1, Vector3.up) * currWallRunVector;
+            }
+            else {
+                // ROTATE CURR MOVEMENT AWAY FROM THE WALL
+                currGroundMovement = Quaternion.AngleAxis(angleToWall + jumpOffAngle, Vector3.up) * currWallRunVector;
+            }
+
+            // END WALLRUNNING
+            wallRunning = false;
+        }
+
 
         // SET JUMP MOVEMENT VECTOR TO CURRENT VELOCITY WHEN JUMPING
         currJumpMovementVector = new Vector3(currGroundMovement.x, 0, currGroundMovement.z);
