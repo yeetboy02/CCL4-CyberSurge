@@ -3,50 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="3D - Figure Parkour Test" ID="{9A7E5A0D-1020-4B3F-9725-60025F253AB8}" ShortID="651693136">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="3D - Figure Parkour Test" ID="{F6D48BEE-4BE2-4247-9EC7-39A42DA8E25F}">
-							<Language>SFX</Language>
-							<AudioFile>3D - Figure Parkour Test.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="866578316"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="3D - Figure Parkour Test" ID="{F6D48BEE-4BE2-4247-9EC7-39A42DA8E25F}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="5-Breathing Industrial Game  - SpankMyFilth" ID="{47B6FF20-B889-43EC-8C27-AC5C94F142F1}" ShortID="104240244">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="5-Breathing Industrial Game  - SpankMyFilth" ID="{AD953EC3-584C-4B9B-B72D-31CD14E843F3}">
-							<Language>SFX</Language>
-							<AudioFile>5-Breathing Industrial Game  - SpankMyFilth.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="597938922"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="5-Breathing Industrial Game  - SpankMyFilth" ID="{AD953EC3-584C-4B9B-B72D-31CD14E843F3}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Finish" ID="{9A571934-0246-4EFA-8ED6-473878C4E14D}" ShortID="210135345">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -69,129 +25,6 @@
 						<ActiveSource Name="alert3 (version 11)" ID="{CF5B49A7-581C-42D2-A06A-5B92DA7A788A}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="BIM_VidPhone_Mono-001" ID="{A06A7B09-9772-444B-9E2E-46FB4B000B43}" ShortID="96521210">
-					<PropertyList>
-						<Property Name="Inclusion" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="BIM_VidPhone_Mono-001" ID="{2982501D-0891-4AB4-B1B7-A69DC013DBD6}">
-							<Language>SFX</Language>
-							<AudioFile>BIM_VidPhone_Mono-001.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="112454964"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="BIM_VidPhone_Mono-001" ID="{2982501D-0891-4AB4-B1B7-A69DC013DBD6}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Chinese Violin" ID="{0DA743D3-4F9A-4B31-82AA-3F80B33FF112}" ShortID="174236842">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Chinese Violin - The Enchanted Sound of the Erhu" ID="{5AC7AF9B-5493-463B-8192-01129C88C0C9}">
-							<Language>SFX</Language>
-							<AudioFile>Chinese Violin - The Enchanted Sound of the Erhu.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="613313089"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Chinese Violin - The Enchanted Sound of the Erhu" ID="{5AC7AF9B-5493-463B-8192-01129C88C0C9}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="concrete_11a_sneakers_walk" ID="{4FA9C2FA-7F26-41AE-8219-A01C95399785}" ShortID="177111721">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="concrete_11a_sneakers_walk" ID="{9E0904F9-8340-48F4-B683-17C46DB723A3}">
-							<Language>SFX</Language>
-							<AudioFile>concrete_11a_sneakers_walk.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="125361522"/>
-							</MediaIDList>
-						</AudioFileSource>
-						<AudioFileSource Name="CityAmbience" ID="{0EEC90AD-2FF2-491F-9A5A-A9EFA0D2872B}">
-							<Language>SFX</Language>
-							<AudioFile>CityAmbience.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="248509475"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="CityAmbience" ID="{0EEC90AD-2FF2-491F-9A5A-A9EFA0D2872B}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="concrete_16a_trekkingshoes_walk" ID="{E665FC55-E25E-4968-A582-78FE38A44DA9}" ShortID="634696834">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="concrete_16a_trekkingshoes_walk" ID="{4D17D6E6-0172-4DA0-9BEA-5547DFE0BBD2}">
-							<Language>SFX</Language>
-							<AudioFile>concrete_16a_trekkingshoes_walk.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="490475712"/>
-							</MediaIDList>
-						</AudioFileSource>
-						<AudioFileSource Name="Pigeon-001" ID="{43DBB0F2-6345-4E9D-B8AC-E128D7F0E3E1}">
-							<Language>SFX</Language>
-							<AudioFile>Pigeon-001.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="705537914"/>
-							</MediaIDList>
-						</AudioFileSource>
-						<AudioFileSource Name="Pigeon-002" ID="{610F0040-41B9-4118-8C8D-2DF87967CCC3}">
-							<Language>SFX</Language>
-							<AudioFile>Pigeon-002.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="285061386"/>
-							</MediaIDList>
-						</AudioFileSource>
-						<AudioFileSource Name="PigeonFlyingAway" ID="{0E8EB6A2-3190-4016-A74E-9C0C8E40E844}">
-							<Language>SFX</Language>
-							<AudioFile>PigeonFlyingAway.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="282423486"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="PigeonFlyingAway" ID="{0E8EB6A2-3190-4016-A74E-9C0C8E40E844}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Cyberpunk Beat" ID="{7BF5C8A7-333A-4400-A545-D001520EC586}" ShortID="514557621">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -212,290 +45,6 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Cyberpunk Beat" ID="{E30FFECA-3F77-4CA5-97B3-36E21636B760}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Drone flutter scifi" ID="{C0EBC11F-32F1-4CE1-9ED8-4412A6DFA90A}" ShortID="743462929">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Drone flutter scifi" ID="{24CE2538-E9E3-4122-8D08-A7D2661C3858}">
-							<Language>SFX</Language>
-							<AudioFile>Drone flutter scifi.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="211332964"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Drone flutter scifi" ID="{24CE2538-E9E3-4122-8D08-A7D2661C3858}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Effect FX Cyber" ID="{2025C117-2AA9-47E9-A480-9F74D1EF2F1A}" ShortID="964511145">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Effect FX Cyber" ID="{A70605F4-43D3-4958-95AF-45649512C2B3}">
-							<Language>SFX</Language>
-							<AudioFile>Effect FX Cyber.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="809057956"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Effect FX Cyber" ID="{A70605F4-43D3-4958-95AF-45649512C2B3}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Elevator - Electronic, Retro, Rising" ID="{B2EE180B-A4CC-41B6-B9DF-22FC20DB4BB7}" ShortID="877502903">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Elevator - Electronic, Retro, Rising" ID="{1DC286DD-345D-47C8-9951-09B314A25E62}">
-							<Language>SFX</Language>
-							<AudioFile>Elevator - Electronic, Retro, Rising.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="703006841"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Elevator - Electronic, Retro, Rising" ID="{1DC286DD-345D-47C8-9951-09B314A25E62}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Footsteps_Mountain_Boots_Rock_Jump_Sequence_Mono" ID="{224DDDC3-3A21-4A4E-9269-C17C933AF9B7}" ShortID="85933189">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Footsteps_Mountain_Boots_Rock_Jump_Sequence_Mono" ID="{5BC682B4-E4FA-4072-AFF7-7CCC63165B64}">
-							<Language>SFX</Language>
-							<AudioFile>Footsteps_Mountain_Boots_Rock_Jump_Sequence_Mono.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="981585883"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Footsteps_Mountain_Boots_Rock_Jump_Sequence_Mono" ID="{5BC682B4-E4FA-4072-AFF7-7CCC63165B64}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Metal stairs" ID="{71FC0747-C94F-419A-9322-862B62AE6E4B}" ShortID="534756900">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Metal stairs" ID="{33B1AEEE-6167-4DDC-9371-515447D3EF43}">
-							<Language>SFX</Language>
-							<AudioFile>Metal stairs .wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="480992383"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Metal stairs" ID="{33B1AEEE-6167-4DDC-9371-515447D3EF43}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Metal Steps" ID="{5A2F9EC4-9260-4D92-A559-BDC5652B021C}" ShortID="4562610">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Metal Steps" ID="{654BB1B8-84F4-417C-87AB-272A7D7ABAD1}">
-							<Language>SFX</Language>
-							<AudioFile>Metal Steps.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="35336381"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Metal Steps" ID="{654BB1B8-84F4-417C-87AB-272A7D7ABAD1}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Pasos sobre metal" ID="{CC57080F-A26C-4F87-9377-505DCDB2D732}" ShortID="583635929">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Pasos sobre metal" ID="{71E69134-05B5-40E7-876A-41C67E443FCF}">
-							<Language>SFX</Language>
-							<AudioFile>Pasos sobre metal.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="674658200"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Pasos sobre metal" ID="{71E69134-05B5-40E7-876A-41C67E443FCF}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Rising Activate 08" ID="{5C5DCE93-43BE-4671-8ED1-5757D983A9B3}" ShortID="490062582">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Rising Activate 08" ID="{2C99BB80-573B-4839-A8DE-78AC34FB3B00}">
-							<Language>SFX</Language>
-							<AudioFile>Rising Activate 08.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="985131695"/>
-							</MediaIDList>
-						</AudioFileSource>
-						<AudioFileSource Name="Pigeon-001" ID="{CFE5A76B-1F87-4D0C-9C96-06CB5C14C1DF}">
-							<Language>SFX</Language>
-							<AudioFile>Pigeon-001.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="705537914"/>
-							</MediaIDList>
-						</AudioFileSource>
-						<AudioFileSource Name="Pigeon-002" ID="{40CE6F7E-393F-4FF7-BDB8-427140DD2BB3}">
-							<Language>SFX</Language>
-							<AudioFile>Pigeon-002.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="285061386"/>
-							</MediaIDList>
-						</AudioFileSource>
-						<AudioFileSource Name="PigeonFlyingAway" ID="{249AC61C-B0D9-45D8-A396-1B7559A6AAB7}">
-							<Language>SFX</Language>
-							<AudioFile>PigeonFlyingAway.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="282423486"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="PigeonFlyingAway" ID="{249AC61C-B0D9-45D8-A396-1B7559A6AAB7}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Ruedas oxidadas" ID="{E0A259C4-C3A2-442C-BF9F-E320BDBA7CD1}" ShortID="559236062">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Ruedas oxidadas" ID="{0265008C-190E-4998-B01C-B7E38DEF275F}">
-							<Language>SFX</Language>
-							<AudioFile>Ruedas oxidadas.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="714226901"/>
-							</MediaIDList>
-						</AudioFileSource>
-						<AudioFileSource Name="Pigeon-001" ID="{B2854E23-E8CC-4680-BC83-F19F8C1C3D32}">
-							<Language>SFX</Language>
-							<AudioFile>Pigeon-001.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="705537914"/>
-							</MediaIDList>
-						</AudioFileSource>
-						<AudioFileSource Name="Pigeon-002" ID="{D3641602-A2EE-4806-B82A-F7A300CE9885}">
-							<Language>SFX</Language>
-							<AudioFile>Pigeon-002.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="285061386"/>
-							</MediaIDList>
-						</AudioFileSource>
-						<AudioFileSource Name="PigeonFlyingAway" ID="{D6E0CACF-E06A-471C-8012-67D0A0C6EB0E}">
-							<Language>SFX</Language>
-							<AudioFile>PigeonFlyingAway.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="282423486"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="PigeonFlyingAway" ID="{D6E0CACF-E06A-471C-8012-67D0A0C6EB0E}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Servo_1_Panera" ID="{7DC00CEF-4F16-4F40-A1AB-C348F76D7BC9}" ShortID="398622809">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Servo_1_Panera" ID="{02FE1A95-5ABE-42DD-B865-6F19F011FA63}">
-							<Language>SFX</Language>
-							<AudioFile>Servo_1_Panera.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="744633345"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Servo_1_Panera" ID="{02FE1A95-5ABE-42DD-B865-6F19F011FA63}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Servo_3_Panera" ID="{2CDF506F-8521-401F-BE8A-22E9A41DFC02}" ShortID="277258104">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Servo_3_Panera" ID="{ABF19A8C-44BD-4522-A77B-F2260BF5F9F5}">
-							<Language>SFX</Language>
-							<AudioFile>Servo_3_Panera.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="1047051624"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Servo_3_Panera" ID="{ABF19A8C-44BD-4522-A77B-F2260BF5F9F5}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="Landing" ID="{450F4E2B-5DD7-4872-B1E9-F64A676FBE66}" ShortID="455421020">
@@ -713,6 +262,11 @@
 				<Sound Name="thrusters_loop" ID="{D6EE9486-A769-4DE0-BA31-A3418BADE635}" ShortID="825577886">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-13</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1043,462 +597,6 @@
 						<ItemRef Name="Countdown-004" ID="{E9799F45-DD4D-4A3A-ACD3-B8A569A31D2B}"/>
 					</Playlist>
 				</RandomSequenceContainer>
-				<SwitchContainer Name="Footsteps" ID="{1A499689-FBB7-4334-AB8C-8A1ABE735647}" ShortID="51976866">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-						</Reference>
-						<Reference Name="DefaultSwitchOrState">
-							<ObjectRef Name="Concrete" ID="{04D72A11-DBF8-4DE3-8FB9-AC47380452DB}" WorkUnitID="{715F559D-C699-432E-AB5C-322E8AD980D3}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-						</Reference>
-						<Reference Name="SwitchGroupOrStateGroup">
-							<ObjectRef Name="Ground" ID="{E522E4D4-CE90-43FF-AAF3-C52EB9FF32AA}" WorkUnitID="{715F559D-C699-432E-AB5C-322E8AD980D3}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<RandomSequenceContainer Name="ConcreteSteps" ID="{72E6F913-48B6-49C7-BFF9-AFADE5D01271}" ShortID="1009321539">
-							<PropertyList>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>300</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-11</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="ConcreteStep-001" ID="{231DD763-15BA-457C-BD20-0624CB47F58F}" ShortID="110200014">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="ConcreteStep-001" ID="{9DAAF6BB-C5D8-4761-9DC6-7A5EDD8098D4}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0806493506493506"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.370987012987013"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>ConcreteStep-001.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="111255819"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ConcreteStep-001" ID="{9DAAF6BB-C5D8-4761-9DC6-7A5EDD8098D4}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="ConcreteStep-002" ID="{6CA64ADF-346E-492C-BEFF-7AD0CA110BE9}" ShortID="136728538">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="ConcreteStep-002" ID="{2A9254A4-C54D-42AF-A908-02E76BB4A382}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0752727272727272"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.284961038961039"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>ConcreteStep-002.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="418699331"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ConcreteStep-002" ID="{2A9254A4-C54D-42AF-A908-02E76BB4A382}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="ConcreteStep-003" ID="{8C4626D2-EE9D-4BD9-A303-C20731FA2A47}" ShortID="209794061">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="ConcreteStep-003" ID="{641E9B12-B877-4369-A660-6F16AFFFC078}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.051974025974026"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.218649350649351"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>ConcreteStep-003.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="342673321"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ConcreteStep-003" ID="{641E9B12-B877-4369-A660-6F16AFFFC078}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="ConcreteStep-004" ID="{C2B97C6F-5F12-495E-9730-8DE6C0520D7E}" ShortID="484339539">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="ConcreteStep-004" ID="{D1624F25-38CD-4D7A-942E-DBFF5C4C6F7A}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0842337662337662"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.322597402597402"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>ConcreteStep-004.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="685137432"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ConcreteStep-004" ID="{D1624F25-38CD-4D7A-942E-DBFF5C4C6F7A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="ConcreteStep-005" ID="{26779CA8-7982-4A72-9078-4B5F1A3C12B9}" ShortID="860258438">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="ConcreteStep-005" ID="{4F0A8456-CFA8-49A0-BEFE-76949C4C3E32}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.103948051948052"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.353064935064935"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>ConcreteStep-005.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="862749239"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ConcreteStep-005" ID="{4F0A8456-CFA8-49A0-BEFE-76949C4C3E32}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="ConcreteStep-006" ID="{6B61E174-744E-4B35-8F34-DBF729CA76BC}" ShortID="498382554">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="ConcreteStep-006" ID="{7462F5E1-B1BD-41CF-936D-F9BAF38889B5}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0663116883116883"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.29212987012987"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>ConcreteStep-006.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="78387640"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="ConcreteStep-006" ID="{7462F5E1-B1BD-41CF-936D-F9BAF38889B5}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="MetalSteps" ID="{31DB317A-55D6-423B-BF46-B3BA90F5B1E6}" ShortID="815751019">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="Highpass" Type="int16">
-									<ValueList>
-										<Value>27</Value>
-									</ValueList>
-								</Property>
-								<Property Name="MakeUpGain" Type="Real64">
-									<ValueList>
-										<Value>7</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>300</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>12</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="MetalStep-001" ID="{5D1D0FE8-03A7-45B0-9770-68A98512B171}" ShortID="254053396">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MetalStep-001" ID="{4DF3D3D5-F279-4D1B-BCE2-2EC23120D887}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.00979674293960009"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.116161380569544"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>MetalStep-001.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="967381246"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MetalStep-001" ID="{4DF3D3D5-F279-4D1B-BCE2-2EC23120D887}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="MetalStep-002" ID="{861AA82B-691F-4D54-8BFD-009EB46D2ED3}" ShortID="789566803">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MetalStep-002" ID="{3CCC6B4A-05AB-4E3C-B641-12E0250482D6}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.00979674293960008"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.0811730129281153"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>MetalStep-002.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="816237218"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MetalStep-002" ID="{3CCC6B4A-05AB-4E3C-B641-12E0250482D6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="MetalStep-003" ID="{70168771-619D-4D42-8810-559B26F23DCC}" ShortID="994810836">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MetalStep-003" ID="{AB06A394-6BEC-4824-8105-C92C09A4FAB7}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.00839720823394292"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.155348352327944"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>MetalStep-003.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="720720670"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MetalStep-003" ID="{AB06A394-6BEC-4824-8105-C92C09A4FAB7}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="MetalStep-004" ID="{ADE64821-E531-463A-BD68-E6905F088305}" ShortID="676947964">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MetalStep-004" ID="{34765CD5-3D7F-4A2B-B983-85C17590C4E9}">
-											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.104965102924287"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>MetalStep-004.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="879264308"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MetalStep-004" ID="{34765CD5-3D7F-4A2B-B983-85C17590C4E9}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="MetalStep-005" ID="{9A6C1573-5AE9-440C-AF81-918A805DB7C0}" ShortID="746117453">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MetalStep-005" ID="{92D8743C-AB3E-4244-A322-A4E005A1A2BF}">
-											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.130156727626115"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>MetalStep-005.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="456990482"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MetalStep-005" ID="{92D8743C-AB3E-4244-A322-A4E005A1A2BF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="MetalStep-006" ID="{1BA62A7C-6947-4CDE-BBCC-6C41E80B59EC}" ShortID="174082933">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MetalStep-006" ID="{D60D2468-061D-4AE2-90ED-2ADBE3E282A2}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.00699767352828577"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.127357658214801"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>MetalStep-006.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="259192915"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MetalStep-006" ID="{D60D2468-061D-4AE2-90ED-2ADBE3E282A2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="MetalStep-007" ID="{8ED76DDC-C03F-4854-9396-92D3506C42E9}" ShortID="172829067">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MetalStep-007" ID="{05DF3BF4-D0F8-45ED-9E2F-E3731AF03534}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0125958123509144"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.116161380569544"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>MetalStep-007.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="433485792"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MetalStep-007" ID="{05DF3BF4-D0F8-45ED-9E2F-E3731AF03534}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-					</ChildrenList>
-					<GroupingInfo>
-						<GroupingBehaviorList>
-							<GroupingBehavior>
-								<ItemRef Name="ConcreteSteps" ID="{72E6F913-48B6-49C7-BFF9-AFADE5D01271}"/>
-							</GroupingBehavior>
-							<GroupingBehavior>
-								<ItemRef Name="MetalSteps" ID="{31DB317A-55D6-423B-BF46-B3BA90F5B1E6}"/>
-							</GroupingBehavior>
-						</GroupingBehaviorList>
-						<GroupingList>
-							<Grouping>
-								<SwitchRef Name="Concrete" ID="{04D72A11-DBF8-4DE3-8FB9-AC47380452DB}"/>
-								<ItemList>
-									<ItemRef Name="ConcreteSteps" ID="{72E6F913-48B6-49C7-BFF9-AFADE5D01271}"/>
-								</ItemList>
-							</Grouping>
-							<Grouping>
-								<SwitchRef Name="Metal" ID="{7031C2E5-0DA5-4D8D-B75A-4C35D9B45F80}"/>
-								<ItemList>
-									<ItemRef Name="MetalSteps" ID="{31DB317A-55D6-423B-BF46-B3BA90F5B1E6}"/>
-								</ItemList>
-							</Grouping>
-						</GroupingList>
-					</GroupingInfo>
-				</SwitchContainer>
 				<Sound Name="PigeonFlyingAway" ID="{23EE7094-7D29-4AC2-8726-68BC08986EB8}" ShortID="422809568">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
@@ -1538,7 +636,7 @@
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-17</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -1629,6 +727,193 @@
 						<ItemRef Name="Pigeon-001" ID="{A8F23710-99A7-4A80-9C65-1BB9E95ADB3D}"/>
 						<ItemRef Name="Pigeon-002" ID="{6B7F4230-2456-4078-8901-CFBB114ECB99}"/>
 					</Playlist>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Footsteps" ID="{72E6F913-48B6-49C7-BFF9-AFADE5D01271}" ShortID="1009321539">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>300</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="ConcreteStep-001" ID="{231DD763-15BA-457C-BD20-0624CB47F58F}" ShortID="110200014">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ConcreteStep-001" ID="{9DAAF6BB-C5D8-4761-9DC6-7A5EDD8098D4}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0806493506493506"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.370987012987013"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ConcreteStep-001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="111255819"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ConcreteStep-001" ID="{9DAAF6BB-C5D8-4761-9DC6-7A5EDD8098D4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ConcreteStep-002" ID="{6CA64ADF-346E-492C-BEFF-7AD0CA110BE9}" ShortID="136728538">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ConcreteStep-002" ID="{2A9254A4-C54D-42AF-A908-02E76BB4A382}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0752727272727272"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.284961038961039"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ConcreteStep-002.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="418699331"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ConcreteStep-002" ID="{2A9254A4-C54D-42AF-A908-02E76BB4A382}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ConcreteStep-003" ID="{8C4626D2-EE9D-4BD9-A303-C20731FA2A47}" ShortID="209794061">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ConcreteStep-003" ID="{641E9B12-B877-4369-A660-6F16AFFFC078}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.051974025974026"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.218649350649351"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ConcreteStep-003.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="342673321"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ConcreteStep-003" ID="{641E9B12-B877-4369-A660-6F16AFFFC078}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ConcreteStep-004" ID="{C2B97C6F-5F12-495E-9730-8DE6C0520D7E}" ShortID="484339539">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ConcreteStep-004" ID="{D1624F25-38CD-4D7A-942E-DBFF5C4C6F7A}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0842337662337662"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.322597402597402"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ConcreteStep-004.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="685137432"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ConcreteStep-004" ID="{D1624F25-38CD-4D7A-942E-DBFF5C4C6F7A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ConcreteStep-005" ID="{26779CA8-7982-4A72-9078-4B5F1A3C12B9}" ShortID="860258438">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ConcreteStep-005" ID="{4F0A8456-CFA8-49A0-BEFE-76949C4C3E32}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.103948051948052"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.353064935064935"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ConcreteStep-005.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="862749239"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ConcreteStep-005" ID="{4F0A8456-CFA8-49A0-BEFE-76949C4C3E32}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ConcreteStep-006" ID="{6B61E174-744E-4B35-8F34-DBF729CA76BC}" ShortID="498382554">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{140854BF-6F1D-427A-A0F3-3C946B26A1F9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B2FFABAF-7C9C-4249-B536-DB94B1EDDB1F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ConcreteStep-006" ID="{7462F5E1-B1BD-41CF-936D-F9BAF38889B5}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0663116883116883"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.29212987012987"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>ConcreteStep-006.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="78387640"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ConcreteStep-006" ID="{7462F5E1-B1BD-41CF-936D-F9BAF38889B5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>

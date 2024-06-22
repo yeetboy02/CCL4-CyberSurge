@@ -11,53 +11,37 @@ Event	ID	Name			Wwise Object Path	Notes
 	3154490300	Play_AmbientNoise			\Default Work Unit\Play_AmbientNoise	
 	3241291351	Play_Achievement_sound			\Default Work Unit\Play_Achievement_sound	
 	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
-	4044939577	Play_Chinese_Violin			\Default Work Unit\Play_Chinese_Violin	
-
-Switch Group	ID	Name			Wwise Object Path	Notes
-	2528658256	Ground			\Default Work Unit\Ground	
-
-Switch	ID	Name	Switch Group			Notes
-	841620460	Concrete	Ground			
-	2473969246	Metal	Ground			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	613274396	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Pigeon\New Sound SFX\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	78387640	ConcreteStep-006	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\ConcreteStep-006_4AB8B1B1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\ConcreteStep-006		39932
-	96789415	Landing On The Ground [1]	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Landing On The Ground [1]_F62207C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [1]		30792
-	111255819	ConcreteStep-001	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\ConcreteStep-001_C112B401.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\ConcreteStep-001		51312
-	127988684	Countdown-001	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Countdown-001_8347025C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-001		176496
-	147213315	Pigeon-001	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Pigeon-001_73F2DB9C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pigeon\Pigeon-001		327068
-	244058664	Landing On The Ground [7]	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Landing On The Ground [7]_31621029.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [7]		54772
-	259192915	MetalStep-006	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\MetalStep-006_2F894F0C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-006		21324
-	342673321	ConcreteStep-003	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\ConcreteStep-003_0A85F98E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\ConcreteStep-003		29496
-	418699331	ConcreteStep-002	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\ConcreteStep-002_6AF3FCCA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\ConcreteStep-002		37084
-	430139319	Finish	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\alert3 (version 11)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Finish		927644
-	433485792	MetalStep-007	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\MetalStep-007_BDA1DD00.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-007		18368
-	456990482	MetalStep-005	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\MetalStep-005_98C14DD8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-005		23056
-	464165162	Pigeon-002	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Pigeon-002_7C26B1A9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pigeon\Pigeon-002		276608
-	482367142	Cyberpunk Beat Quiet	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Cyberpunk Beat_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cyberpunk Beat Quiet		5507212
-	531600051	Landing_Stone_1	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Landing_Stone_1_964FDB8A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing_Stone_1		19636
-	592530725	Landing On The Ground [2]	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Landing On The Ground [2]_9443F8CF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [2]		29480
-	613313089	Chinese Violin	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Chinese Violin - The Enchanted Sound of the Erhu_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chinese Violin		14187664
-	685137432	ConcreteStep-004	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\ConcreteStep-004_3E483D68.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\ConcreteStep-004		42144
-	711410964	Countdown-004	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Countdown-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-004		352896
-	720720670	MetalStep-003	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\MetalStep-003_F4E1411C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-003		26020
-	728538383	thrusters_loop	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\thrusters_loop_7D204FDB.wem		\Actor-Mixer Hierarchy\Default Work Unit\thrusters_loop		3838400
-	816237218	MetalStep-002	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\MetalStep-002_CBC80C10.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-002		12688
-	859789295	Achievement sound	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Achievement sound 1_77BE2E52.wem		\Actor-Mixer Hierarchy\Default Work Unit\Achievement sound		154808
-	862749239	ConcreteStep-005	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\ConcreteStep-005_400CDEE8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteSteps\ConcreteStep-005		44040
-	879264308	MetalStep-004	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\MetalStep-004_CBB385DB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-004		18612
-	882248691	Ambience-metro	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\ambience, metro, wagon, train, interior, city, Moscow_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbientNoise\Ambience-metro		4492896
-	897840081	HoloRobo	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Robo Bird_DA93DA21.wem		\Actor-Mixer Hierarchy\Default Work Unit\HoloRobo		70668
-	950820286	Cyberpunk Beat	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Cyberpunk Beat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cyberpunk Beat		5507212
-	967381246	MetalStep-001	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\MetalStep-001_B55B1500.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\MetalSteps\MetalStep-001		18860
-	1028041429	Countdown-002	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Countdown-002_8347025C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-002		176496
-	1050745615	PigeonFlyingAway	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\PigeonFlyingAway_58AD9B16.wem		\Actor-Mixer Hierarchy\Default Work Unit\PigeonFlyingAway		466332
-	1054905388	Countdown-003	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Countdown-003_8347025C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-003		176496
-	1061541565	Street Noise in the city 1	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\Street Noise in the city 1_E542090B.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbientNoise\Street Noise in the city 1		8429812
+	78387640	ConcreteStep-006	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\ConcreteStep-006_4AB8B1B1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteStep-006		39932
+	96789415	Landing On The Ground [1]	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\Landing On The Ground [1]_F62207C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [1]		30792
+	111255819	ConcreteStep-001	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\ConcreteStep-001_C112B401.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteStep-001		51312
+	127988684	Countdown-001	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\Countdown-001_8347025C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-001		176496
+	147213315	Pigeon-001	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\Pigeon-001_73F2DB9C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pigeon\Pigeon-001		327068
+	244058664	Landing On The Ground [7]	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\Landing On The Ground [7]_31621029.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [7]		54772
+	342673321	ConcreteStep-003	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\ConcreteStep-003_0A85F98E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteStep-003		29496
+	418699331	ConcreteStep-002	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\ConcreteStep-002_6AF3FCCA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteStep-002		37084
+	430139319	Finish	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\alert3 (version 11)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Finish		927644
+	464165162	Pigeon-002	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\Pigeon-002_7C26B1A9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pigeon\Pigeon-002		276608
+	482367142	Cyberpunk Beat Quiet	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\Cyberpunk Beat_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cyberpunk Beat Quiet		5507212
+	531600051	Landing_Stone_1	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\Landing_Stone_1_964FDB8A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing_Stone_1		19636
+	592530725	Landing On The Ground [2]	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\Landing On The Ground [2]_9443F8CF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Landing\Landing On The Ground [2]		29480
+	685137432	ConcreteStep-004	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\ConcreteStep-004_3E483D68.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteStep-004		42144
+	711410964	Countdown-004	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\Countdown-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-004		352896
+	728538383	thrusters_loop	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\thrusters_loop_7D204FDB.wem		\Actor-Mixer Hierarchy\Default Work Unit\thrusters_loop		3838400
+	859789295	Achievement sound	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\Achievement sound 1_77BE2E52.wem		\Actor-Mixer Hierarchy\Default Work Unit\Achievement sound		154808
+	862749239	ConcreteStep-005	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\ConcreteStep-005_400CDEE8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\ConcreteStep-005		44040
+	882248691	Ambience-metro	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\ambience, metro, wagon, train, interior, city, Moscow_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbientNoise\Ambience-metro		4492896
+	897840081	HoloRobo	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\Robo Bird_DA93DA21.wem		\Actor-Mixer Hierarchy\Default Work Unit\HoloRobo		70668
+	950820286	Cyberpunk Beat	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\Cyberpunk Beat_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cyberpunk Beat		5507212
+	1028041429	Countdown-002	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\Countdown-002_8347025C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-002		176496
+	1050745615	PigeonFlyingAway	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\PigeonFlyingAway_58AD9B16.wem		\Actor-Mixer Hierarchy\Default Work Unit\PigeonFlyingAway		466332
+	1054905388	Countdown-003	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\Countdown-003_8347025C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Countdown\Countdown-003		176496
+	1061541565	Street Noise in the city 1	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\Street Noise in the city 1_E542090B.wem		\Actor-Mixer Hierarchy\Default Work Unit\AmbientNoise\Street Noise in the city 1		8429812
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	412349323	CityAmbience	C:\Users\User\Desktop\CCL4\CCL4-Game\CCL4-Game_WwiseProject\.cache\Windows\SFX\CityAmbience_D79FB2B7.wem	412349323.wem	\Actor-Mixer Hierarchy\Default Work Unit\AmbientNoise\CityAmbience	
+	412349323	CityAmbience	C:\Users\Manuel\Desktop\CCL4\CCL4-CyberSurge\CCL4-Game_WwiseProject\.cache\Windows\SFX\CityAmbience_D79FB2B7.wem	412349323.wem	\Actor-Mixer Hierarchy\Default Work Unit\AmbientNoise\CityAmbience	
 

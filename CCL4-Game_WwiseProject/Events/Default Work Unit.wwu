@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{3EC24D1A-77A4-4760-BDCB-879E3AAF123E}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Chinese_Violin" ID="{0DF35CE6-80F0-4888-A97C-3E56B646C8AA}">
-					<ChildrenList>
-						<Action Name="" ID="{D49AE9CB-2B46-4CD8-905D-67C5F2BA8426}" ShortID="197350763">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Chinese Violin" ID="{0DA743D3-4F9A-4B31-82AA-3F80B33FF112}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Cyberpunk_Beat" ID="{D7069E42-44E9-4EAB-8B1B-426D71540D87}">
 					<ChildrenList>
 						<Action Name="" ID="{8617F05F-3DD0-4EAC-89B5-B6E060AF1D72}" ShortID="562421545">
@@ -135,12 +124,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Footsteps" ID="{FDC616E2-0684-41C0-99FC-D26C98C270EE}">
+				<Event Name="Play_Footsteps" ID="{BCE9DCDD-809D-451F-9884-FDF4ED8D03C0}">
 					<ChildrenList>
-						<Action Name="" ID="{B94489AA-2FB3-4C69-839A-E5AEF8CEE34A}" ShortID="230704528">
+						<Action Name="" ID="{974354EA-E056-49D6-897F-987E726F5315}" ShortID="991875056">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Footsteps" ID="{1A499689-FBB7-4334-AB8C-8A1ABE735647}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
+									<ObjectRef Name="Footsteps" ID="{72E6F913-48B6-49C7-BFF9-AFADE5D01271}" WorkUnitID="{C38C4133-5D51-4355-856A-A6EFE9D5E22E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

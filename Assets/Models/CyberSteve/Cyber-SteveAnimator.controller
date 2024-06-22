@@ -256,7 +256,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -8513578659211463273, guid: 9a1b31d87ea88e4438e64f0616468b88, type: 3}
+  m_Motion: {fileID: 7400000, guid: 20dc9a5a23a060442a77d43e9155bcaf, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: wallRunRight
@@ -733,13 +733,13 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: victory
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -1127,7 +1127,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -1263900014388373186, guid: 9a1b31d87ea88e4438e64f0616468b88, type: 3}
+  m_Motion: {fileID: 7400000, guid: 9089e0b9039d0fb4b83f0b11890c0f1f, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: wallRunRight

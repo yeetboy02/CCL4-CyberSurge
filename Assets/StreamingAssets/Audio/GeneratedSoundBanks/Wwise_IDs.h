@@ -15,7 +15,6 @@ namespace AK
     {
         static const AkUniqueID PLAY_ACHIEVEMENT_SOUND = 3241291351U;
         static const AkUniqueID PLAY_AMBIENTNOISE = 3154490300U;
-        static const AkUniqueID PLAY_CHINESE_VIOLIN = 4044939577U;
         static const AkUniqueID PLAY_COUNTDOWN = 2175797879U;
         static const AkUniqueID PLAY_CYBERPUNK_BEAT = 454602296U;
         static const AkUniqueID PLAY_CYBERPUNK_BEAT_QUIET = 792531229U;
@@ -27,21 +26,6 @@ namespace AK
         static const AkUniqueID PLAY_PIGEONFLYINGAWAY = 960299171U;
         static const AkUniqueID PLAY_THRUSTERS_LOOP = 1682802373U;
     } // namespace EVENTS
-
-    namespace SWITCHES
-    {
-        namespace GROUND
-        {
-            static const AkUniqueID GROUP = 2528658256U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID CONCRETE = 841620460U;
-                static const AkUniqueID METAL = 2473969246U;
-            } // namespace SWITCH
-        } // namespace GROUND
-
-    } // namespace SWITCHES
 
     namespace BANKS
     {
