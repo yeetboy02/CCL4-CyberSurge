@@ -81652,6 +81652,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2068537314422298589, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
+      propertyPath: FootStep.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 8c25f66f6bb39884bac47d26095ba579, type: 2}
     - target: {fileID: 2944064544450315116, guid: a2183cff907e940e0a1344e85bf658f0, type: 3}
       propertyPath: m_Name
       value: PlayerObject (1)

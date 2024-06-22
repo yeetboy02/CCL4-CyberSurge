@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3944981190" Type="User" Language="SFX" Hash="{03605640-7CF9-91CD-7E12-881466647D26}">
+		<SoundBank Id="3944981190" Type="User" Language="SFX" Hash="{2496C607-2793-0BE5-C5BD-518C08829F64}">
 			<ShortName>CyberSurge</ShortName>
 			<Path>CyberSurge.bnk</Path>
 			<Media>
@@ -220,5 +220,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0928ADA0-F9EC-2039-A0F6-43EB380C4D0B}</FileHash>
+	<FileHash>{E872F092-1B49-D816-ADCC-DB821A224A86}</FileHash>
 </SoundBanksInfo>
