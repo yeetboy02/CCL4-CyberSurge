@@ -53,9 +53,12 @@ Developing CyberSurge was a challenging yet rewarding experience. Our team succe
 - **Samy Schiphorst:** Artist
 
 ## Screenshots and Media
-![CyberSurge Screenshot 1](path/to/screenshot1.png)
-![CyberSurge Screenshot 2](path/to/screenshot2.png)
-![CyberSurge Screenshot 3](path/to/screenshot3.png)
+![CyberSurge Cover](CyberSurgeCover.png)
+![CyberSurge CyberSteve Progress](CyberSteveInTheMaking.png)
+![CyberSurge CyberSteve Finished](CyberSteveFullBody.png)
+![CyberSurge CyberBob](CyberBob.png)
+![CyberSurge Checkpoints](Checkpoints.png)
+![CyberSurge Catchy Teaser Image](InCityScreenshot.png)
 
 ## Development Journal
 ### Week 1: Planning and Conceptualization
