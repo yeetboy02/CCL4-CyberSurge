@@ -49,8 +49,8 @@ Developing CyberSurge was a challenging yet rewarding experience. Our team succe
 
 ## Team Members
 - **Lukas Gruber:** Lead Developer
-- **Manuel Prammer:** Game Design, Sound Designer, Artist support
-- **Samy Schiphorst:** Artist
+- **Manuel Prammer:** Game Design, Audio Design, Artist support
+- **Samy Schiphorst:** Game Artist
 
 ## Screenshots and Media
 ![CyberSurge Cover](CyberSurgeCover.png)
@@ -61,25 +61,53 @@ Developing CyberSurge was a challenging yet rewarding experience. Our team succe
 ![CyberSurge Catchy Teaser Image](InCityScreenshot.png)
 
 ## Development Journal
-### Week 1: Planning and Conceptualization
-- Brainstormed game ideas and decided on a cyberpunk parkour theme.
-- Outlined core mechanics and visual style.
+### Week 1
 
-### Week 2-3: Design Phase
-- Designed the city layout and initial parkour courses.
-- Created concept art and mood boards.
+**Manuel – Game & Audio Designer**
+1. Asset modelling: checkpoints, pipes, jump pads
+2. UV unwrapping & Texture mapping
+3. Asset modelling: map buildings
+4. Texturing
 
-### Week 4-6: Development Phase
-- Modeled 3D environments and characters.
-- Implemented parkour mechanics and timer system.
+**Samy – Game Artist**
+1. (Before week 1) Concept art for character & environment, first presentation
+2. Character modelling: Cyber-Steve
+3. UV unwrapping
+4. Texture mapping: color, bumps, emission, roughness
+5. Rigging
 
-### Week 7-8: Testing and Optimization
-- Conducted playtesting sessions to refine gameplay.
-- Fixed bugs and optimized performance.
+**Lukas – Lead Developer**
+1. Smooth character movement: move, jump
+2. Smooth camera functionalities
+3. Basic functionality for parkour courses
+4. High score board functionality
+5. JSON implementation for checkpoints
 
-### Week 9: Final Touches
-- Polished visuals and audio.
-- Prepared the game for submission.
+### Week 2
+
+**Manuel – Game & Audio Designer**
+1. World building: map design
+2. Unity: working on shaders and better emission
+3. Character modelling: Cyber-Bob, the pigeon
+4. Texturing
+5. Animation: idle, fly away
+6. Game audio: finding & implementing sounds
+
+**Samy – Game Artist**
+1. Character animation: idle, run, jump
+2. UI design
+3. Implementing map details
+4. Character animation: wall run
+5. Final presentation
+6. Promotion video
+
+**Lukas – Lead Developer**
+1. Menu & scene change functionalities
+2. Character functionalities: Cyber-Bob (pigeon) & Cyber-Bert (robot)
+3. Timer implementation
+4. Wall run implementation
+5. Bug fixes
+
 
 ---
 
